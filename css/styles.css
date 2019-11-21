@@ -1,0 +1,65 @@
+footer {
+  margin-top: 5%;
+  text-align: center;
+}
+
+h5 {
+  font-family: Helvetica;
+  font-weight: bold;
+  color: #007aff;
+}
+
+p {
+  font-family: Helvetica;
+  color: #676966;
+}
+
+/* Navigation menu */
+.navigation {
+  padding: 0;
+}
+
+.navbar-brand {
+  font-size: 2rem;
+  font-weight: bold;
+  padding-left: 10%;
+}
+
+.navbar-nav {
+  padding-left: 50%;
+}
+
+.nav-item {
+  padding: 0 18px;
+  font-size: 1rem
+}
+
+/* Project division */
+.project-frame {
+  margin: 10px auto 0 auto;
+}
+
+.project-cards {
+  margin: 0 auto;
+  max-width: 1440px;
+}
+
+.card {
+  margin: 0 auto;
+  height: 100%;
+  max-width: 100%;
+}
+
+.card:hover {
+  transition: transform .8s ease;
+  transform: scale(1.02);
+  box-shadow: 1px 1px 5px #999;
+}
+
+.card-header {
+  text-align: center;
+}
+
+.card-image {
+  max-height: 166px;
+}
