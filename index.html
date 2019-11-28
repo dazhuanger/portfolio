@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
 
 <head>
-  <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"> 
+  <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <title>Jianchen Zhu Portfolio</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="css/styles.css">
@@ -18,7 +18,7 @@
   <!-- Nav Bar -->
   <div class="container-fluid navigation">
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <a class="navbar-brand" href="#">Jianchen Zhu</a>
+      <a class="navbar-brand" href="index.html">Jianchen Zhu</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -30,11 +30,11 @@
               Projects
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">Special Olympics Ontario</a>
-              <a class="dropdown-item" href="#">Chef</a>
-              <a class="dropdown-item" href="#">Ticket Faster</a>
-              <a class="dropdown-item" href="#">Sports Radio</a>
-              <a class="dropdown-item" href="#">Neighbourhood Sports</a>
+              <a class="dropdown-item" href="SOO.html">Special Olympics Ontario</a>
+              <a class="dropdown-item" href="chef.html">Chef</a>
+              <a class="dropdown-item" href="ticket_faster.html">Ticket Faster</a>
+              <a class="dropdown-item" href="sports_radio.html">Sports Radio</a>
+              <!-- <a class="dropdown-item" href="#">Neighbourhood Sports</a> -->
             </div>
           </li>
 
@@ -48,59 +48,70 @@
       </div>
     </nav>
   </div>
-
+  <!-- Welcome -->
+  <div class="container-fluid welcome">
+    <h2 class="greeting">Hello, I'm Jianchen. Welcome to my portfolio.</h2>
+    <h4 class="bio">I'm an emerging user experience designer who is enthusiastic about creating products to solve problems and provide excellent user experience.</h4>
+  </div>
   <!-- Projects-->
 
-  <div class="container-fluid projects">
+  <div class="container projects">
     <div class="row project-cards">
-      <div class="col-md-3 col-sm-6 col-xs-12 project-frame">
-        <div class="card">
-          <h5 class="card-header">Special Olympics Ontario</h5>
-          <img class="card-img-top" src="images/SOO_mac.png" alt="SOO image">
-          <div class="card-body">
-            <h4>Website design project for community partners</h4>
-            <p>Information Architecture</p>
-            <p>User Reasearch</p>
-            <p>Usability Testing</p>
-            <p>Wireframing</p>
+      <div class="col-sm-6 col-xs-12 project-frame">
+        <a href="SOO.html">
+          <div class="card SOO">
+            <h5 class="card-header">Special Olympics Ontario</h5>
+            <img class="card-img-top" src="images/SOO_mac.png" alt="SOO image">
+            <div class="card-body">
+              <h4>Website design project for community partners</h4>
+              <p>Information Architecture</p>
+              <p>User Reasearch</p>
+              <p>Usability Testing</p>
+              <p>Wireframing</p>
+            </div>
           </div>
-        </div>
+        </a>
       </div>
 
-      <div class="col-md-3 col-sm-6 col-xs-12 project-frame">
-        <div class="card">
-          <h5 class="card-header">Chef</h5>
-          <img class="card-img-top" src="images/chef.png" alt="chef image">
-          <div class="card-body">
-            <h4>Android mobile & Wear OS UI </h4>
-            <p>Interface Design</p>
+      <div class="col-sm-6 col-xs-12 project-frame">
+        <a href="chef.html">
+          <div class="card chef">
+            <h5 class="card-header">Chef</h5>
+            <img class="card-img-top" src="images/chef.png" alt="chef image">
+            <div class="card-body">
+              <h4>Android mobile & Wear OS UI </h4>
+              <p>Interface Design</p>
+            </div>
           </div>
-        </div>
+        </a>
       </div>
 
-      <div class="col-md-3 col-sm-6 col-xs-12 project-frame">
-        <div class="card">
-          <h5 class="card-header">Ticket Faster</h5>
-          <img class="card-img-top" src="images/ticket_faster.png" alt="ticket image">
-          <div class="card-body">
-            <h4>macOS desktop application UI</h4>
-            <p>Interface Design</p>
+      <div class="col-sm-6 col-xs-12 project-frame">
+        <a href="ticket_faster.html">
+          <div class="card TF">
+            <h5 class="card-header">Ticket Faster</h5>
+            <img class="card-img-top" src="images/ticket_faster.png" alt="ticket image">
+            <div class="card-body">
+              <h4>macOS desktop application UI</h4>
+              <p>Interface Design</p>
+            </div>
           </div>
-        </div>
+        </a>
       </div>
 
-      <div class="col-md-3 col-sm-6 col-xs-12 project-frame">
-        <div class="card">
-          <h5 class="card-header">Sports Radio</h5>
-          <img class="card-img-top" src="images/sports_radio.png" alt="sports radio image">
-          <div class="card-body">
-            <h4>Apple Carplay application UI</h4>
-            <p>Interface Design</p>
+      <div class="col-sm-6 col-xs-12 project-frame">
+        <a href="sports_radio.html">
+          <div class="card SR">
+            <h5 class="card-header">Sports Radio</h5>
+            <img class="card-img-top" src="images/sports_radio.png" alt="sports radio image">
+            <div class="card-body">
+              <h4>Apple Carplay application UI</h4>
+              <p>Interface Design</p>
+            </div>
           </div>
-        </div>
+        </a>
       </div>
     </div>
-
   </div>
 
 </body>
