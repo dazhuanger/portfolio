@@ -3,6 +3,15 @@ footer {
   text-align: center;
 }
 
+h2 {
+  font-family: Helvetica;
+  font-weight: 600;
+}
+
+h4 {
+  font-weight: 300;
+}
+
 h5 {
   font-family: Helvetica;
   font-weight: bold;
@@ -50,7 +59,7 @@ a:hover {
 
 .greeting {
   text-align: center;
-  width: 60%;
+  width: 70%;
   margin: 5% auto;
   -webkit-animation: fadein 3s;
   /* Safari, Chrome and Opera > 12.1 */
