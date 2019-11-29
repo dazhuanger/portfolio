@@ -40,12 +40,11 @@ a:hover {
 .navbar-brand {
   font-size: 2rem;
   font-weight: bold;
-  padding-left: 10%;
 }
 
-.navbar-nav {
-  padding-left: 50%;
-}
+/* .navbar-nav {
+  margin: auto;
+} */
 
 .nav-item {
   padding: 0 18px;
