@@ -16,6 +16,10 @@ a:hover {
   color: inherit;
 }
 
+span {
+  font-weight: 600;
+}
+
 
 /* Homepage */
 /* Navigation menu */
@@ -120,26 +124,25 @@ a:hover {
   max-width: 1440px;
 }
 
-.card {
+.project-card {
   margin: 0 auto;
   height: 100%;
   max-width: 100%;
 }
 
-.card:hover {
+.project-card:hover {
   transition: transform .8s ease;
   transform: scale(1.02);
   box-shadow: 1px 1px 5px #999;
 }
-
 .card-header {
   text-align: center;
   font-weight: bold;
   color: #007aff;
 }
 
-.card-image {
-  max-height: 166px;
+.card-img-top {
+  padding: 5% 5%;
 }
 
 .keywords {
@@ -164,6 +167,7 @@ a:hover {
   font-size: 1.3rem;
   font-weight: 900;
   color: black;
+  padding-top: 2%;
 }
 
 .bullet {
@@ -173,4 +177,9 @@ a:hover {
   font-weight: 100;
   font-size: 1.1rem;
   color: #4f4f4f;
+}
+
+li .text {
+  font-weight: 400;
+  color: black;
 }
