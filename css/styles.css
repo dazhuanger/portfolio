@@ -3,21 +3,24 @@ footer {
   text-align: center;
 }
 
-h2, h3, h4, h5, h6, p, li {
-  font-family: Helvetica;
+h2, h3, h4, h5, h6 {
+  /* font-family: "Montserrat", sans-serif; */
+  font-family: SF Pro Display, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
 }
 
-a {
-  color: inherit;
+p, li {
+  font-family: SF Pro Text, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
 }
 
-a:hover {
-  text-decoration: none;
-  color: inherit;
-}
 
-span {
+.highlight {
+  color: #007aff;
   font-weight: 600;
+}
+
+.highlight:hover {
+  transition: transform .8s ease;
+  transform: scale(1.02);
 }
 
 
@@ -28,25 +31,28 @@ span {
 }
 
 .navbar-brand {
+  font-family: SF Pro Display, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
   font-size: 2rem;
   font-weight: bold;
 }
 
 .nav-item {
+  font-family: SF Pro Text, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
   padding: 0 18px;
   font-size: 1rem
 }
 
 /* Welcome division */
-.welcome {
-  margin: 5% auto 10% auto;
+.intro {
+  margin: 5% auto;
+  position: relative;
 }
 
 .greeting {
   font-weight: 600;
   text-align: center;
   width: 70%;
-  margin: 5% auto;
+  margin: auto;
   -webkit-animation: fadein 3s;
   /* Safari, Chrome and Opera > 12.1 */
   -moz-animation: fadein 3s;
@@ -59,9 +65,9 @@ span {
 .bio {
   font-weight: 300;
   font-size: 1.5rem;
-  text-align: center;
+  text-align: left;
   width: 60%;
-  margin: 5% auto;
+  margin: 3% auto;
   -webkit-animation: fadein 3s;
   /* Safari, Chrome and Opera > 12.1 */
   -moz-animation: fadein 3s;
@@ -124,6 +130,16 @@ span {
   max-width: 1440px;
 }
 
+/* stop a-tag text in the card from changing color or underlining  */
+.card-a-tag {
+  color: inherit;
+}
+
+.card-a-tag:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
 .project-card {
   margin: 0 auto;
   height: 100%;
@@ -135,10 +151,10 @@ span {
   transform: scale(1.02);
   box-shadow: 1px 1px 5px #999;
 }
-.card-header {
-  text-align: center;
-  font-weight: bold;
+
+.project-title {
   color: #007aff;
+  font-size: 1.5rem;
 }
 
 .card-img-top {
@@ -146,40 +162,43 @@ span {
 }
 
 .keywords {
-  font-family: Helvetica;
-  color: #676966;
+  font-size: 1.2rem;
+  font-weight: 200;
+  color: #333;
 }
 
 /* SOO page */
 .research {
   padding-top: 2%;
-  padding-left: 5%;
-  padding-right: 5%;
+  padding-left: 8%;
+  padding-right: 8%;
 }
 
 .div-title {
-  padding-bottom: 2%;
-  font-weight: 700;
+  font-weight: 600;
   color: #007aff;
 }
 
 .div-subtitle {
   font-size: 1.3rem;
-  font-weight: 900;
+  font-weight: 600;
   color: black;
-  padding-top: 2%;
+  padding-top: 1%;
 }
 
-.bullet {
-  font-size: 1.1rem;
-}
 .text {
-  font-weight: 100;
+  font-weight: 200;
   font-size: 1.1rem;
-  color: #4f4f4f;
+  line-height: 1.7rem;
+  color: #333;
 }
 
-li .text {
+li.text {
   font-weight: 400;
   color: black;
+}
+
+.test-result-img {
+  max-width: 80%;
+  height: auto;
 }
