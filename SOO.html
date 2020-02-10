@@ -10,7 +10,8 @@
   <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700|Roboto:300,400,500&display=swap" rel="stylesheet">
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="index.js" charset="utf-8"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </head>
 
@@ -46,10 +47,23 @@
     </nav>
   </div>
 
+  <!-- side nav -->
+  <div class="nav flex-column side-nav">
+    <p class="navbar-brand">Outline</p>
+    <a class="nav-link scroll" href="#SOO-research">Research and Analysis</a>
+    <a class="nav-link scroll" href="#SOO-design">Design</a>
+    <a class="nav-link scroll" href="#SOO-prototype">Prototyping</a>
+  </div>
+
+
+
+
+
+
   <!-- Intro division -->
-  <div class="container intro">
+  <div class="container intro" id="SOO-intro">
     <h2 class="greeting">Special Olympics Ontario Website Redesign</h2>
-    <h4 class="bio">As a community partner project, this group project focused on improving the overall
+    <h4 class="bio">This community partner project focused on improving the overall
       <span class="highlight">information architecture</span> of the Special Olympics Ontario's main website by
       refining the organization, navigation and labeling system of the website.</h4>
     <h4 class="bio">What I did: <span style="font-weight: 100;">User Interview, Usability Testing, Wireframing, Prototyping</span></h4>
@@ -57,12 +71,11 @@
   </div>
 
   <!-- Research division -->
-  <div class="container research">
+  <div class="container research" id="SOO-research">
     <h3 class="div-title">Research and Analysis</h3>
 
     <h4 class="div-subtitle">Problem</h4>
-    <p class="text">Since its inception, SOO has grown tremendously, providing a wide range of new services.
-      These services are, however, poorly represented on the website due to inextensible information
+    <p class="text">Special Olympics Ontario's services are poorly represented on the website due to inextensible information
       architecture that was used to build the site. The IA of the main website suffers from various problems:</p>
     <ul>
       <li class="text">
@@ -94,9 +107,9 @@
       <li class="text">Sometimes they choose to call or email SOO staff</li>
     </ul>
 
-    <p class="text">We selected five participants who represent the potential users
-      of the main website to conducta a <a class="highlight" href="https://docs.google.com/document/d/1o97b-xVTTJA-y6NViHFAMOX6PQ0MYSj_1YQEYhLEeto/edit?usp=sharing" target="_blank">usability test</a>. Compared to the interview participants, these five participants have limited
-      knowledge about SOO and their website. Such participant profile would help us
+    <p class="text">Five participants were selected to represent the potential users
+      of the main website to conduct a <a class="highlight" href="https://docs.google.com/document/d/1o97b-xVTTJA-y6NViHFAMOX6PQ0MYSj_1YQEYhLEeto/edit?usp=sharing" target="_blank">usability test</a>.
+      These participants have limited knowledge about SOO and their website. Such participant profile would help us
       to analyze the behaviour of less frequent users of the website.</p>
     <p class="text">Result:</p>
     <img class="test-result-img" src="images/U_test_results.png" alt="test results">
@@ -110,13 +123,23 @@
 
 
   <!-- Design division -->
-  <div class="container design">
+  <div class="container design" id="SOO-design">
+
+    <h3 class="div-title">Design</h3>
+
+    <h4 class="div-subtitle">Card Sorting Study</h4>
+    <p class="text">The card sorting study sheds light onto the design of the
+      categories, global navigation and labeling system of the website.</p>
+    <p class="text">The study was conducted with volunteers and staff members of
+      Special Olympics Ontario at their volunteer conference.</p>
+
+    <img class="card-sorting-img" src="images/card_sorting.png" alt="cart sorting img">
 
   </div>
 
 
   <!-- Prototype division -->
-  <div class="container prototype">
+  <div class="container prototype" id="SOO-prototype">
 
   </div>
 
