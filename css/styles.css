@@ -12,7 +12,6 @@ p, li {
   font-family: SF Pro Text, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
 }
 
-
 .highlight {
   color: #007aff;
   font-weight: 600;
@@ -22,7 +21,6 @@ p, li {
   transition: transform .8s ease;
   transform: scale(1.02);
 }
-
 
 /* Homepage */
 /* Navigation menu */
@@ -40,6 +38,24 @@ p, li {
   font-family: SF Pro Text, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
   padding: 0 18px;
   font-size: 1rem
+}
+
+/* Side navigation menu */
+.side-nav {
+  position: fixed;
+  display: inline;
+  top: 300px;
+  z-index: 1;
+}
+
+.scroll {
+  color: #007aff;
+}
+
+@media screen and (max-width: 1135px){
+  .side-nav {
+    display: none;
+  }
 }
 
 /* Welcome division */
@@ -68,13 +84,13 @@ p, li {
   text-align: left;
   width: 60%;
   margin: 3% auto;
-  -webkit-animation: fadein 3s;
+  -webkit-animation: fadein 2s;
   /* Safari, Chrome and Opera > 12.1 */
-  -moz-animation: fadein 3s;
+  -moz-animation: fadein 2s;
   /* Firefox < 16 */
-  -ms-animation: fadein 3s;
+  -ms-animation: fadein 2s;
   /* Opera < 12.1 */
-  animation: fadein 3s;
+  animation: fadein 2s;
 }
 
 @keyframes fadein {
@@ -168,10 +184,8 @@ p, li {
 }
 
 /* SOO page */
-.research {
-  padding-top: 2%;
-  padding-left: 8%;
-  padding-right: 8%;
+.research, .design {
+  padding: 2% 8%;
 }
 
 .div-title {
@@ -201,4 +215,19 @@ li.text {
 .test-result-img {
   max-width: 80%;
   height: auto;
+  margin: 0 auto;
+  display: block;
+}
+
+.card-sorting-img {
+  max-width: 90%;
+  height: auto;
+  margin: 0 auto;
+  display: block;
+}
+
+.card-sorting-img:hover {
+  transition: transform .8s ease;
+  transform: scale(1.02);
+  box-shadow: 1px 1px 3px #999;
 }
