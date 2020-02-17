@@ -43,7 +43,7 @@ p, li {
 /* Side navigation menu */
 .side-nav {
   position: fixed;
-  display: inline;
+  display: none;
   top: 300px;
   z-index: 1;
 }
@@ -185,7 +185,7 @@ p, li {
 
 /* SOO page */
 .research, .design, .prototype {
-  padding: 2% 8%;
+  padding-top: 2%;
 }
 
 .div-title {
@@ -234,11 +234,23 @@ li.text {
   padding-bottom: 2%;
 }
 
+.midfi-prototype {
+  display: inline-block;
+}
 
+.try-it {
+  display: inline-block;
+  margin-left: 15px;
+  margin-bottom: 5px;
+}
 
 /* Chef page */
 .rationales, .mid-fi {
-  padding: 2% 8%;
+  padding-top: 2%;
+}
+
+.structure-1, .structure-2, .recipe, .steps, .watch {
+  padding-bottom: 7%;
 }
 
 .midfi-img {
