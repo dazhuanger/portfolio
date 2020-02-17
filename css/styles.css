@@ -52,7 +52,7 @@ p, li {
   color: #007aff;
 }
 
-@media screen and (max-width: 1135px){
+@media screen and (max-width: 1135px) {
   .side-nav {
     display: none;
   }
@@ -184,7 +184,7 @@ p, li {
 }
 
 /* SOO page */
-.research, .design {
+.research, .design, .prototype {
   padding: 2% 8%;
 }
 
@@ -212,22 +212,47 @@ li.text {
   color: black;
 }
 
-.test-result-img {
+.test-result-img, .card-sorting-img, .p-sketch-img, .tree-test-img {
   max-width: 80%;
   height: auto;
   margin: 0 auto;
   display: block;
+  padding-bottom: 2%;
 }
 
-.card-sorting-img {
-  max-width: 90%;
-  height: auto;
-  margin: 0 auto;
-  display: block;
-}
-
-.card-sorting-img:hover {
+.card-sorting-img:hover, .tree-test-img:hover {
   transition: transform .8s ease;
   transform: scale(1.02);
   box-shadow: 1px 1px 3px #999;
+}
+
+.hand-sketch, .midfi-prototype {
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+  display: block;
+  padding-bottom: 2%;
+}
+
+
+
+/* Chef page */
+.rationales, .mid-fi {
+  padding: 2% 8%;
+}
+
+.midfi-img {
+  max-width: 48%;
+  height: auto;
+  margin: 0 auto;
+  /* display: inline; */
+  padding-bottom: 2%;
+}
+
+.midfi-img-lg {
+  max-width: 60%;
+  height: auto;
+  margin: 0 auto;
+  display: block;
+  padding-bottom: 2%;
 }

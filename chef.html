@@ -46,6 +46,14 @@
     </nav>
   </div>
 
+  <!-- side nav -->
+  <div class="nav flex-column side-nav">
+    <p class="navbar-brand">Outline</p>
+    <a class="nav-link scroll" href="#SOO-research">Research and Analysis</a>
+    <a class="nav-link scroll" href="#SOO-design">Design</a>
+    <a class="nav-link scroll" href="#SOO-prototype">Prototyping</a>
+  </div>
+
   <!-- Intro division -->
   <div class="container intro">
     <h2 class="greeting">Chef</h2>
@@ -54,9 +62,126 @@
       and a Wear OS application.</h4>
   </div>
 
+  <!-- Design Requirements -->
+  <div class="container rationales" id="chef-Rationales">
+    <h3 class="div-title">Design Rationales</h3>
+    <p class="text">As a cooking companion App, Chef should provide the user with some
+      basic features such as step-by-step recipes and timer. Also, it is important to
+      add some discoverability to this app by offering users recipe recommendations
+      and a searching feature to find recipes according to their liking.</p>
+  </div>
+
+  <div class="container mid-fi" id="Mid-Fi">
+    <h3 class="div-title">Mid-Fi Wireframe</h3>
+    <div class="row">
+      <div class="col-sm-6 col-xs-12">
+        <h4 class="div-subtitle">Overall Structure </h4>
+        <ul>
+          <li class="text">Bottom navigation bar</li>
+          <p class="text">Organizes different pages and allows the user to navigate inside the app.</p>
+
+          <li class="text">Home page</li>
+          <p class="text">Contains recipe recommendations and the user's browsing history.
+            The page layout gives the user an affordance to scroll down and swipe to the
+            left to explore more content.</p>
+
+          <li class="text">Search page</li>
+          <p class="text">Placed on the top of the screen where the user can type in
+            the keywords to search a specific recipe. Also, the user can tap on any
+            block below to open a category and view the recipes that he or she is interested in.</p>
+        </ul>
+      </div>
+
+      <div class="col-sm-6 col-xs-12">
+        <img class="midfi-img" src="images/home.png" alt="midfi homepage">
+        <img class="midfi-img" src="images/search.png" alt="midfi search">
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-6 col-xs-12">
+        <ul>
+          <li class="text">Favourite list </li>
+          <p class="text">To save the favourite recipes.</p>
+
+          <li class="text">Shopping list </li>
+          <p class="text">A checklist of essential ingredients so that they can be fully prepared before cooking</p>
+        </ul>
+      </div>
+
+      <div class="col-sm-6 col-xs-12">
+        <img class="midfi-img" src="images/favourite.png" alt="midfi favourite">
+        <img class="midfi-img" src="images/shopping_list.png" alt="midfi shopping list">
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-6 col-xs-12">
+        <h4 class="div-subtitle">Recipe Page </h4>
+        <ul>
+          <li class="text">Introduction </li>
+          <p class="text">Including the name, type of cuisine and ​a gallery of the recipe.</p>
+
+          <li class="text">Time and nutrition information </li>
+          <p class="text">More detailed information for the user.</p>
+
+          <li class="text">Ingredient list</li>
+          <p class="text">The user can tap on the button on the top right corner to create a shopping list for the ingredients.</p>
+        </ul>
+      </div>
+
+      <div class="col-sm-6 col-xs-12">
+        <img class="midfi-img-lg" src="images/recipe_page.png" alt="midfi recipe page">
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-6 col-xs-12">
+        <h4 class="div-subtitle">Steps Page </h4>
+        <ul>
+          <li class="text">Timeline</li>
+          <p class="text">Located on the top of the screen, indicating the current step.
+            Also serves as an alternative to swiping gestures. Users can tap on the dot to skip multiple steps at a time.</p>
+
+          <li class="text">Photo/Video and text instructions</li>
+          <p class="text">Depending on the complexity of the recipe, the content maker can choose to put a video or a simple photo</p>
+
+          <li class="text">Timer</li>
+          <p class="text">Users can tap on the button to set a timer. Once the timer is set, the countdown clock will replace the timer button.</p>
+        </ul>
+      </div>
+
+      <div class="col-sm-6 col-xs-12">
+        <img class="midfi-img" src="images/step1.png" alt="midfi step page">
+        <img class="midfi-img" src="images/timer_set.png" alt="midfi timer page">
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-6 col-xs-12">
+        <h4 class="div-subtitle">Watch UI </h4>
+        <ul>
+          <li class="text">Navigation</li>
+          <p class="text">The navigation bar in the mobile UI is adjusted to accommodate the watch screen.</p>
+
+          <li class="text">Text instructions</li>
+          <p class="text">Users can only see text instructions on their watches due to the screen size restriction.</p>
+
+          <li class="text">Timer</li>
+          <p class="text">Same as the mobile UI, users can tap on the button to set a timer. Once the timer is set, the countdown clock will replace the timer button.</p>
+        </ul>
+      </div>
+
+      <div class="col-sm-6 col-xs-12">
+        <img class="midfi-img" src="images/watch_fav_list.png" alt="midfi fav page">
+        <img class="midfi-img" src="images/watch_menu.png" alt="midfi menu page">
+        <img class="midfi-img" src="images/watch_timer.png" alt="midfi timer page">
+        <img class="midfi-img" src="images/watch_timer_set.png" alt="midfi timer set page">
+      </div>
+    </div>
 
 
-
+  </div>
 
 </body>
 
