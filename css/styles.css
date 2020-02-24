@@ -249,22 +249,44 @@ li.text {
   padding-top: 2%;
 }
 
-.structure-1, .structure-2, .recipe, .steps, .watch {
+.structure-1, .structure-2, .recipe, .steps, .watch, .splash, .enhanced, .dimmed {
   padding-bottom: 7%;
 }
 
 .midfi-img {
-  max-width: 48%;
+  max-width: 45%;
   height: auto;
-  margin: 0 auto;
-  /* display: inline; */
+  margin: 0 2%;
   padding-bottom: 2%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
-.midfi-img-lg {
+.midfi-img-lg, .highfi-img-lg {
   max-width: 60%;
   height: auto;
   margin: 0 auto;
   display: block;
   padding-bottom: 2%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.midfi-watch {
+  max-width: 45%;
+  height: auto;
+  margin: 0 6%;
+  padding-bottom: 2%;
+}
+
+.chef-storyboard {
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+  padding-bottom: 2%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.chef-storyboard:hover {
+  transition: transform .8s ease;
+  transform: scale(1.02);
+  box-shadow: 1px 1px 3px #999;
 }
