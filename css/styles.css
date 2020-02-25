@@ -249,7 +249,7 @@ li.text {
   padding-top: 2%;
 }
 
-.structure-1, .structure-2, .recipe, .steps, .watch, .splash, .enhanced, .dimmed, .ticket-mid-fi, .ticket-high-fi{
+.structure-1, .structure-2, .recipe, .steps, .watch, .splash, .enhanced, .dimmed, .ticket-mid-fi, .ticket-high-fi, .radio-mid-fi, .radio-high-fi{
   padding-bottom: 7%;
 }
 
@@ -277,7 +277,7 @@ li.text {
   padding-bottom: 2%;
 }
 
-.chef-storyboard, .ticket-storyboard {
+.chef-storyboard, .ticket-storyboard, .radio-storyboard {
   max-width: 100%;
   height: auto;
   margin: 0 auto;
@@ -285,7 +285,7 @@ li.text {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
-.chef-storyboard:hover, .ticket-storyboard:hover{
+.chef-storyboard:hover, .ticket-storyboard:hover, .radio-storyboard:hover {
   transition: transform .8s ease;
   transform: scale(1.02);
   box-shadow: 1px 1px 3px #999;
@@ -297,6 +297,13 @@ li.text {
   margin: 0 auto;
   padding-bottom: 2%;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.midfi-car, .highfi-car {
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+  padding-bottom: 2%;
 }
 
 .critiques {
