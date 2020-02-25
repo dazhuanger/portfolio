@@ -244,16 +244,16 @@ li.text {
   margin-bottom: 5px;
 }
 
-/* Chef page */
-.rationales, .mid-fi {
+/* UI design projects */
+.rationales, .mid-fi, .high-fi, .feedback {
   padding-top: 2%;
 }
 
-.structure-1, .structure-2, .recipe, .steps, .watch, .splash, .enhanced, .dimmed {
+.structure-1, .structure-2, .recipe, .steps, .watch, .splash, .enhanced, .dimmed, .ticket-mid-fi, .ticket-high-fi{
   padding-bottom: 7%;
 }
 
-.midfi-img {
+.midfi-mobile {
   max-width: 45%;
   height: auto;
   margin: 0 2%;
@@ -261,7 +261,7 @@ li.text {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
-.midfi-img-lg, .highfi-img-lg {
+.midfi-mobile-lg, .highfi-mobile-lg {
   max-width: 60%;
   height: auto;
   margin: 0 auto;
@@ -277,7 +277,7 @@ li.text {
   padding-bottom: 2%;
 }
 
-.chef-storyboard {
+.chef-storyboard, .ticket-storyboard {
   max-width: 100%;
   height: auto;
   margin: 0 auto;
@@ -285,8 +285,22 @@ li.text {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
-.chef-storyboard:hover {
+.chef-storyboard:hover, .ticket-storyboard:hover{
   transition: transform .8s ease;
   transform: scale(1.02);
   box-shadow: 1px 1px 3px #999;
+}
+
+.midfi-mac, .highfi-mac {
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+  padding-bottom: 2%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.critiques {
+  text-align: center;
+  width: 60%;
+  margin: 5% auto;
 }
