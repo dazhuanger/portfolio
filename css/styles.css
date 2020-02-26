@@ -249,7 +249,8 @@ li.text {
   padding-top: 2%;
 }
 
-.structure-1, .structure-2, .recipe, .steps, .watch, .splash, .enhanced, .dimmed, .ticket-mid-fi, .ticket-high-fi, .radio-mid-fi, .radio-high-fi{
+.chef-mid-fi, .chef-high-fi,
+.ticket-mid-fi, .ticket-high-fi, .radio-mid-fi, .radio-high-fi {
   padding-bottom: 7%;
 }
 
