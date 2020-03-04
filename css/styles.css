@@ -69,13 +69,6 @@ p, li {
   text-align: center;
   width: 70%;
   margin: auto;
-  -webkit-animation: fadein 3s;
-  /* Safari, Chrome and Opera > 12.1 */
-  -moz-animation: fadein 3s;
-  /* Firefox < 16 */
-  -ms-animation: fadein 3s;
-  /* Opera < 12.1 */
-  animation: fadein 3s;
 }
 
 .bio {
@@ -84,13 +77,16 @@ p, li {
   text-align: left;
   width: 60%;
   margin: 3% auto;
-  -webkit-animation: fadein 2s;
-  /* Safari, Chrome and Opera > 12.1 */
-  -moz-animation: fadein 2s;
-  /* Firefox < 16 */
-  -ms-animation: fadein 2s;
-  /* Opera < 12.1 */
-  animation: fadein 2s;
+}
+
+@media screen and (max-width: 414px) {
+  .bio {
+    font-weight: 300;
+    font-size: 1.5rem;
+    text-align: left;
+    width: 100%;
+    margin: 3% auto;
+  }
 }
 
 @keyframes fadein {
@@ -311,4 +307,15 @@ li.text {
   text-align: center;
   width: 60%;
   margin: 5% auto;
+}
+
+/* About page */
+.resume {
+  padding: 5% 20% 0 20%;
+}
+
+.linkedin {
+  padding-right: 19%;
+  max-width: 100px;
+  height: auto;
 }
