@@ -13,7 +13,7 @@ p, li {
 }
 
 .highlight {
-  color: #007aff;
+  color: #0343fb;
   font-weight: 600;
 }
 
@@ -49,18 +49,12 @@ p, li {
 }
 
 .scroll {
-  color: #007aff;
-}
-
-@media screen and (max-width: 1135px) {
-  .side-nav {
-    display: none;
-  }
+  color: #0343fb;
 }
 
 /* Welcome division */
 .intro {
-  margin: 5% auto;
+  margin: 2% auto;
   position: relative;
 }
 
@@ -77,59 +71,6 @@ p, li {
   text-align: left;
   width: 60%;
   margin: 3% auto;
-}
-
-@media screen and (max-width: 414px) {
-  .bio {
-    font-weight: 300;
-    font-size: 1.5rem;
-    text-align: center;
-    width: 100%;
-    margin: 3% auto;
-  }
-}
-
-@keyframes fadein {
-  from {
-    opacity: 0;
-  }
-
-  to {
-    opacity: 1;
-  }
-}
-
-/* Firefox < 16 */
-@-moz-keyframes fadein {
-  from {
-    opacity: 0;
-  }
-
-  to {
-    opacity: 1;
-  }
-}
-
-/* Safari, Chrome and Opera > 12.1 */
-@-webkit-keyframes fadein {
-  from {
-    opacity: 0;
-  }
-
-  to {
-    opacity: 1;
-  }
-}
-
-/* Opera < 12.1 */
-@-o-keyframes fadein {
-  from {
-    opacity: 0;
-  }
-
-  to {
-    opacity: 1;
-  }
 }
 
 /* Project division */
@@ -165,7 +106,7 @@ p, li {
 }
 
 .project-title {
-  color: #007aff;
+  color: #0343fb;
   font-size: 1.5rem;
 }
 
@@ -184,9 +125,15 @@ p, li {
   padding-top: 2%;
 }
 
+.text-box {
+  width: 60%;
+  margin: 2% auto;
+}
+
 .div-title {
   font-weight: 600;
-  color: #007aff;
+  color: #0343fb;
+  display: block;
 }
 
 .div-subtitle {
@@ -194,6 +141,7 @@ p, li {
   font-weight: 600;
   color: black;
   padding-top: 1%;
+  display: block;
 }
 
 .text {
@@ -318,4 +266,32 @@ li.text {
   padding-right: 19%;
   max-width: 100px;
   height: auto;
+}
+
+
+/* SnapTravel page */
+.snaptravel-title {
+  max-width: 50%;
+  display: block;
+  margin: 0 auto;
+}
+
+
+@media only screen and (max-width: 1135px) {
+  .side-nav {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .bio {
+    width: 100%;
+    font-size: 1.2rem;
+    text-align: left;
+  }
+
+  .text-box {
+    width: 100%;
+    margin: 2% auto;
+  }
 }
