@@ -134,6 +134,7 @@ p, li {
   font-weight: 600;
   color: #0343fb;
   display: block;
+  margin-bottom: 5%;
 }
 
 .div-subtitle {
@@ -198,6 +199,10 @@ li.text {
   padding-bottom: 7%;
 }
 
+.col-sm-4, .col-sm-5, .col-sm-6 {
+  padding-top: 6%;
+}
+
 .midfi-mobile {
   max-width: 45%;
   height: auto;
@@ -253,7 +258,6 @@ li.text {
 
 .critiques {
   text-align: center;
-  width: 60%;
   margin: 5% auto;
 }
 
@@ -268,14 +272,12 @@ li.text {
   height: auto;
 }
 
-
 /* SnapTravel page */
 .snaptravel-title {
   max-width: 50%;
   display: block;
   margin: 0 auto;
 }
-
 
 @media only screen and (max-width: 1135px) {
   .side-nav {
