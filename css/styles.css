@@ -157,10 +157,10 @@ p, li {
 }
 
 .text {
-  font-weight: 300;
+  font-weight: 400;
   font-size: 1.1rem;
   line-height: 1.7rem;
-  color: #1d1d1f;
+  color: #6e6e6e;
 }
 
 li.text {
