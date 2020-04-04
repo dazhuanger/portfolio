@@ -168,12 +168,19 @@ li.text {
   color: black;
 }
 
-.test-result-img, .card-sorting-img, .p-sketch-img, .tree-test-img {
+.test-result-img,  .p-sketch-img {
   max-width: 80%;
   height: auto;
   margin: 0 auto;
   display: block;
-  padding-bottom: 2%;
+}
+
+.card-sorting-img, .tree-test-img {
+  max-width: 80%;
+  height: auto;
+  margin: 0 auto;
+  display: block;
+  box-shadow: 0 0 2px #999;
 }
 
 .card-sorting-img:hover, .tree-test-img:hover {
@@ -187,7 +194,6 @@ li.text {
   height: auto;
   margin: 0 auto;
   display: block;
-  padding-bottom: 2%;
 }
 
 .midfi-prototype {
@@ -218,7 +224,6 @@ li.text {
   max-width: 45%;
   height: auto;
   margin: 0 2%;
-  padding-bottom: 2%;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
@@ -227,7 +232,6 @@ li.text {
   height: auto;
   margin: 0 auto;
   display: block;
-  padding-bottom: 2%;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
@@ -248,7 +252,6 @@ li.text {
   max-width: 100%;
   height: auto;
   margin: 0 auto;
-  padding-bottom: 2%;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
@@ -262,7 +265,6 @@ li.text {
   max-width: 100%;
   height: auto;
   margin: 0 auto;
-  padding-bottom: 2%;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
@@ -270,7 +272,7 @@ li.text {
   max-width: 100%;
   height: auto;
   margin: 0 auto;
-  padding-bottom: 2%;
+  box-shadow: 0 0 2px #999;
 }
 
 .critiques {
