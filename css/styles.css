@@ -125,6 +125,15 @@ p, li {
   padding-top: 2%;
 }
 
+.tasks {
+  text-align: center;
+  margin: 10px 0;
+}
+
+.task-icon {
+  max-width: 100px;
+}
+
 .text-box {
   width: 60%;
   margin: 2% auto;
