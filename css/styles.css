@@ -69,6 +69,7 @@ p, li {
   font-weight: 300;
   font-size: 1.5rem;
   text-align: left;
+  line-height: 1.5;
   width: 60%;
   margin: 3% auto;
 }
@@ -120,7 +121,7 @@ p, li {
   color: #333;
 }
 
-/* SOO page */
+/* SOO page , Neighbourhood Sports*/
 .research, .design, .prototype {
   padding-top: 1%;
   padding-bottom: 1%;
@@ -138,7 +139,7 @@ p, li {
 
 .text-box {
   width: 60%;
-  margin: 2% auto;
+  margin: 0 auto;
 }
 
 .div-title {
@@ -168,7 +169,7 @@ li.text {
   color: black;
 }
 
-.test-result-img,  .p-sketch-img {
+.test-result-img, .p-sketch-img {
   max-width: 80%;
   height: auto;
   margin: 0 auto;
@@ -216,7 +217,8 @@ li.text {
   padding-bottom: 7%;
 }
 
-.col-sm-4, .col-sm-5 {
+.ticket-mid-fi .col-md-4, .chef-mid-fi .col-md-4, .chef-high-fi .col-md-4, .radio-mid-fi .col-md-5,
+.radio-high-fi .col-md-5 {
   padding-top: 6%;
 }
 
@@ -294,6 +296,41 @@ li.text {
 /* SnapTravel page */
 .snaptravel-title {
   max-width: 50%;
+  display: block;
+  margin: 0 auto;
+}
+
+/* AR project page */
+.description, .AR-prototypes, .design-process, .current, .modifications {
+  padding-top: 3%;
+  padding-bottom: 3%;
+}
+
+.AR-video {
+  text-align: center;
+}
+
+.AR-tech {
+  margin: 1% auto;
+}
+
+.waist-level {
+  padding-top: 37px;
+}
+.arrows-img {
+  width: 100%;
+}
+
+.long-line-img {
+  max-width: 90%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.waist-img {
+  max-height: 496px;
+  max-width: 90%;
   display: block;
   margin: 0 auto;
 }

@@ -3,14 +3,15 @@
 
 <head>
   <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <title>About</title>
+  <title>SnapTravel</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="css/styles.css">
   <link rel="icon" href="images/favicon.ico">
   <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700|Roboto:300,400,500&display=swap" rel="stylesheet">
 
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="index.js" charset="utf-8"></script>
   <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </head>
 
@@ -29,12 +30,12 @@
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Projects
               </a>
-              <a class="dropdown-item" href="AR.html">AR navigation</a>
-              <a class="dropdown-item" href="SOO.html">Special Olympics Ontario</a>
-              <a class="dropdown-item" href="snaptravel.html">Neighbourhood Sports</a>
-              <a class="dropdown-item" href="chef.html">Chef</a>
-              <a class="dropdown-item" href="ticket_faster.html">Ticket Faster</a>
-              <a class="dropdown-item" href="sports_radio.html">Sports Radio</a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="SOO.html">Special Olympics Ontario</a>
+                <a class="dropdown-item" href="chef.html">Chef</a>
+                <a class="dropdown-item" href="ticket_faster.html">Ticket Faster</a>
+                <a class="dropdown-item" href="sports_radio.html">Sports Radio</a>
+                <a class="dropdown-item" href="snaptravel.html">SnapTravel</a>
               </div>
             </li>
             <li class="nav-item">
@@ -46,32 +47,12 @@
     </nav>
   </div>
 
-  <div class="container intro">
-    <h2 class="greeting">About me</h2>
-    <div class="row resume">
-      <p class="text">
-        I'm an emerging user experience designer. I'm enthusiastic about creating
-        products that solve problems for users and provide an excellent user experience.
-        I'm good at identifying users’ pain points by analyzing user research data and
-        connecting experience and ideas through rational reflection to provide effective
-        solutions to ameliorate user experience. </p>
-      <p class="text">
-        As a patient team player, I know how to
-        compromise to maximize the outcome of teamwork, but I'm also able to work
-        independently and insist on ideas that are beneficial to the team.
-      </p>
-    </div>
-
-    <div class="row resume">
-      <div class="col-xs-6">
-        <a href="https://www.linkedin.com/in/jianchen-zhu" target="_blank"><img class="linkedin" src="images/logo/linkedin.png" alt="linkedin logo"></a>
-      </div>
-
-      <div class="col-xs-6">
-        <a role="button" class="btn btn-dark resume-btn" href="pdf/Resume_Jianchen_Zhu.pdf" target="_blank">Resume</a>
-      </div>
-
-    </div>
+  <!-- side nav -->
+  <div class="nav flex-column side-nav">
+    <p class="navbar-brand">Outline</p>
+    <a class="nav-link scroll" href="#SOO-research">Research and Analysis</a>
+    <a class="nav-link scroll" href="#SOO-design">Design</a>
+    <a class="nav-link scroll" href="#SOO-prototype">Prototyping</a>
   </div>
 
 
@@ -79,7 +60,22 @@
 
 
 
+  <!-- Intro division -->
+  <div class="container intro" id="SOO-intro">
+    <!-- <h2 class="greeting">SnapTravel</h2> -->
+    <img class="snaptravel-title" src="images/snaptravel_logo.png" alt="snaptravel_logo image">
+    <h4 class="bio">Ongoing project, more details to follow.</h4>
+
+    <!-- <h4 class="bio">A practicum project that I am currently working on at SnapTravel, a Toronto
+      based online travel agency. I worked as a <span class="highlight">UX research and design intern</span>
+      and participated in several projects with the product design team. </h4> -->
+
+    <!-- <h4 class="bio">What I did: <span style="font-weight: 100;">User Flow Audit,
+        Competitor Research, Data Analysis, Ideation & Usability Testing </span></h4> -->
+  </div>
+
 
 </body>
 <footer>© Jianchen Zhu 2020</footer>
+
 </html>

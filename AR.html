@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title>AR Navigation</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" href="images/favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700|Roboto:300,400,500&display=swap" rel="stylesheet">
+
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <!-- Nav bar -->
+  <div class="container-fluid navigation">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">Jianchen Zhu</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Projects
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="AR.html">AR navigation</a>
+                <a class="dropdown-item" href="SOO.html">Special Olympics Ontario</a>
+                <a class="dropdown-item" href="neighbourhood_sports.html">Neighbourhood Sports</a>
+                <a class="dropdown-item" href="chef.html">Chef</a>
+                <a class="dropdown-item" href="ticket_faster.html">Ticket Faster</a>
+                <a class="dropdown-item" href="sports_radio.html">Sports Radio</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+  <!-- Intro division -->
+  <div class="container intro">
+    <h2 class="greeting">AR Navigation</h2>
+    <h4 class="bio">This is a project in response to a design prompt of a UX research and
+      design course for augmented reality. It focused on the <span class="highlight"> design and evaluation</span>
+      of an AR navigation app for a food night market. </h4>
+    <h4 class="bio">My roles: </h4>
+    <div class="row greeting">
+      <div class="col-md-4 tasks">
+        <h5><span style="font-weight: 100;">Ideation</span></h5>
+        <img class="task-icon" src="images/icons/ideation.png" alt="interview icon">
+      </div>
+      <div class="col-md-4 tasks">
+        <h5><span style="font-weight: 100;">Prototyping</span></h5>
+        <img class="task-icon" src="images/icons/prototyping.png" alt="testing icon">
+      </div>
+      <div class="col-md-4 tasks">
+        <h5><span style="font-weight: 100;">Data Analysis</span></h5>
+        <img class="task-icon" src="images/icons/data.png" alt="wireframing icon">
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Project Description -->
+  <div class="container description">
+    <div class="text-box">
+      <h3 class="div-title">Project Description</h3>
+      <p class="text">Our group designed two new interaction techniques
+        and compared them with the existing technique to determine which one will
+        be the best at getting the user from spot A to B. We also aimed to discover some
+        usability problems of the AR navigation app through the usability test.</p>
+
+    </div>
+
+  </div>
+
+
+  <!-- AR prototypes -->
+  <div class="container AR-prototypes">
+    <div class="text-box">
+    <h3 class="div-title">AR Prototypes</h3>
+    </div>
+
+    <div class="row AR-video">
+      <div class="col-md-6">
+        <iframe max-width="300" height="650" src="https://www.youtube.com/embed/0rNtuPWlu6g" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <h5>Technique 1 Long Line</h5>
+        <p class="text">The device is held by a user. The navigation line is drawn
+          from the user’s current position to the specified destination and is placed
+          approximately at waist-level. </p>
+      </div>
+
+      <div class="col-md-6">
+        <iframe width="300" height="650" src="https://www.youtube.com/embed/S9yCQtuytVY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <h5>Technique 2 Signpost</h5>
+        <p class="text">The device is held by the user. Signs are positioned at
+          critical junctures along the user’s route and additionally includes start and finish.</p>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- Design Process -->
+  <div class="container design-process">
+    <div class="text-box">
+      <h3 class="div-title">Design Process</h3>
+    </div>
+
+    <div class="row current">
+      <div class="col-md-6">
+        <div class="AR-tech">
+          <h4 class="div-subtitle">Studying Current Technique</h4>
+          <ul>
+            <li class="text">Local cues</li>
+            <p class="text">The existing technique features local cues which focus primarily on user's next step.
+              The arrows appear sequentially as the user moves around.</p>
+          </ul>
+          <ul>
+            <li class="text">Positioning</li>
+            <p class="text">Arrows are placed at floor-level. Users need to put the
+              hand-held device at a lower position to trigger the visual cue. </p>
+          </ul>
+          <img class="arrows-img" src="images/3D_arrows.png" alt="arrows img">
+        </div>
+      </div>
+
+      <div class="col-md-6 AR-video">
+        <iframe width="300" height="650" src="https://www.youtube.com/embed/P6i7MXAyKTE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </div>
+
+    <div class="row modifications">
+      <div class="col-md-6">
+        <h4 class="div-subtitle">Modifications</h4>
+        <ul>
+          <li class="text">Static global cues</li>
+          <p class="text">Position of the destination is always available. It provides continuous, trigger-free guidance and is not time-sensitive.</p>
+        </ul>
+        <img class="long-line-img " src="images/3D_global.png" alt="global img">
+      </div>
+
+      <div class="col-md-6 waist-level">
+        <ul>
+          <li class="text">Waist / eye level</li>
+          <p class="text">Visual cues are moved up to a waist and eye level to make them more salient.</p>
+        </ul>
+        <img class="waist-img" src="images/3D_waist_level.png" alt="waist level ">
+      </div>
+    </div>
+  </div>
+
+
+</body>
+<footer>
+  <div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>© Jianchen Zhu 2020
+</footer>
+
+</html>
