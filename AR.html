@@ -32,7 +32,7 @@
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                 <a class="dropdown-item" href="AR.html">AR navigation</a>
                 <a class="dropdown-item" href="SOO.html">Special Olympics Ontario</a>
-<!--                 <a class="dropdown-item" href="neighbourhood_sports.html">Neighbourhood Sports</a> -->
+                <a class="dropdown-item" href="neighbourhood_sports.html">Neighbourhood Sports</a>
                 <a class="dropdown-item" href="chef.html">Chef</a>
                 <a class="dropdown-item" href="ticket_faster.html">Ticket Faster</a>
                 <a class="dropdown-item" href="sports_radio.html">Sports Radio</a>
@@ -79,22 +79,21 @@
         and compared them with the existing technique to determine which one will
         be the best at getting the user from spot A to B. We also aimed to discover some
         usability problems of the AR navigation app through the usability test.</p>
-
     </div>
 
   </div>
 
 
-  <!-- AR prototypes -->
+  <!-- AR Prototypes -->
   <div class="container AR-prototypes">
     <div class="text-box">
-    <h3 class="div-title">AR Prototypes</h3>
+      <h3 class="div-title">AR Prototypes</h3>
     </div>
 
     <div class="row AR-video">
       <div class="col-md-6">
         <iframe max-width="300" height="650" src="https://www.youtube.com/embed/0rNtuPWlu6g" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <h5>Technique 1 Long Line</h5>
+        <h5>Long Line</h5>
         <p class="text">The device is held by a user. The navigation line is drawn
           from the user’s current position to the specified destination and is placed
           approximately at waist-level. </p>
@@ -102,7 +101,7 @@
 
       <div class="col-md-6">
         <iframe width="300" height="650" src="https://www.youtube.com/embed/S9yCQtuytVY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <h5>Technique 2 Signpost</h5>
+        <h5>Signpost</h5>
         <p class="text">The device is held by the user. Signs are positioned at
           critical junctures along the user’s route and additionally includes start and finish.</p>
       </div>
@@ -117,10 +116,17 @@
       <h3 class="div-title">Design Process</h3>
     </div>
 
+
+    <!-- current technique -->
+    <div class="row">
+      <div class="col">
+        <h4 class="div-subtitle">Current Technique</h4>
+      </div>
+    </div>
+
     <div class="row current">
       <div class="col-md-6">
         <div class="AR-tech">
-          <h4 class="div-subtitle">Studying Current Technique</h4>
           <ul>
             <li class="text">Local cues</li>
             <p class="text">The existing technique features local cues which focus primarily on user's next step.
@@ -140,9 +146,16 @@
       </div>
     </div>
 
+    <!-- ideation & modifications -->
+    <div class="row">
+      <div class="col">
+        <h4 class="div-subtitle">Ideation & Modifications</h4>
+      </div>
+    </div>
+
     <div class="row modifications">
       <div class="col-md-6">
-        <h4 class="div-subtitle">Modifications</h4>
+        <p class="hmw">How might we make the interaction <span class="highlight">effortless</span>?</p>
         <ul>
           <li class="text">Static global cues</li>
           <p class="text">Position of the destination is always available. It provides continuous, trigger-free guidance and is not time-sensitive.</p>
@@ -150,14 +163,102 @@
         <img class="long-line-img " src="images/3D_global.png" alt="global img">
       </div>
 
-      <div class="col-md-6 waist-level">
+      <div class="col-md-6">
+        <p class="hmw">How might we add more <span class="highlight">discoverability</span> to the app?</p>
         <ul>
           <li class="text">Waist / eye level</li>
-          <p class="text">Visual cues are moved up to a waist and eye level to make them more salient.</p>
+          <p class="text">Visual cues are moved up to eye level to keep the user's head up, which allows the user to pay more attention to surroundings.</p>
         </ul>
-        <img class="waist-img" src="images/3D_waist_level.png" alt="waist level ">
+        <img class="waist-img" src="images/3D_waist_level.png" alt="waist level">
       </div>
     </div>
+  </div>
+
+  <!-- Evaluation -->
+  <div class="container evaluation">
+    <div class="text-box">
+      <h3 class="div-title">Evaluation</h3>
+    </div>
+
+    <!-- experiment -->
+    <div class="text-box">
+      <h4 class="div-subtitle">Experiment</h4>
+    </div>
+
+    <div class="row experiment">
+      <div class="col-md-6">
+        <ul>
+          <li class="text">Procedure</li>
+          <p class="text">Between-subjects experiment</p>
+          <p class="text">Three participants</p>
+          <p class="text">Each perform all three interactions techniques in a different order</p>
+        </ul>
+      </div>
+
+      <div class="col-md-6">
+        <ul>
+          <li class="text">Success Criteria</li>
+          <p class="text">Effectiveness: ability to complete the task</p>
+          <p class="text">Efficiency: speed at which the user completes the task</p>
+          <p class="text">Satisfaction: user’s experience throughout the duration of the task</p>
+          <p class="text">Learnability: time and effort required by a user to achieve competency</p>
+        </ul>
+      </div>
+    </div>
+
+    <!-- results -->
+    <div class="text-box">
+      <h4 class="div-subtitle">Results</h4>
+    </div>
+
+    <div class="row results">
+      <div class="col-md-4 result">
+        <ul>
+          <li class="text">Technique 1. Arrows</li>
+          <p class="text">Difficulty noticing the navigational cues</p>
+          <p class="text">Overwhelmed cognitive capacity</p>
+          <p class="text">Limited global knowledge of the environment</p>
+        </ul>
+      </div>
+
+      <div class="col-md-4 result winner">
+        <ul>
+          <li class="text">Technique 2. Long Line </li>
+          <p class="text">Lessened cognitive load</p>
+          <p class="text">Instant, concise understanding of environment</p>
+          <p class="text">Direct, unambiguous and effective</p>
+        </ul>
+        <img class="trophy-icon" src="images/icons/trophy.png" alt="trophy">
+      </div>
+
+      <div class="col-md-4 result">
+        <ul>
+          <li class="text">Technique 3. Signpost </li>
+          <p class="text">Blocked field of vision</p>
+          <p class="text">Insufficient amount of information</p>
+          <p class="text">Lack of progress tracking</p>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="container reflection">
+    <div class="text-box">
+      <h3 class="div-title">Reflection</h3>
+      <p class="text">This experiment would most ideally be conducted as a between-subjects
+        experiment to avoid learning effects. But due to the outbreak of COVID-19,
+        only one participant was recruited. The user spent significantly less time completing the last task than the first. It cannot be known with any certainty if this
+        is due to the user’s familiarity with the AR environment (learning effects) or the efficacy of the navigation technique.</p>
+
+      <p class="text">Another shortcoming of this experiment is its low external validity
+        —though a night market was simulated in the AR app, it ultimately bears little resemblance
+        to an actual night market. Stimulus like noises, lighting, various physical obstacles,
+        and human interactions were not articulated in this simulation.</p>
+
+      <p class="text">The last shortcoming is the limitation of the prototyping tool, Wiarframe.
+        Same as all the other AR prototyping tools for designers, Wiarframe is still in its early stage, which greatly constrained the complexity of our design.</p>
+    </div>
+
   </div>
 
 
