@@ -123,9 +123,9 @@ p, li {
 
 /* SOO page , Neighbourhood Sports*/
 .research, .design, .prototype {
-  padding-top: 1%;
-  padding-bottom: 1%;
-  border-bottom: 1px solid #d9d9d9;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  margin-bottom: 20px;
 }
 
 .tasks {
@@ -140,6 +140,11 @@ p, li {
 .text-box {
   width: 60%;
   margin: 0 auto;
+}
+
+.diagram-box, .tree-test-box, .midfi-box {
+  margin-top: 30px;
+  margin-bottom: 20px;
 }
 
 .div-title {
@@ -303,13 +308,13 @@ li.text {
 /* AR project page */
 .description, .AR-prototypes, .design-process, .evaluation, .reflection {
   padding-top: 2%;
-  margin-bottom: 2%
+  margin-bottom: 20px;
 }
 
 .current, .modifications {
   padding-top: 2%;
   padding-bottom: 2%;
-  margin-bottom: 2%;
+  margin-bottom: 20px;
 }
 
 .AR-video {
