@@ -7,6 +7,10 @@ footer {
   text-align: center;
 }
 
+.hideme {
+  opacity: 0;
+}
+
 .highlight {
   color: #0343fb;
   font-weight: 600;
