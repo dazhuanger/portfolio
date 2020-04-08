@@ -370,13 +370,15 @@ li.text {
   margin: 0 auto;
 }
 
-@media only screen and (max-width: 1135px) {
-  .side-nav {
-    display: none;
-  }
-}
-
 @media screen and (max-width: 414px) {
+  .greeting {
+    font-size: 2rem;
+  }
+
+  .div-title {
+    font-size: 1.6rem;
+  }
+
   .bio {
     width: 100%;
     font-size: 1.2rem;
@@ -394,5 +396,9 @@ li.text {
 
   .midfi-watch {
     margin: 0 2%;
+  }
+
+  .experiment, .results {
+    width: 100%;
   }
 }
