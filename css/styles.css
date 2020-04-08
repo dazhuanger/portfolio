@@ -1,15 +1,10 @@
+body {
+  font-family: SF Pro Display, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
 footer {
   margin-top: 5%;
   text-align: center;
-}
-
-h2, h3, h4, h5, h6 {
-  /* font-family: "Montserrat", sans-serif; */
-  font-family: SF Pro Display, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
-}
-
-p, li {
-  font-family: SF Pro Display, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
 }
 
 .highlight {
@@ -29,27 +24,13 @@ p, li {
 }
 
 .navbar-brand {
-  font-family: SF Pro Display, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
   font-size: 2rem;
   font-weight: bold;
 }
 
 .nav-item {
-  font-family: SF Pro Text, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
   padding: 0 18px;
   font-size: 1rem
-}
-
-/* Side navigation menu */
-.side-nav {
-  position: fixed;
-  display: none;
-  top: 300px;
-  z-index: 1;
-}
-
-.scroll {
-  color: #0343fb;
 }
 
 /* Welcome division */
