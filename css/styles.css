@@ -336,20 +336,13 @@ li.text {
   margin: 0 auto;
 }
 
-.procedure, .criteria {
-  max-width: 45%;
-  padding: 20px 5%;
-  margin: 20px auto;
-  border-radius: 9px;
-  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2);
-}
-
 .result {
-  max-width: 30%;
+  max-width: 95%;
   padding: 20px 1%;
   margin: 20px auto;
   border-radius: 9px;
   box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2);
+  min-height: 301px;
 }
 
 .trophy-icon {
@@ -385,7 +378,9 @@ li.text {
     margin: 0 2%;
   }
 
-  .experiment, .results {
-    width: 100%;
+  .result {
+    max-width: 100%;
   }
+
+
 }
