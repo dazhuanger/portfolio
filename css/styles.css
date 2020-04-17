@@ -1,5 +1,9 @@
-body {
-font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+h1, h2, h3, h4, h5, h6 {
+font-family: "SF Pro Display", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+p, a, li {
+  font-family: "SF Pro Text", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 footer {
@@ -29,7 +33,7 @@ footer {
 
 .navbar-brand {
   font-size: 2rem;
-  font-weight: bold;
+  font-weight: 600;
 }
 
 .nav-item {
