@@ -231,7 +231,7 @@ li.text {
 }
 
 .watch-imgs {
-  width: 56%;
+  max-width: 60%;
   margin: 10% auto;
 }
 
