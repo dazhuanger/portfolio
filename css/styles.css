@@ -200,6 +200,12 @@ li.text {
   margin-bottom: 5px;
 }
 
+.percentage {
+  font-size: 2.2rem;
+  font-weight: 600;
+  color: #0343fb;
+}
+
 /* UI design projects */
 .rationales, .mid-fi, .high-fi, .feedback {
   padding-top: 2%;
@@ -254,6 +260,11 @@ li.text {
   transition: transform .8s ease;
   transform: scale(1.02);
   box-shadow: 1px 1px 3px #999;
+}
+
+.car-gif {
+  display: block;
+  margin: 0 auto 50px auto;
 }
 
 .midfi-mac, .highfi-mac {
