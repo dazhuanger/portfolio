@@ -279,6 +279,7 @@ li.text {
 .car-gif {
   display: block;
   margin: 0 auto 50px auto;
+  max-width: 100%;
 }
 
 .midfi-mac, .highfi-mac {
