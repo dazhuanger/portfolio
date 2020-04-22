@@ -221,6 +221,20 @@ li.text {
   padding-top: 6%;
 }
 
+.showcase {
+  margin: 2% auto;
+}
+
+.chef-mockup {
+  max-width: 100%;
+}
+
+.chef-gif {
+  max-width: 80%;
+  display: block;
+  margin: 0 auto;
+}
+
 .midfi-mobile {
   max-width: 45%;
   height: auto;
