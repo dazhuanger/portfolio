@@ -223,6 +223,7 @@ li.text {
 
 .showcase {
   margin: 2% auto;
+  text-align: center;
 }
 
 .chef-mockup {
@@ -406,9 +407,9 @@ li.text {
     margin: 2% auto;
   }
 
-  .chef-mockup {
+  /* .chef-mockup {
     max-width: 95%;
-  }
+  } */
 
   .watch-imgs {
     width: 100%;
