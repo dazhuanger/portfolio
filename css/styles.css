@@ -1,3 +1,4 @@
+/* Universal elements */
 body {
   font-family: -apple-system, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
@@ -21,7 +22,40 @@ footer {
   transform: scale(1.02);
 }
 
-/* Homepage */
+.div-title {
+  font-weight: 600;
+  font-size: 2rem;
+  color: #0343fb;
+  display: block;
+  margin-bottom: 5%;
+  text-align: center;
+}
+
+.div-subtitle {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: black;
+  padding-top: 1%;
+  display: block;
+}
+
+.text {
+  font-weight: 400;
+  font-size: 1.1rem;
+  line-height: 1.7rem;
+  color: #6e6e6e;
+}
+
+li.text {
+  font-weight: 400;
+  color: black;
+}
+
+.text-box {
+  width: 60%;
+  margin: 0 auto;
+}
+
 /* Navigation menu */
 .navigation {
   padding: 0;
@@ -39,7 +73,7 @@ footer {
 
 /* Welcome division */
 .intro {
-  margin: 2% auto;
+  margin: 2% auto 10% auto;
   position: relative;
 }
 
@@ -60,7 +94,9 @@ footer {
   margin: 3% auto;
 }
 
-/* Project division */
+/* Homepage */
+
+/* Project cards division */
 .project-frame {
   margin: 10px auto 0 auto;
 }
@@ -70,7 +106,6 @@ footer {
   max-width: 1440px;
 }
 
-/* stop a-tag text in the card from changing color or underlining  */
 .card-a-tag {
   color: inherit;
 }
@@ -107,11 +142,13 @@ footer {
   color: #333;
 }
 
-/* SOO page , Neighbourhood Sports*/
+/* SOO page */
+
+/* containers */
 .research, .design, .prototype {
   padding-top: 2%;
   padding-bottom: 2%;
-  margin-bottom: 20px;
+  margin-bottom: 10%;
 }
 
 .tasks {
@@ -123,43 +160,9 @@ footer {
   max-width: 100px;
 }
 
-.text-box {
-  width: 60%;
-  margin: 0 auto;
-}
-
 .diagram-box, .tree-test-box, .midfi-box {
   margin-top: 30px;
   margin-bottom: 20px;
-}
-
-.div-title {
-  font-weight: 600;
-  font-size: 2rem;
-  color: #0343fb;
-  display: block;
-  margin-bottom: 5%;
-  text-align: center;
-}
-
-.div-subtitle {
-  font-size: 1.3rem;
-  font-weight: 600;
-  color: black;
-  padding-top: 1%;
-  display: block;
-}
-
-.text {
-  font-weight: 400;
-  font-size: 1.1rem;
-  line-height: 1.7rem;
-  color: #6e6e6e;
-}
-
-li.text {
-  font-weight: 400;
-  color: black;
 }
 
 .test-result-img, .p-sketch-img {
@@ -200,15 +203,46 @@ li.text {
   margin-bottom: 5px;
 }
 
+
+/* Neighbourhood Sports */
+.research .text-box {
+  margin-bottom: 50px;
+}
+
+.competitor-row {
+  border-bottom: 1px solid #d4d4d4;
+  padding-top: 10px;
+  margin-bottom: 20px;
+}
+
+.competitor-name {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-top: 20px;
+}
+
+.survey-result {
+  text-align: center;
+}
+
 .percentage {
-  font-size: 2.2rem;
+  font-size: 2.5rem;
   font-weight: 600;
   color: #0343fb;
 }
 
+.persona {
+  display: block;
+  margin: 20px auto;
+  max-width: 100%;
+}
+
 /* UI design projects */
+
+/* containers */
 .rationales, .mid-fi, .high-fi, .feedback {
   padding-top: 2%;
+  margin-bottom: 10%;
 }
 
 .chef-mid-fi, .chef-high-fi,
@@ -324,7 +358,7 @@ li.text {
 /* AR project page */
 .description, .AR-prototypes, .design-process, .evaluation, .reflection {
   padding-top: 2%;
-  margin-bottom: 20px;
+  margin-bottom: 10%;
 }
 
 .current, .modifications, .experiment, .results {
