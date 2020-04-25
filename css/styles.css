@@ -145,7 +145,7 @@ li.text {
 /* SOO page */
 
 /* containers */
-.research, .design, .prototype {
+.research, .design, .prototype{
   padding-top: 2%;
   padding-bottom: 2%;
   margin-bottom: 10%;
@@ -256,7 +256,7 @@ li.text {
 }
 
 .showcase {
-  margin: 2% auto;
+  margin: 2% auto 10% auto;
   text-align: center;
 }
 
