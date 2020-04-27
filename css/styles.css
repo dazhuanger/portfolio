@@ -3,6 +3,17 @@ body {
   font-family: -apple-system, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+}
+
+p {
+  font-weight: 400;
+  font-size: 1.1rem;
+  line-height: 1.7rem;
+  color: #6e6e6e;
+}
+
 footer {
   margin-top: 5%;
   text-align: center;
@@ -23,8 +34,7 @@ footer {
 }
 
 .div-title {
-  font-weight: 600;
-  font-size: 2rem;
+  font-size: 2.5rem;
   color: #0343fb;
   display: block;
   margin-bottom: 5%;
@@ -33,20 +43,12 @@ footer {
 
 .div-subtitle {
   font-size: 1.3rem;
-  font-weight: 600;
   color: black;
   padding-top: 1%;
   display: block;
 }
 
 .text {
-  font-weight: 400;
-  font-size: 1.1rem;
-  line-height: 1.7rem;
-  color: #6e6e6e;
-}
-
-li.text {
   font-weight: 400;
   color: black;
 }
@@ -73,13 +75,12 @@ li.text {
 
 /* Welcome division */
 .intro {
-  margin: 2% auto 10% auto;
+  margin: 2% auto 6% auto;
   position: relative;
 }
 
 .greeting {
-  font-weight: 600;
-  font-size: 2.5rem;
+  font-size: 3rem;
   text-align: center;
   width: 70%;
   margin: auto;
@@ -95,7 +96,6 @@ li.text {
 }
 
 /* Homepage */
-
 /* Project cards division */
 .project-frame {
   margin: 10px auto 0 auto;
@@ -143,12 +143,10 @@ li.text {
 }
 
 /* SOO page */
-
 /* containers */
-.research, .design, .prototype{
+.research, .design, .prototype {
   padding-top: 2%;
-  padding-bottom: 2%;
-  margin-bottom: 10%;
+  margin-bottom: 6%;
 }
 
 .tasks {
@@ -203,9 +201,8 @@ li.text {
   margin-bottom: 5px;
 }
 
-
 /* Neighbourhood Sports */
-.research .text-box {
+.research .text-box, .design .text-box {
   margin-bottom: 50px;
 }
 
@@ -231,14 +228,36 @@ li.text {
   color: #0343fb;
 }
 
-.persona {
+.persona, .big-ideas {
   display: block;
   margin: 20px auto;
   max-width: 100%;
 }
 
-/* UI design projects */
+.needs-statement {
+  color: #6e6e6e;
+}
 
+.idea-category {
+  font-size: 2rem;
+  color: #bfbfbf;
+}
+
+.idea-content {
+  font-size: 2rem;
+  color: #000;
+}
+
+.prioritization {
+  margin-bottom: 50px;
+}
+
+.paper-proto {
+  display: inline-block;
+  max-width: 33%;
+}
+
+/* UI design projects */
 /* containers */
 .rationales, .mid-fi, .high-fi, .feedback {
   padding-top: 2%;
@@ -356,9 +375,10 @@ li.text {
 }
 
 /* AR project page */
+/* containers */
 .description, .AR-prototypes, .design-process, .evaluation, .reflection {
   padding-top: 2%;
-  margin-bottom: 10%;
+  margin-bottom: 6%;
 }
 
 .current, .modifications, .experiment, .results {
@@ -439,6 +459,16 @@ li.text {
   .text-box {
     width: 100%;
     margin: 2% auto;
+  }
+
+  .paper-prototypes {
+    flex: none;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
+  .paper-proto {
+    max-width: 80%;
   }
 
   .watch-imgs {
