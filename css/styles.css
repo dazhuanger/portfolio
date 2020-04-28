@@ -202,7 +202,7 @@ footer {
 }
 
 /* Neighbourhood Sports */
-.research .text-box, .design .text-box {
+.research .text-box, .design .text-box, .prototype .text-box {
   margin-bottom: 50px;
 }
 
@@ -228,7 +228,7 @@ footer {
   color: #0343fb;
 }
 
-.persona, .big-ideas {
+.persona, .big-ideas, .neighbour-midfi {
   display: block;
   margin: 20px auto;
   max-width: 100%;
@@ -240,7 +240,7 @@ footer {
 
 .idea-category {
   font-size: 2rem;
-  color: #bfbfbf;
+  color: #999;
 }
 
 .idea-content {
@@ -255,6 +255,7 @@ footer {
 .paper-proto {
   display: inline-block;
   max-width: 33%;
+  margin-bottom: 50px;
 }
 
 /* UI design projects */
