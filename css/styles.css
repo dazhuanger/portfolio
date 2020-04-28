@@ -3,7 +3,22 @@ body {
   font-family: -apple-system, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h5 {
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+h4 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+h6 {
+  font-size: 1.2rem;
   font-weight: 600;
 }
 
@@ -34,7 +49,6 @@ footer {
 }
 
 .div-title {
-  font-size: 2.5rem;
   color: #0343fb;
   display: block;
   margin-bottom: 5%;
@@ -42,8 +56,6 @@ footer {
 }
 
 .div-subtitle {
-  font-size: 1.3rem;
-  color: black;
   padding-top: 1%;
   display: block;
 }
@@ -88,7 +100,6 @@ footer {
 
 .bio {
   font-weight: 300;
-  font-size: 1.5rem;
   text-align: left;
   line-height: 1.5;
   width: 60%;
@@ -129,7 +140,6 @@ footer {
 
 .project-title {
   color: #0343fb;
-  font-size: 1.5rem;
 }
 
 .card-img-top {
@@ -137,7 +147,6 @@ footer {
 }
 
 .keywords {
-  font-size: 1.2rem;
   font-weight: 200;
   color: #333;
 }
@@ -213,8 +222,6 @@ footer {
 }
 
 .competitor-name {
-  font-size: 1.2rem;
-  font-weight: 600;
   margin-top: 20px;
 }
 
@@ -223,8 +230,6 @@ footer {
 }
 
 .percentage {
-  font-size: 2.5rem;
-  font-weight: 600;
   color: #0343fb;
 }
 
@@ -239,8 +244,7 @@ footer {
 }
 
 .idea-category {
-  font-size: 2rem;
-  color: #999;
+  color: #fc7914;
 }
 
 .idea-content {
@@ -401,7 +405,6 @@ footer {
 }
 
 .hmw {
-  font-size: 1.4rem;
   text-align: center;
 }
 
@@ -424,7 +427,6 @@ footer {
 }
 
 .icon-note {
-  font-size: 1.2rem;
   margin-top: 10px;
 }
 
@@ -444,16 +446,11 @@ footer {
 
 @media screen and (max-width: 414px) {
   .greeting {
-    font-size: 2rem;
-  }
-
-  .div-title {
-    font-size: 1.6rem;
+    width: 100%;
   }
 
   .bio {
     width: 100%;
-    font-size: 1.2rem;
     text-align: left;
   }
 
