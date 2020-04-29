@@ -151,6 +151,12 @@ footer {
   color: #333;
 }
 
+.neighbour_img {
+  max-width: 60%;
+  display: block;
+  margin: 0 auto;
+}
+
 /* SOO page */
 /* containers */
 .research, .design, .prototype {
