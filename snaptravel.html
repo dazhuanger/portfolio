@@ -30,11 +30,13 @@
                 Projects
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="snaptravel.html">SnapTravel</a>
                 <a class="dropdown-item" href="SOO.html">Special Olympics Ontario</a>
                 <a class="dropdown-item" href="chef.html">Chef</a>
+                <a class="dropdown-item" href="neighbourhood_sports.html">Neighbourhood Sports</a>
                 <a class="dropdown-item" href="ticket_faster.html">Ticket Faster</a>
                 <a class="dropdown-item" href="sports_radio.html">Sports Radio</a>
-                <a class="dropdown-item" href="snaptravel.html">SnapTravel</a>
+                <a class="dropdown-item" href="AR.html">AR navigation</a>
               </div>
             </li>
             <li class="nav-item">
@@ -49,17 +51,147 @@
 
   <!-- Intro division -->
   <div class="container intro">
-    <!-- <h2 class="greeting">SnapTravel</h2> -->
-    <img class="snaptravel-title" src="images/snaptravel_logo.png" alt="snaptravel_logo image">
-    <h4 class="bio">Ongoing project, more details to follow.</h4>
+    <h2 class="greeting">SnapTravel</h2>
+    <h4 class="bio">SnapTravel is an online travel agency based in Toronto. I was a <span class="highlight">UX research and design intern</span>
+      in the product design team. I helped SnapTravel revamp its current checkout flow by identifying and solving mainly two problems.</h4>
 
-    <!-- <h4 class="bio">A practicum project that I am currently working on at SnapTravel, a Toronto
-      based online travel agency. I worked as a <span class="highlight">UX research and design intern</span>
-      and participated in several projects with the product design team. </h4> -->
+    <h4 class="bio">My roles:</h4>
 
-    <!-- <h4 class="bio">What I did: <span style="font-weight: 100;">User Flow Audit,
-        Competitor Research, Data Analysis, Ideation & Usability Testing </span></h4> -->
+    <div class="row greeting">
+      <div class="col-md-3 col-sm-6 tasks">
+        <h5><span style="font-weight: 100;">User Flow Audit</span></h5>
+        <img class="task-icon" src="images/icons/prototyping.png" alt="flow icon">
+      </div>
+      <div class="col-md-3 col-sm-6 tasks">
+        <h5><span style="font-weight: 100;">Research</span></h5>
+        <img class="task-icon" src="images/icons/research.png" alt="research icon">
+      </div>
+      <div class="col-md-3 col-sm-6 tasks">
+        <h5><span style="font-weight: 100;">Data Analysis</span></h5>
+        <img class="task-icon" src="images/icons/data.png" alt="data icon">
+      </div>
+      <div class="col-md-3 col-sm-6 tasks">
+        <h5><span style="font-weight: 100;">Ideation</span></h5>
+        <img class="task-icon" src="images/icons/ideation.png" alt="wireframing icon">
+      </div>
+    </div>
   </div>
+
+  <!-- Problem 1 Backtracking -->
+  <div class="container problem">
+    <div class="text-box">
+      <h3 class="div-title">Problem</h3>
+      <p>I conducted a flow audit on the current website of SnapTravel. The goal was to
+        identify issues that users may encounter while using the product. In particular, as a first-time
+        user of SnapTravel myself, I had some different insights from users who are already familiar with the website.
+        The problem of backtracking was one of them.</p>
+    </div>
+
+    <div class="row">
+      <div class="col-md-6">
+        <img class="snaptravel-mobile-static" src="images/3_steps.png" alt="3_step img">
+      </div>
+
+      <div class="col-md-6 problem-annotation">
+        <h4 class="div-subtitle">Collapsible Cards</h4>
+        <p>The current checkout flow has three steps: hotel details, guest details
+          and payment information, organized by three collapsible cards. This works
+          well on desktops but creates problems on mobile devices.</p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-6">
+        <img class="snaptravel-mobile-gif" src="images/gif/backtracking.gif" alt="backtracking gif">
+      </div>
+
+      <div class="col-md-6 problem-annotation">
+        <h4 class="div-subtitle">Backtracking</h4>
+        <p>Before tapping on the final confirmation button, if users want to double-check if the information they entered was correct, they have to expand the hotel details card again.
+          However, once the card is expanded, it can only be collapsed by clicking the main button because the triangle button on the
+          top-right corner is not a toggle switch. This means that users have to go through the entire process again.</p>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Analysis -->
+  <div class="container analysis">
+    <div class="text-box">
+      <h3 class="div-title">Analysis</h3>
+      <h4 class="div-subtitle">Data Analysis</h4>
+      <p>Having identified these possible pain points, I dived into the database to find evidence to support my assumption. The event tracker on Amplitude showed:</p>
+      <p><span style="font-size: 2rem; font-weight: 600; color: #000;">50%</span> of users go from step 2 to step 1.</p>
+      <p><span style="font-size: 2rem; font-weight: 600; color: #000;">35%</span> of users go from step 3 to step 2.</p>
+      <p><span style="font-size: 2rem; font-weight: 600; color: #000;">21%</span> of users go from step 3 to step 1.</p>
+      <p><span style="font-size: 2rem; font-weight: 600; color: #000;">11%</span> of users who opened the booking form didn't finish the booking and let the rate expired.</p>
+      <p>The result indicates that the backtracking problem does exist and it is
+        hurting the conversion rate since at least 11% of users didn't finish the booking.
+        So how might we solve this problem and increase the conversion rate?</p>
+    </div>
+
+    <div class="text-box">
+      <h4 class="div-subtitle">Competitive Analysis</h4>
+      <p>I conducted research on the structure of booking forms on SnapTravel's
+        major competitors. There are mainly two types of organization schemes.</p>
+    </div>
+
+    <div class="text-box">
+      <p class=text>Multiple pages: Booking.com</p>
+      <p>The checkout flow is separated in different pages. A timeline is on top to show the steps. Price is shown
+        consistently at the bottom of each page with different CTA on the button.</p>
+    </div>
+    <img class="competitor-research-img" src="images/booking_flow.png" alt="booking.com flow">
+
+    <div class="text-box">
+      <p class="text">Single page with scrolling: Priceline.com</p>
+      <p>Everything is on the same page with empty forms to be filled. Forms change colour after completion.
+        There is only one button for the final confirmation.</p>
+    </div>
+    <img class="competitor-research-img" src="images/priceline_flow.png" alt="priceline.com flow">
+
+
+    <div class="text-box">
+      <p>Both organization schemes keep key information such as price and date within user's viewpoint consistently.
+        This kind of design reduces user's cognitive burden and avoids the backtracking problem, which interrupts the
+        entire checkout flow.</p>
+    </div>
+  </div>
+
+
+  <!-- Solutions -->
+  <div class="container solutions">
+    <div class="text-box">
+      <h3 class="div-title">Solutions</h3>
+      <h4 class="div-subtitle">Recommendations</h4>
+      <p>Based on the research findings, I made some design recommendations to solve this problem.</p>
+      <ul>
+        <li class="text">Fixing the malfunctioning triangle button</li>
+        <p>This quick remedy requires the least effort. Turning the button into a toggle switch will allow the user to
+          have a quick sneak peek of the forms they filled. However, the backtracking problem would still exist.</p>
+        <img class="snaptravel-mobile-static" src="images/toggle_switch.png" alt="toggle switch">
+      </ul>
+    </div>
+
+    <div class="text-box">
+      <ul>
+        <li class="text">Sticky summary cards</li>
+        <p>This option also keeps the current mechanism. Making the collapsed card sticky to persist key details
+          would solve the backtracking problem.</p>
+        <img class="snaptravel-mobile-static" src="images/sticky.png" alt="sticky img">
+      </ul>
+    </div>
+
+    <div class="text-box">
+      <h4>Next Steps</h4>
+      <p>Following up on the design recommendations, the product design team will collaborate with product managers to build prototypes
+        and run AB testings to see if the modified design would increase the conversion rate.</p>
+    </div>
+  </div>
+
+
+
+
 
 
 </body>
