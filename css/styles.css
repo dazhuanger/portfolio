@@ -150,12 +150,6 @@ footer {
   color: #333;
 }
 
-.neighbour_img {
-  max-width: 50%;
-  display: block;
-  margin: 0 auto;
-}
-
 /* SOO page */
 /* containers */
 .research, .design, .prototype {
@@ -234,7 +228,7 @@ footer {
   text-align: center;
 }
 
-.persona, .big-ideas, .neighbour-midfi {
+.persona, .big-ideas {
   display: block;
   margin: 20px auto;
   max-width: 100%;
@@ -261,6 +255,17 @@ footer {
   display: inline-block;
   max-width: 33%;
   margin-bottom: 50px;
+}
+
+.neighbour-midfi {
+  display: block;
+  margin: 20px auto 50px auto;
+  max-width: 100%;
+}
+
+.neighbour_img {
+  display: block;
+  margin: 20px auto 0 auto;
 }
 
 /* UI design projects */
