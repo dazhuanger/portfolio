@@ -22,7 +22,7 @@ h6 {
   font-weight: 600;
 }
 
-p {
+p, li {
   font-weight: 400;
   font-size: 1.1rem;
   line-height: 1.7rem;
@@ -61,7 +61,6 @@ footer {
 }
 
 .text {
-  font-weight: 400;
   color: black;
 }
 
@@ -235,10 +234,6 @@ footer {
   text-align: center;
 }
 
-.percentage {
-  color: #0343fb;
-}
-
 .persona, .big-ideas, .neighbour-midfi {
   display: block;
   margin: 20px auto;
@@ -379,10 +374,45 @@ footer {
 }
 
 /* SnapTravel page */
-.snaptravel-title {
-  max-width: 50%;
+.problem, .analysis, .solutions {
+  padding-top: 2%;
+  margin-bottom: 6%;
+}
+
+.snaptravel-mobile-static {
   display: block;
+  width: 60%;
   margin: 0 auto;
+}
+
+.snaptravel-mobile-gif {
+  display: block;
+  width: 60%;
+  margin: 0 auto;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.problem .text-box {
+  margin-bottom: 50px;
+}
+
+.problem .row {
+  margin-bottom: 7%
+}
+
+.problem-annotation {
+  padding-top: 6%;
+  padding-right: 10%;
+}
+
+.data-dive-percentage {
+  color: #0343fb;
+}
+
+.competitor-research-img {
+  display: block;
+  width: 60%;
+  margin: 0 auto 7% auto;
 }
 
 /* AR project page */
@@ -451,7 +481,7 @@ footer {
 }
 
 @media screen and (max-width: 414px) {
-  .greeting {
+  .greeting, .competitor-research-img, .result, .watch-imgs {
     width: 100%;
   }
 
@@ -475,15 +505,7 @@ footer {
     max-width: 80%;
   }
 
-  .watch-imgs {
-    width: 100%;
-  }
-
   .midfi-watch {
     margin: 0 2%;
-  }
-
-  .result {
-    max-width: 100%;
   }
 }
