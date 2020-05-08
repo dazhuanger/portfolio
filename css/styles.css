@@ -485,8 +485,8 @@ footer {
   margin: 0 auto;
 }
 
-@media screen and (max-width: 414px) {
-  .greeting, .competitor-research-img, .result, .watch-imgs {
+@media screen and (max-width: 768px) {
+  .greeting, .competitor-research-img, .result, .watch-imgs, .neighbour_img  {
     width: 100%;
   }
 
@@ -513,4 +513,6 @@ footer {
   .midfi-watch {
     margin: 0 2%;
   }
+
+
 }
