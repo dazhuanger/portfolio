@@ -263,10 +263,10 @@ footer {
   max-width: 100%;
 }
 
-.neighbour_img {
-  display: block;
-  margin: 20px auto 0 auto;
-  width: 100%;
+.neighbour-high-fi {
+  display: inline-block;
+  max-width: 30%;
+  margin: 0 1% 50px 1%;
 }
 
 /* UI design projects */
@@ -501,13 +501,13 @@ footer {
     margin: 2% auto;
   }
 
-  .paper-prototypes {
+  .paper-prototypes, .highfi-prototypes{
     flex: none;
     overflow-x: auto;
     white-space: nowrap;
   }
 
-  .paper-proto {
+  .paper-proto, .neighbour-high-fi {
     max-width: 80%;
   }
 
