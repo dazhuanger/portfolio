@@ -16,6 +16,7 @@ $(document).ready(function() {
           'opacity': '1'
         }, 1000);
 
+        $(".scroll").removeClass("floating");
       }
 
     });

@@ -85,8 +85,39 @@ footer {
 }
 
 /* Welcome division */
+.landing {
+  margin: 200px auto 200px auto;
+  position: relative;
+}
+
+.scroll {
+  margin-top: 100px;
+  text-align: center;
+}
+
+.floating {
+  animation-name: floating;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes floating {
+  from {
+    transform: translate(0, 0px);
+  }
+
+  65% {
+    transform: translate(0, 15px);
+  }
+
+  to {
+    transform: translate(0, -0px);
+  }
+}
+
 .intro {
-  margin: 2% auto 6% auto;
+  margin: 100px auto 6% auto;
   position: relative;
 }
 
@@ -487,7 +518,7 @@ footer {
 }
 
 @media screen and (max-width: 768px) {
-  .greeting, .competitor-research-img, .result, .watch-imgs, .neighbour_img  {
+  .greeting, .competitor-research-img, .result, .watch-imgs, .neighbour_img {
     width: 100%;
   }
 
@@ -501,7 +532,7 @@ footer {
     margin: 2% auto;
   }
 
-  .paper-prototypes, .highfi-prototypes{
+  .paper-prototypes, .highfi-prototypes {
     flex: none;
     overflow-x: auto;
     white-space: nowrap;
@@ -514,6 +545,4 @@ footer {
   .midfi-watch {
     margin: 0 2%;
   }
-
-
 }
