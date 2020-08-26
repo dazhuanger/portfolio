@@ -1,2 +1,2 @@
-# portfolio
-# My personal UX design portfolio
+# UX Design Portfolio
+
