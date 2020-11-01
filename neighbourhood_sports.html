@@ -1,290 +1,391 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-180622107-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-<head>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-180622107-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+      gtag("config", "UA-180622107-1");
+    </script>
 
-  gtag('config', 'UA-180622107-1');
-</script>
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <title>Neighbourhood Sports</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="icon" href="images/favicon.ico" />
 
-  <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <title>Neighbourhood Sports</title>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link rel="stylesheet" href="css/styles.css">
-  <link rel="icon" href="images/favicon.ico">
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script src="index.js" charset="utf-8"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+  </head>
 
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="index.js" charset="utf-8"></script>
-  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-</head>
-
-<body>
-  <!-- Nav bar -->
-  <div class="container-fluid navigation">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <div class="container">
-        <a class="navbar-brand" href="index.html">Jianchen Zhu</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Projects
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="snaptravel.html">SnapTravel</a>
-                <a class="dropdown-item" href="SOO.html">Special Olympics Ontario</a>
-                <a class="dropdown-item" href="chef.html">Chef</a>
-                <a class="dropdown-item" href="neighbourhood_sports.html">Neighbourhood Sports</a>
-                <a class="dropdown-item" href="ticket_faster.html">Ticket Faster</a>
-                <a class="dropdown-item" href="sports_radio.html">Sports Radio</a>
-                <a class="dropdown-item" href="AR.html">AR navigation</a>
-              </div>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="about.html">About</a>
-            </li>
-          </ul>
+  <body>
+    <!-- Nav bar -->
+    <div class="container-fluid navigation">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+          <a class="navbar-brand" href="index.html">Jianchen Zhu</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  Projects
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="snaptravel.html">SnapTravel</a>
+                  <a class="dropdown-item" href="SOO.html">Special Olympics Ontario</a>
+                  <a class="dropdown-item" href="chef.html">Chef</a>
+                  <a class="dropdown-item" href="neighbourhood_sports.html">Neighbourhood Sports</a>
+                  <a class="dropdown-item" href="ticket_faster.html">Ticket Faster</a>
+                  <a class="dropdown-item" href="sports_radio.html">Sports Radio</a>
+                  <a class="dropdown-item" href="AR.html">AR navigation</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+              </li>
+            </ul>
+          </div>
         </div>
-      </div>
-    </nav>
-  </div>
-
-  <!-- Intro division -->
-  <div class="container intro">
-    <h2 class="greeting">Neighbourhood Sports</h2>
-    <h4 class="bio">A <span class="highlight">mobile application</span> that provides a
-      simple way to find sports partners in local communities. It is intended
-      to improve community engagement through recreational sports.</h4>
-
-    <h4 class="bio">My roles: </h4>
-    <div class="row greeting">
-      <div class="col-md-3 col-sm-6 tasks">
-        <h5><span style="font-weight: 100;">User Interview</span></h5>
-        <img class="task-icon" src="images/icons/interview.png" alt="interview icon">
-      </div>
-      <div class="col-md-3 col-sm-6 tasks">
-        <h5><span style="font-weight: 100;">Data Analysis</span></h5>
-        <img class="task-icon" src="images/icons/data.png" alt="data icon">
-      </div>
-      <div class="col-md-3 col-sm-6 tasks">
-        <h5><span style="font-weight: 100;">Wireframing</span></h5>
-        <img class="task-icon" src="images/icons/wireframe.png" alt="wireframing icon">
-      </div>
-      <div class="col-md-3 col-sm-6 tasks">
-        <h5><span style="font-weight: 100;">Prototyping</span></h5>
-        <img class="task-icon" src="images/icons/prototyping.png" alt="prototyping icon">
-      </div>
-    </div>
-  </div>
-
-  <!-- Research division -->
-  <div class="container research">
-    <!-- Problem + User assumptions -->
-    <div class="text-box">
-      <h3 class="div-title">Research and Analysis</h3>
-      <h4 class="div-subtitle">Problem</h4>
-      <p>The current platform of community centres fails to provide
-        easy and simple ways to find sport partners locally. It features a cluttered and counterintuitive design, which is causing poor turnout to local parks and arenas.</p>
+      </nav>
     </div>
 
-    <!-- User assumptions -->
-    <div class="text-box">
-      <h4 class="div-subtitle">User Assumptions</h4>
-      <p>Young professional.</p>
-      <p>Plays sports after work or during the weekends.</p>
-      <p>Has trouble finding local players to play with at the neighbourhood parks or courts.</p>
-    </div>
+    <!-- Intro division -->
+    <div class="container intro">
+      <h2 class="greeting">Neighbourhood Sports</h2>
+      <h4 class="bio">
+        A <span class="highlight">mobile application</span> that provides a simple way to find sports partners in local
+        communities. It is intended to improve community engagement through recreational sports.
+      </h4>
 
-    <!-- Research methods -->
-    <div class="text-box">
-      <h4 class="div-subtitle">Research Methods</h4>
-      <p>Secondary research: <span class="highlight">competitor analysis</span></p>
-
-      <div class="row competitor-row">
-        <div class="col-md-4 ">
-          <h6 class="competitor-name">Find a player</h6>
+      <h4 class="bio">My roles:</h4>
+      <div class="row greeting">
+        <div class="col-md-3 col-sm-6 tasks">
+          <h5><span style="font-weight: 100">User Interview</span></h5>
+          <img class="task-icon" src="images/icons/interview.png" alt="interview icon" />
         </div>
-        <div class="col-md-8">
-          <p>Poor interface</p>
-          <p>Unnecessary rating & rewards feature</p>
+        <div class="col-md-3 col-sm-6 tasks">
+          <h5><span style="font-weight: 100">Data Analysis</span></h5>
+          <img class="task-icon" src="images/icons/data.png" alt="data icon" />
         </div>
-      </div>
-
-      <div class="row competitor-row">
-        <div class="col-md-4 ">
-          <h6 class="competitor-name">Hoopmaps</h6>
+        <div class="col-md-3 col-sm-6 tasks">
+          <h5><span style="font-weight: 100">Wireframing</span></h5>
+          <img class="task-icon" src="images/icons/wireframe.png" alt="wireframing icon" />
         </div>
-        <div class="col-md-8">
-          <p>Exclusively for basketball</p>
-          <p>Must link to Facebook </p>
-        </div>
-      </div>
-
-      <div class="row competitor-row">
-        <div class="col-md-4 ">
-          <h6 class="competitor-name">Meetup</h6>
-        </div>
-        <div class="col-md-8">
-          <p>For large groups and events</p>
-          <p>Not community-based</p>
-        </div>
-      </div>
-
-      <p>Primary research: <a class="highlight" href="https://docs.google.com/forms/d/e/1FAIpQLSewclIBhyMj1AYKNKSfPmYggUX8OuLkQd5MnM1inn2KdCs5gw/viewform" target="_blank">online survey</a></p>
-      <div class="row">
-        <div class="col-md-4 survey-result">
-          <h3 class="highlight">48.4%</h3>
-          <p>team up through personal connections</p>
-        </div>
-        <div class="col-md-4 survey-result">
-          <h3 class="highlight">70.6%</h3>
-          <p>play sports in gyms or fitness centres</p>
-        </div>
-        <div class="col-md-4 survey-result">
-          <h3 class="highlight">50%</h3>
-          <p>would prefer an independent App</p>
+        <div class="col-md-3 col-sm-6 tasks">
+          <h5><span style="font-weight: 100">Prototyping</span></h5>
+          <img class="task-icon" src="images/icons/prototyping.png" alt="prototyping icon" />
         </div>
       </div>
     </div>
 
-    <!-- User persona -->
-    <div class="text-box">
-      <h4 class="div-subtitle">User Persona</h4>
-    </div>
-    <div class="row">
-      <div class="col">
-        <img class="persona" src="images/neighbourhood/Persona.png" alt="persona img">
+    <!-- Research division -->
+    <div class="container research">
+      <!-- Problem + User assumptions -->
+      <div class="text-box">
+        <h3 class="div-title">Research and Analysis</h3>
+        <h4 class="div-subtitle">Problem</h4>
+        <p>
+          The current platform of community centres fails to provide easy and simple ways to find sport partners
+          locally. It features a cluttered and counterintuitive design, which is causing poor turnout to local parks and
+          arenas.
+        </p>
       </div>
-    </div>
 
-    <!-- How might we -->
-    <div class="text-box hideme">
-      <h4 class="div-subtitle">How might we? </h4>
-      <p>How migh we create an experience to let Tim</p>
-      <h5 class="needs-statement">Arrange sports meetings without taking any transportation.</h5>
-      <h5 class="needs-statement">Find the ideal place and time to play.</h5>
-      <h5 class="needs-statement">Play with people of the same skill level.</h5>
-    </div>
-  </div>
+      <!-- User assumptions -->
+      <div class="text-box">
+        <h4 class="div-subtitle">User Assumptions</h4>
+        <p>Young professional.</p>
+        <p>Plays sports after work or during the weekends.</p>
+        <p>Has trouble finding local players to play with at the neighbourhood parks or courts.</p>
+      </div>
 
+      <!-- Research methods -->
+      <div class="text-box">
+        <h4 class="div-subtitle">Research Methods</h4>
+        <p>Secondary research: <span class="highlight">competitor analysis</span></p>
 
-  <!-- Ideation division -->
-  <div class="container design hideme">
-    <!-- big ideas -->
-    <div class="text-box">
-      <h3 class="div-title">Ideation</h3>
-      <h4 class="div-subtitle">Big Ideas</h4>
+        <div class="row competitor-row">
+          <div class="col-md-4">
+            <h6 class="competitor-name">Find a player</h6>
+          </div>
+          <div class="col-md-8">
+            <p>Poor interface</p>
+            <p>Unnecessary rating & rewards feature</p>
+          </div>
+        </div>
+
+        <div class="row competitor-row">
+          <div class="col-md-4">
+            <h6 class="competitor-name">Hoopmaps</h6>
+          </div>
+          <div class="col-md-8">
+            <p>Exclusively for basketball</p>
+            <p>Must link to Facebook</p>
+          </div>
+        </div>
+
+        <div class="row competitor-row">
+          <div class="col-md-4">
+            <h6 class="competitor-name">Meetup</h6>
+          </div>
+          <div class="col-md-8">
+            <p>For large groups and events</p>
+            <p>Not community-based</p>
+          </div>
+        </div>
+
+        <p>
+          Primary research:
+          <a
+            class="highlight"
+            href="https://docs.google.com/forms/d/e/1FAIpQLSewclIBhyMj1AYKNKSfPmYggUX8OuLkQd5MnM1inn2KdCs5gw/viewform"
+            target="_blank"
+            >online survey</a
+          >
+        </p>
+        <div class="row">
+          <div class="col-md-4 survey-result">
+            <h3 class="highlight">48.4%</h3>
+            <p>team up through personal connections</p>
+          </div>
+          <div class="col-md-4 survey-result">
+            <h3 class="highlight">70.6%</h3>
+            <p>play sports in gyms or fitness centres</p>
+          </div>
+          <div class="col-md-4 survey-result">
+            <h3 class="highlight">50%</h3>
+            <p>would prefer an independent App</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- User persona -->
+      <div class="text-box">
+        <h4 class="div-subtitle">User Persona</h4>
+      </div>
       <div class="row">
         <div class="col">
-          <img class="big-ideas" src="images/neighbourhood/big_ideas.png" alt="big ideas img">
+          <img class="persona" src="images/neighbourhood/Persona.png" alt="persona img" />
         </div>
+      </div>
+
+      <!-- How might we -->
+      <div class="text-box hideme">
+        <h4 class="div-subtitle">How might we?</h4>
+        <p>How migh we create an experience to let Tim</p>
+        <h5 class="needs-statement">Arrange sports meetings without taking any transportation.</h5>
+        <h5 class="needs-statement">Find the ideal place and time to play.</h5>
+        <h5 class="needs-statement">Play with people of the same skill level.</h5>
       </div>
     </div>
 
-    <!-- prioritization -->
-    <div class="text-box">
-      <h4 class="div-subtitle">Prioritization</h4>
-      <p>Big ideas were prioritized based on the <span class="highlight">impact</span> and <span class="highlight">feasibility</span>.</p>
-
-      <div class="row prioritization">
-        <div class="col-md-6">
-          <span class="idea-category">No brainer</span>
-          <h4 class="idea-content">Community centre enrolment</h4>
-          <p>High impact & feasibility</p>
-        </div>
-
-        <div class="col-md-6">
-          <br>
-          <p>Our results showed that this would be feasible because community centres are already established and impactful because people will go to community centres.</p>
+    <!-- Ideation division -->
+    <div class="container design hideme">
+      <!-- big ideas -->
+      <div class="text-box">
+        <h3 class="div-title">Ideation</h3>
+        <h4 class="div-subtitle">Big Ideas</h4>
+        <div class="row">
+          <div class="col">
+            <img class="big-ideas" src="images/neighbourhood/big_ideas.png" alt="big ideas img" />
+          </div>
         </div>
       </div>
 
-      <div class="row prioritization">
-        <div class="col-md-6">
-          <span class="idea-category">Big bets</span>
-          <h4 class="idea-content">Gamification</h4>
-          <p>High impact</p>
+      <!-- prioritization -->
+      <div class="text-box">
+        <h4 class="div-subtitle">Prioritization</h4>
+        <p>
+          Big ideas were prioritized based on the <span class="highlight">impact</span> and
+          <span class="highlight">feasibility</span>.
+        </p>
+
+        <div class="row prioritization">
+          <div class="col-md-6">
+            <span class="idea-category">No brainer</span>
+            <h4 class="idea-content">Community centre enrolment</h4>
+            <p>High impact & feasibility</p>
+          </div>
+
+          <div class="col-md-6">
+            <br />
+            <p>
+              Our results showed that this would be feasible because community centres are already established and
+              impactful because people will go to community centres.
+            </p>
+          </div>
         </div>
 
-        <div class="col-md-6">
-          <br>
-          <p>Gamification can boost player's motivation which will enhance the impact of this app.</p>
-        </div>
-      </div>
+        <div class="row prioritization">
+          <div class="col-md-6">
+            <span class="idea-category">Big bets</span>
+            <h4 class="idea-content">Gamification</h4>
+            <p>High impact</p>
+          </div>
 
-      <div class="row prioritization">
-        <div class="col-md-6">
-          <sapn class="idea-category">Utitlies</span>
+          <div class="col-md-6">
+            <br />
+            <p>Gamification can boost player's motivation which will enhance the impact of this app.</p>
+          </div>
+        </div>
+
+        <div class="row prioritization">
+          <div class="col-md-6">
+            <span class="idea-category">Utitlies</span>
             <h4 class="idea-content">Matchmaking</h4>
             <p>High feasibility</p>
+          </div>
+
+          <div class="col-md-6">
+            <br />
+            <p>
+              Matchmaking has a high feasibility, but other factors have to be taken into consideration, such as privacy
+              issues, location data etc.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Prototype division -->
+    <div class="container prototype hideme">
+      <!-- low-fi -->
+      <div class="text-box">
+        <h3 class="div-title">Prototyping</h3>
+        <h4 class="div-subtitle">Low-Fi Sketches</h4>
+        <p>Powered by pencil, paper and coffee!</p>
+        <p>User flow is constructed and visualized by preliminary sketches in a form of storyboard.</p>
+      </div>
+      <div class="paper-prototypes">
+        <img class="paper-proto" src="images/neighbourhood/paper_prototype_1.png" alt="" />
+        <img class="paper-proto" src="images/neighbourhood/paper_prototype_2.png" alt="" />
+        <img class="paper-proto" src="images/neighbourhood/paper_prototype_3.png" alt="" />
+      </div>
+
+      <!-- mid-fi -->
+      <div class="text-box">
+        <h4 class="div-subtitle">Mid-fi Wireframe</h4>
+        <p>Powered by Balsamiq and Invision</p>
+        <p>
+          Each of our group members conducted a lean evaluation on the sketches above with prospective users of this
+          app. We then integrated their feedback into a mid-fi wireframe, which is a minimum viable product.
+        </p>
+      </div>
+      <img class="neighbour-midfi" src="images/neighbourhood/neighbour_midfi.png" alt="neighbourhood mid-fi" />
+
+      <div class="text-box">
+        <h4 class="div-subtitle">High-fi Prototype</h4>
+        <p>
+          This course project was finished in December 2018. The final deliverable was those mid-fi wireframes above. I
+          recently worked individually to make a high-fidelity version for the iPhone X.
+        </p>
+      </div>
+
+      <!-- Landing page -->
+      <div class="row">
+        <div class="col-md-6">
+          <img class="neighbour-static" src="images/neighbourhood/highfi1.png" alt="neighbour highfi1 img" />
         </div>
 
-        <div class="col-md-6">
-          <br>
-          <p>Matchmaking has a high feasibility, but other factors have to be taken into consideration, such as privacy issues, location data etc.</p>
+        <div class="col-md-6 problem-annotation">
+          <h4 class="div-subtitle">Landing Page</h4>
+          <p>A simple landing page for users to log in or create a new account to join the community.</p>
         </div>
       </div>
 
+      <!-- Home Page -->
+      <div class="row">
+        <div class="col-md-6">
+          <img class="neighbour-static" src="images/neighbourhood/highfi2.png" alt="neighbour highfi2 img" />
+        </div>
+
+        <div class="col-md-6 problem-annotation">
+          <h4 class="div-subtitle">Home Page</h4>
+          <p>The home page features three may sections:</p>
+          <p>
+            <span class="highlight">Upcoming Games</span> are shown in large cards with detailed information, including
+            game date & time, location, level and intensity.
+          </p>
+          <p>
+            <span class="highlight">Recent Searches</span> section allows players to generate a search quickly using
+            previous criteria.
+          </p>
+          <p>
+            Finally, the <span class="highlight">Recommended for you</span> section provides players with sports event
+            they might be interested to attend.
+          </p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-6">
+          <img class="neighbour-static" src="images/neighbourhood/highfi3.png" alt="neighbour highfi3 img" />
+        </div>
+
+        <div class="col-md-6 problem-annotation">
+          <h4 class="div-subtitle">New Game Menu</h4>
+          <p>A new game setting menu slides in when the purple button in the bottom nav bar is tapped.</p>
+          <p>
+            Players can create a new game according to their schedule and set the level and intensity of the game to
+            their likings. The level settings can guarantee that the event attracts players at the same skill level, and
+            the intensity settings tell the players how intense the game will be.
+          </p>
+        </div>
+      </div>
+
+      <div class="highfi-prototypes"></div>
     </div>
+  </body>
 
-  </div>
-
-
-  <!-- Prototype division -->
-  <div class="container prototype hideme">
-    <!-- low-fi -->
-    <div class="text-box">
-      <h3 class="div-title">Prototyping</h3>
-      <h4 class="div-subtitle">Low-Fi Sketches</h4>
-      <p>Powered by pencil, paper and coffee!</p>
-      <p>User flow is constructed and visualized by preliminary sketches in a form of storyboard.</p>
+  <footer>
+    <div>
+      Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from
+      <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
     </div>
-    <div class="paper-prototypes">
-      <img class="paper-proto" src="images/neighbourhood/paper_prototype_1.png" alt="">
-      <img class="paper-proto" src="images/neighbourhood/paper_prototype_2.png" alt="">
-      <img class="paper-proto" src="images/neighbourhood/paper_prototype_3.png" alt="">
-    </div>
-
-    <!-- mid-fi -->
-    <div class="text-box">
-      <h4 class="div-subtitle">Mid-fi Wireframe</h4>
-      <p>Powered by Balsamiq and Invision</p>
-      <p>Each of our group members conducted a lean evaluation on the sketches above with prospective users of this app. We then integrated their feedback into a mid-fi wireframe, which is a minimum viable product.</p>
-    </div>
-    <img class="neighbour-midfi" src="images/neighbourhood/neighbour_midfi.png" alt="neighbourhood mid-fi">
-
-
-    <div class="text-box">
-      <h4 class="div-subtitle">High-fi Prototype</h4>
-      <p>This course project was finished in December 2018. The final deliverable was those mid-fi wireframes above. I'm currently working individually to make a high-fidelity version for the iPhone X. Here is a sneak peek. Stay tuned
-        for the update.😊</p>
-    </div>
-    <div class="highfi-prototypes">
-      <img class="neighbour-high-fi" src="images/neighbourhood/highfi1.png" alt="neighbour highfi1 img">
-      <img class="neighbour-high-fi" src="images/neighbourhood/highfi2.png" alt="neighbour highfi2 img">
-      <img class="neighbour-high-fi" src="images/neighbourhood/highfi3.png" alt="neighbour highfi3 img">
-    </div>
-
-  </div>
-
-
-
-
-</body>
-
-<footer>
-  <div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
-  <a href="https://www.freepik.com/free-photos-vectors/book">Book vector created by upklyak - www.freepik.com</a>
-  © Jianchen Zhu 2020
-</footer>
-
+    <a href="https://www.freepik.com/free-photos-vectors/book">Book vector created by upklyak - www.freepik.com</a>
+    © Jianchen Zhu 2020
+  </footer>
 </html>

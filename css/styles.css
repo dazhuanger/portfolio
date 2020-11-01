@@ -3,7 +3,9 @@ body {
   font-family: -apple-system, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-h1, h2, h5 {
+h1,
+h2,
+h5 {
   font-weight: 600;
 }
 
@@ -22,7 +24,8 @@ h6 {
   font-weight: 600;
 }
 
-p, li {
+p,
+li {
   font-weight: 400;
   font-size: 1.1rem;
   line-height: 1.7rem;
@@ -44,7 +47,7 @@ footer {
 }
 
 .highlight:hover {
-  transition: transform .8s ease;
+  transition: transform 0.8s ease;
   transform: scale(1.02);
 }
 
@@ -81,7 +84,7 @@ footer {
 
 .nav-item {
   padding: 0 18px;
-  font-size: 1rem
+  font-size: 1rem;
 }
 
 /* Welcome division */
@@ -163,7 +166,7 @@ footer {
 }
 
 .project-card:hover {
-  transition: transform .8s ease;
+  transition: transform 0.8s ease;
   transform: scale(1.02);
   box-shadow: 1px 1px 5px #999;
 }
@@ -183,7 +186,9 @@ footer {
 
 /* SOO page */
 /* containers */
-.research, .design, .prototype {
+.research,
+.design,
+.prototype {
   padding-top: 2%;
   margin-bottom: 6%;
 }
@@ -197,19 +202,23 @@ footer {
   max-width: 100px;
 }
 
-.diagram-box, .tree-test-box, .midfi-box {
+.diagram-box,
+.tree-test-box,
+.midfi-box {
   margin-top: 30px;
   margin-bottom: 20px;
 }
 
-.test-result-img, .p-sketch-img {
+.test-result-img,
+.p-sketch-img {
   max-width: 80%;
   height: auto;
   margin: 0 auto;
   display: block;
 }
 
-.card-sorting-img, .tree-test-img {
+.card-sorting-img,
+.tree-test-img {
   max-width: 80%;
   height: auto;
   margin: 0 auto;
@@ -217,13 +226,15 @@ footer {
   box-shadow: 0 0 2px #999;
 }
 
-.card-sorting-img:hover, .tree-test-img:hover {
-  transition: transform .8s ease;
+.card-sorting-img:hover,
+.tree-test-img:hover {
+  transition: transform 0.8s ease;
   transform: scale(1.02);
   box-shadow: 1px 1px 3px #999;
 }
 
-.hand-sketch, .midfi-prototype {
+.hand-sketch,
+.midfi-prototype {
   max-width: 100%;
   height: auto;
   margin: 0 auto;
@@ -241,7 +252,9 @@ footer {
 }
 
 /* Neighbourhood Sports */
-.research .text-box, .design .text-box, .prototype .text-box {
+.research .text-box,
+.design .text-box,
+.prototype .text-box {
   margin-bottom: 50px;
 }
 
@@ -259,7 +272,8 @@ footer {
   text-align: center;
 }
 
-.persona, .big-ideas {
+.persona,
+.big-ideas {
   display: block;
   margin: 20px auto;
   max-width: 100%;
@@ -294,25 +308,39 @@ footer {
   max-width: 100%;
 }
 
-.neighbour-high-fi {
-  display: inline-block;
-  max-width: 30%;
-  margin: 0 1% 50px 1%;
+.prototype .row {
+  margin-bottom: 7%;
+}
+
+.neighbour-static {
+  display: block;
+  width: 60%;
+  margin: 0 auto;
 }
 
 /* UI design projects */
 /* containers */
-.rationales, .mid-fi, .high-fi, .feedback {
+.rationales,
+.mid-fi,
+.high-fi,
+.feedback {
   padding-top: 2%;
   margin-bottom: 10%;
 }
 
-.chef-mid-fi, .chef-high-fi,
-.ticket-mid-fi, .ticket-high-fi, .radio-mid-fi, .radio-high-fi {
+.chef-mid-fi,
+.chef-high-fi,
+.ticket-mid-fi,
+.ticket-high-fi,
+.radio-mid-fi,
+.radio-high-fi {
   padding-bottom: 7%;
 }
 
-.ticket-mid-fi .col-md-4, .chef-mid-fi .col-md-4, .chef-high-fi .col-md-4, .radio-mid-fi .col-md-5,
+.ticket-mid-fi .col-md-4,
+.chef-mid-fi .col-md-4,
+.chef-high-fi .col-md-4,
+.radio-mid-fi .col-md-5,
 .radio-high-fi .col-md-5 {
   padding-top: 6%;
 }
@@ -340,7 +368,8 @@ footer {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
-.midfi-mobile-lg, .highfi-mobile-lg {
+.midfi-mobile-lg,
+.highfi-mobile-lg {
   max-width: 60%;
   height: auto;
   margin: 0 auto;
@@ -361,15 +390,19 @@ footer {
   padding-bottom: 2%;
 }
 
-.chef-storyboard, .ticket-storyboard, .radio-storyboard {
+.chef-storyboard,
+.ticket-storyboard,
+.radio-storyboard {
   max-width: 100%;
   height: auto;
   margin: 0 auto;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
-.chef-storyboard:hover, .ticket-storyboard:hover, .radio-storyboard:hover {
-  transition: transform .8s ease;
+.chef-storyboard:hover,
+.ticket-storyboard:hover,
+.radio-storyboard:hover {
+  transition: transform 0.8s ease;
   transform: scale(1.02);
   box-shadow: 1px 1px 3px #999;
 }
@@ -380,14 +413,16 @@ footer {
   max-width: 100%;
 }
 
-.midfi-mac, .highfi-mac {
+.midfi-mac,
+.highfi-mac {
   max-width: 100%;
   height: auto;
   margin: 0 auto;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
-.midfi-car, .highfi-car {
+.midfi-car,
+.highfi-car {
   max-width: 100%;
   height: auto;
   margin: 0 auto;
@@ -411,7 +446,9 @@ footer {
 }
 
 /* SnapTravel page */
-.problem, .analysis, .solutions {
+.problem,
+.analysis,
+.solutions {
   padding-top: 2%;
   margin-bottom: 6%;
 }
@@ -434,7 +471,7 @@ footer {
 }
 
 .problem .row {
-  margin-bottom: 7%
+  margin-bottom: 7%;
 }
 
 .problem-annotation {
@@ -454,12 +491,19 @@ footer {
 
 /* AR project page */
 /* containers */
-.description, .AR-prototypes, .design-process, .evaluation, .reflection {
+.description,
+.AR-prototypes,
+.design-process,
+.evaluation,
+.reflection {
   padding-top: 2%;
   margin-bottom: 6%;
 }
 
-.current, .modifications, .experiment, .results {
+.current,
+.modifications,
+.experiment,
+.results {
   padding-top: 2%;
   padding-bottom: 2%;
   margin-bottom: 20px;
@@ -495,7 +539,8 @@ footer {
   margin: 0 auto;
 }
 
-.procedure, .criteria {
+.procedure,
+.criteria {
   text-align: center;
 }
 
@@ -518,7 +563,11 @@ footer {
 }
 
 @media screen and (max-width: 768px) {
-  .greeting, .competitor-research-img, .result, .watch-imgs, .neighbour_img {
+  .greeting,
+  .competitor-research-img,
+  .result,
+  .watch-imgs,
+  .neighbour_img {
     width: 100%;
   }
 
@@ -532,13 +581,15 @@ footer {
     margin: 2% auto;
   }
 
-  .paper-prototypes, .highfi-prototypes {
+  .paper-prototypes,
+  .highfi-prototypes {
     flex: none;
     overflow-x: auto;
     white-space: nowrap;
   }
 
-  .paper-proto, .neighbour-high-fi {
+  .paper-proto,
+  .neighbour-high-fi {
     max-width: 80%;
   }
 
