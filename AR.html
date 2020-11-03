@@ -1,328 +1,397 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-180622107-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-<head>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-180622107-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+      gtag("config", "UA-180622107-1");
+    </script>
 
-  gtag('config', 'UA-180622107-1');
-</script>
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <title>AR Navigation</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="icon" href="images/favicon.ico" />
 
-  <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <title>AR Navigation</title>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link rel="stylesheet" href="css/styles.css">
-  <link rel="icon" href="images/favicon.ico">
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="index.js" charset="utf-8"></script>
+  </head>
 
-  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  <script src="index.js" charset="utf-8"></script>
-</head>
+  <body>
+    <!-- Nav bar -->
+    <div class="container-fluid navigation">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+          <a class="navbar-brand" href="index.html">Jianchen Zhu</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  Projects
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="snaptravel.html">Snaptravel</a>
+                  <a class="dropdown-item" href="chef.html">Chef</a>
+                  <a class="dropdown-item" href="neighbourhood_sports.html">Neighbourhood Sports</a>
+                  <a class="dropdown-item" href="ticket_faster.html">Ticket Faster</a>
+                  <a class="dropdown-item" href="sports_radio.html">Sports Radio</a>
+                  <a class="dropdown-item" href="AR.html">AR navigation</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
 
-<body>
-  <!-- Nav bar -->
-  <div class="container-fluid navigation">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <div class="container">
-        <a class="navbar-brand" href="index.html">Jianchen Zhu</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Projects
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="snaptravel.html">SnapTravel</a>
-                <a class="dropdown-item" href="SOO.html">Special Olympics Ontario</a>
-                <a class="dropdown-item" href="chef.html">Chef</a>
-                <a class="dropdown-item" href="neighbourhood_sports.html">Neighbourhood Sports</a>
-                <a class="dropdown-item" href="ticket_faster.html">Ticket Faster</a>
-                <a class="dropdown-item" href="sports_radio.html">Sports Radio</a>
-                <a class="dropdown-item" href="AR.html">AR navigation</a>
-              </div>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="about.html">About</a>
-            </li>
-          </ul>
+    <!-- Intro division -->
+    <div class="container intro">
+      <h2 class="greeting">AR Navigation</h2>
+      <h4 class="bio">
+        This is a project in response to a design prompt of a UX research and design course for augmented reality. It
+        focused on the <span class="highlight"> design and evaluation</span> of an AR navigation app for a food night
+        market.
+      </h4>
+      <h4 class="bio">My roles:</h4>
+      <div class="row greeting">
+        <div class="col-md-4 tasks">
+          <h5><span style="font-weight: 100">Ideation</span></h5>
+          <img class="task-icon" src="images/icons/ideation.png" alt="interview icon" />
+        </div>
+        <div class="col-md-4 tasks">
+          <h5><span style="font-weight: 100">Prototyping</span></h5>
+          <img class="task-icon" src="images/icons/prototyping.png" alt="testing icon" />
+        </div>
+        <div class="col-md-4 tasks">
+          <h5><span style="font-weight: 100">Data Analysis</span></h5>
+          <img class="task-icon" src="images/icons/data.png" alt="wireframing icon" />
         </div>
       </div>
-    </nav>
-  </div>
+    </div>
 
-  <!-- Intro division -->
-  <div class="container intro">
-    <h2 class="greeting">AR Navigation</h2>
-    <h4 class="bio">This is a project in response to a design prompt of a UX research and
-      design course for augmented reality. It focused on the <span class="highlight"> design and evaluation</span>
-      of an AR navigation app for a food night market. </h4>
-    <h4 class="bio">My roles: </h4>
-    <div class="row greeting">
-      <div class="col-md-4 tasks">
-        <h5><span style="font-weight: 100;">Ideation</span></h5>
-        <img class="task-icon" src="images/icons/ideation.png" alt="interview icon">
-      </div>
-      <div class="col-md-4 tasks">
-        <h5><span style="font-weight: 100;">Prototyping</span></h5>
-        <img class="task-icon" src="images/icons/prototyping.png" alt="testing icon">
-      </div>
-      <div class="col-md-4 tasks">
-        <h5><span style="font-weight: 100;">Data Analysis</span></h5>
-        <img class="task-icon" src="images/icons/data.png" alt="wireframing icon">
+    <!-- Project Description -->
+    <div class="container description">
+      <div class="text-box">
+        <h3 class="div-title">Project Description</h3>
+        <p>
+          Our group designed two new interaction techniques and compared them with the existing technique to determine
+          which one will be the best at getting the user from spot A to B. We also aimed to discover some usability
+          problems of the AR navigation app through the usability test.
+        </p>
       </div>
     </div>
 
-  </div>
-
-  <!-- Project Description -->
-  <div class="container description">
-    <div class="text-box">
-      <h3 class="div-title">Project Description</h3>
-      <p>Our group designed two new interaction techniques
-        and compared them with the existing technique to determine which one will
-        be the best at getting the user from spot A to B. We also aimed to discover some
-        usability problems of the AR navigation app through the usability test.</p>
-    </div>
-
-  </div>
-
-
-  <!-- AR Prototypes -->
-  <div class="container AR-prototypes">
-    <div class="text-box">
-      <h3 class="div-title">AR Prototypes</h3>
-    </div>
-
-    <div class="row AR-video">
-      <div class="col-md-6">
-        <iframe max-width="300" height="650" src="https://www.youtube.com/embed/0rNtuPWlu6g" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <h5>Long Line</h5>
-        <p>The device is held by a user. The navigation line is drawn
-          from the user’s current position to the specified destination and is placed
-          approximately at waist-level. </p>
+    <!-- AR Prototypes -->
+    <div class="container AR-prototypes">
+      <div class="text-box">
+        <h3 class="div-title">AR Prototypes</h3>
       </div>
 
-      <div class="col-md-6">
-        <iframe width="300" height="650" src="https://www.youtube.com/embed/S9yCQtuytVY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <h5>Signpost</h5>
-        <p>The device is held by the user. Signs are positioned at
-          critical junctures along the user’s route and additionally includes start and finish.</p>
-      </div>
-    </div>
-  </div>
+      <div class="row AR-video">
+        <div class="col-md-6">
+          <iframe
+            max-width="300"
+            height="650"
+            src="https://www.youtube.com/embed/0rNtuPWlu6g"
+            frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+          <h5>Long Line</h5>
+          <p>
+            The device is held by a user. The navigation line is drawn from the user’s current position to the specified
+            destination and is placed approximately at waist-level.
+          </p>
+        </div>
 
-
-
-  <!-- Design Process -->
-  <div class="container design-process hideme">
-    <div class="text-box">
-      <h3 class="div-title">Design Process</h3>
-    </div>
-
-
-    <!-- current technique -->
-    <div class="row">
-      <div class="col">
-        <h4 class="div-subtitle">Current Technique</h4>
+        <div class="col-md-6">
+          <iframe
+            width="300"
+            height="650"
+            src="https://www.youtube.com/embed/S9yCQtuytVY"
+            frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+          <h5>Signpost</h5>
+          <p>
+            The device is held by the user. Signs are positioned at critical junctures along the user’s route and
+            additionally includes start and finish.
+          </p>
+        </div>
       </div>
     </div>
 
-    <div class="row current">
-      <div class="col-md-6">
-        <div class="AR-tech">
+    <!-- Design Process -->
+    <div class="container design-process hideme">
+      <div class="text-box">
+        <h3 class="div-title">Design Process</h3>
+      </div>
+
+      <!-- current technique -->
+      <div class="row">
+        <div class="col">
+          <h4 class="div-subtitle">Current Technique</h4>
+        </div>
+      </div>
+
+      <div class="row current">
+        <div class="col-md-6">
+          <div class="AR-tech">
+            <ul>
+              <li class="text">Local cues</li>
+              <p>
+                The existing technique features local cues which focus primarily on user's next step. The arrows appear
+                sequentially as the user moves around.
+              </p>
+            </ul>
+            <ul>
+              <li class="text">Positioning</li>
+              <p>
+                Arrows are placed at floor-level. Users need to put the hand-held device at a lower position to trigger
+                the visual cue.
+              </p>
+            </ul>
+            <img class="arrows-img" src="images//AR/3D_arrows.png" alt="arrows img" />
+          </div>
+        </div>
+
+        <div class="col-md-6 AR-video">
+          <iframe
+            width="300"
+            height="650"
+            src="https://www.youtube.com/embed/P6i7MXAyKTE"
+            frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+
+      <!-- ideation & modifications -->
+      <div class="row">
+        <div class="col">
+          <h4 class="div-subtitle">Ideation & Modifications</h4>
+        </div>
+      </div>
+
+      <div class="row modifications">
+        <div class="col-md-6">
+          <h6 class="hmw">How might we make the interaction <span class="highlight">effortless</span>?</h6>
           <ul>
-            <li class="text">Local cues</li>
-            <p>The existing technique features local cues which focus primarily on user's next step.
-              The arrows appear sequentially as the user moves around.</p>
+            <li class="text">Static global cues</li>
+            <p>
+              Position of the destination is always available. It provides continuous, trigger-free guidance and is not
+              time-sensitive.
+            </p>
           </ul>
+          <img class="long-line-img" src="images/AR/3D_global.png" alt="global img" />
+        </div>
+
+        <div class="col-md-6">
+          <h6 class="hmw">How might we add more <span class="highlight">discoverability</span> to the app?</h6>
           <ul>
-            <li class="text">Positioning</li>
-            <p>Arrows are placed at floor-level. Users need to put the
-              hand-held device at a lower position to trigger the visual cue. </p>
+            <li class="text">Waist / eye level</li>
+            <p>
+              Visual cues are moved up to eye level to keep the user's head up, which allows the user to pay more
+              attention to surroundings.
+            </p>
           </ul>
-          <img class="arrows-img" src="images//AR/3D_arrows.png" alt="arrows img">
-        </div>
-      </div>
-
-      <div class="col-md-6 AR-video">
-        <iframe width="300" height="650" src="https://www.youtube.com/embed/P6i7MXAyKTE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      </div>
-    </div>
-
-    <!-- ideation & modifications -->
-    <div class="row">
-      <div class="col">
-        <h4 class="div-subtitle">Ideation & Modifications</h4>
-      </div>
-    </div>
-
-    <div class="row modifications">
-      <div class="col-md-6">
-        <h6 class="hmw">How might we make the interaction <span class="highlight">effortless</span>?</h6>
-        <ul>
-          <li class="text">Static global cues</li>
-          <p>Position of the destination is always available. It provides continuous, trigger-free guidance and is not time-sensitive.</p>
-        </ul>
-        <img class="long-line-img " src="images/AR/3D_global.png" alt="global img">
-      </div>
-
-      <div class="col-md-6">
-        <h6 class="hmw">How might we add more <span class="highlight">discoverability</span> to the app?</h6>
-        <ul>
-          <li class="text">Waist / eye level</li>
-          <p>Visual cues are moved up to eye level to keep the user's head up, which allows the user to pay more attention to surroundings.</p>
-        </ul>
-        <img class="waist-img" src="images/AR/3D_waist_level.png" alt="waist level">
-      </div>
-    </div>
-  </div>
-
-  <!-- Evaluation -->
-  <div class="container evaluation hideme">
-    <div class="text-box">
-      <h3 class="div-title">Evaluation</h3>
-    </div>
-
-    <!-- experiment -->
-    <div class="row">
-      <div class="col">
-        <h4 class="div-subtitle">Experiment</h4>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col procedure">
-        <h5>Procedure</h5>
-      </div>
-    </div>
-
-    <div class="row experiment">
-      <div class="col">
-        <div class="procedure">
-          <img src="images/icons/participants.png" alt="participants icon">
-          <p>Between-subjects experiment</p>
-          <p>Three participants</p>
-          <p>Each perform all three interaction techniques in a different order</p>
+          <img class="waist-img" src="images/AR/3D_waist_level.png" alt="waist level" />
         </div>
       </div>
     </div>
 
-    <div class="row">
-      <div class="col criteria">
-        <h5>Success Criteria</h5>
+    <!-- Evaluation -->
+    <div class="container evaluation hideme">
+      <div class="text-box">
+        <h3 class="div-title">Evaluation</h3>
+      </div>
+
+      <!-- experiment -->
+      <div class="row">
+        <div class="col">
+          <h4 class="div-subtitle">Experiment</h4>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col procedure">
+          <h5>Procedure</h5>
+        </div>
+      </div>
+
+      <div class="row experiment">
+        <div class="col">
+          <div class="procedure">
+            <img src="images/icons/participants.png" alt="participants icon" />
+            <p>Between-subjects experiment</p>
+            <p>Three participants</p>
+            <p>Each perform all three interaction techniques in a different order</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col criteria">
+          <h5>Success Criteria</h5>
+        </div>
+      </div>
+
+      <div class="row experiment">
+        <div class="col-md-3">
+          <div class="criteria">
+            <img src="images/icons/effectiveness.png" alt="effectiveness icon" />
+            <h6 class="icon-note">Effectiveness</h6>
+            <p>Ability to complete the task</p>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="criteria">
+            <img src="images/icons/efficiency.png" alt="efficiency icon" />
+            <h6 class="icon-note">Efficiency</h6>
+            <p>Speed at which the user completes the task</p>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="criteria">
+            <img src="images/icons/satisfaction.png" alt="satisfaction icon" />
+            <h6 class="icon-note">Satisfaction</h6>
+            <p>Experience throughout the duration of the task</p>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="criteria">
+            <img src="images/icons/learn.png" alt="learn img" />
+            <h6 class="icon-note">Learnability</h6>
+            <p>Time and effort required by a user to achieve competency</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- results -->
+      <div class="row">
+        <div class="col">
+          <h4 class="div-subtitle">Results</h4>
+        </div>
+      </div>
+
+      <div class="row results">
+        <div class="col-md-4">
+          <div class="result">
+            <ul>
+              <li class="text">Technique 1. Arrows</li>
+              <p>Difficulty noticing the navigational cues</p>
+              <p>Overwhelmed cognitive capacity</p>
+              <p>Limited global knowledge of the environment</p>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="result">
+            <ul>
+              <li class="text">Technique 2. Long Line</li>
+              <p>Lessened cognitive load</p>
+              <p>Instant, concise understanding of environment</p>
+              <p>Direct, unambiguous and effective</p>
+            </ul>
+            <img class="trophy-icon" src="images/icons/trophy.png" alt="trophy" />
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="result">
+            <ul>
+              <li class="text">Technique 3. Signpost</li>
+              <p>Blocked field of vision</p>
+              <p>Insufficient amount of information</p>
+              <p>Lack of progress tracking</p>
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
 
-    <div class="row experiment">
-      <div class="col-md-3">
-        <div class="criteria">
-          <img src="images/icons/effectiveness.png" alt="effectiveness icon">
-          <h6 class="icon-note">Effectiveness</h6>
-          <p>Ability to complete the task</p>
+    <div class="container reflection hideme">
+      <div class="text-box">
+        <h3 class="div-title">Reflection</h3>
+        <p>
+          This experiment would most ideally be conducted as a between-subjects experiment to avoid learning effects.
+          But due to the outbreak of COVID-19, only one participant was recruited. The user spent significantly less
+          time completing the last task than the first. It cannot be known with any certainty if this is due to the
+          user’s familiarity with the AR environment (learning effects) or the efficacy of the navigation technique.
+        </p>
 
-        </div>
-      </div>
+        <p>
+          Another shortcoming of this experiment is its low external validity —though a night market was simulated in
+          the AR app, it ultimately bears little resemblance to an actual night market. Stimulus like noises, lighting,
+          various physical obstacles, and human interactions were not articulated in this simulation.
+        </p>
 
-      <div class="col-md-3">
-        <div class="criteria">
-          <img src="images/icons/efficiency.png" alt="efficiency icon">
-          <h6 class="icon-note">Efficiency</h6>
-          <p>Speed at which the user completes the task</p>
-        </div>
-      </div>
-
-      <div class="col-md-3">
-        <div class="criteria">
-          <img src="images/icons/satisfaction.png" alt="satisfaction icon">
-          <h6 class="icon-note">Satisfaction</h6>
-          <p>Experience throughout the duration of the task</p>
-        </div>
-      </div>
-
-      <div class="col-md-3">
-        <div class="criteria">
-          <img src="images/icons/learn.png" alt="learn img">
-          <h6 class="icon-note">Learnability</h6>
-          <p>Time and effort required by a user to achieve competency</p>
-        </div>
+        <p>
+          The last shortcoming is the limitation of the prototyping tool, Wiarframe. Same as all the other AR
+          prototyping tools for designers, Wiarframe is still in its early stage, which greatly constrained the
+          complexity of our design.
+        </p>
       </div>
     </div>
-
-    <!-- results -->
-    <div class="row">
-      <div class="col">
-        <h4 class="div-subtitle">Results</h4>
-      </div>
+  </body>
+  <footer>
+    <div>
+      Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from
+      <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
     </div>
-
-    <div class="row results">
-      <div class="col-md-4 ">
-        <div class="result">
-          <ul>
-            <li class="text">Technique 1. Arrows</li>
-            <p>Difficulty noticing the navigational cues</p>
-            <p>Overwhelmed cognitive capacity</p>
-            <p>Limited global knowledge of the environment</p>
-          </ul>
-        </div>
-      </div>
-
-      <div class="col-md-4">
-        <div class="result">
-          <ul>
-            <li class="text">Technique 2. Long Line </li>
-            <p>Lessened cognitive load</p>
-            <p>Instant, concise understanding of environment</p>
-            <p>Direct, unambiguous and effective</p>
-          </ul>
-          <img class="trophy-icon" src="images/icons/trophy.png" alt="trophy">
-        </div>
-      </div>
-
-      <div class="col-md-4">
-        <div class="result">
-          <ul>
-            <li class="text">Technique 3. Signpost </li>
-            <p>Blocked field of vision</p>
-            <p>Insufficient amount of information</p>
-            <p>Lack of progress tracking</p>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="container reflection hideme">
-    <div class="text-box">
-      <h3 class="div-title">Reflection</h3>
-      <p>This experiment would most ideally be conducted as a between-subjects
-        experiment to avoid learning effects. But due to the outbreak of COVID-19,
-        only one participant was recruited. The user spent significantly less time completing the last task than the first. It cannot be known with any certainty if this
-        is due to the user’s familiarity with the AR environment (learning effects) or the efficacy of the navigation technique.</p>
-
-      <p>Another shortcoming of this experiment is its low external validity
-        —though a night market was simulated in the AR app, it ultimately bears little resemblance
-        to an actual night market. Stimulus like noises, lighting, various physical obstacles,
-        and human interactions were not articulated in this simulation.</p>
-
-      <p>The last shortcoming is the limitation of the prototyping tool, Wiarframe.
-        Same as all the other AR prototyping tools for designers, Wiarframe is still in its early stage, which greatly constrained the complexity of our design.</p>
-    </div>
-
-  </div>
-
-
-</body>
-<footer>
-  <div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>© Jianchen Zhu 2020
-</footer>
-
+    © Jianchen Zhu 2020
+  </footer>
 </html>

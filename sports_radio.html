@@ -1,243 +1,275 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-180622107-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-<head>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-180622107-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+      gtag("config", "UA-180622107-1");
+    </script>
 
-  gtag('config', 'UA-180622107-1');
-</script>
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <title>Sports Radio</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="icon" href="images/favicon.ico" />
 
-  <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <title>Sports Radio</title>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link rel="stylesheet" href="css/styles.css">
-  <link rel="icon" href="images/favicon.ico">
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+  </head>
 
-  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-</head>
+  <body>
+    <!-- Nav bar -->
+    <div class="container-fluid navigation">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+          <a class="navbar-brand" href="index.html">Jianchen Zhu</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  Projects
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="snaptravel.html">Snaptravel</a>
+                  <a class="dropdown-item" href="chef.html">Chef</a>
+                  <a class="dropdown-item" href="neighbourhood_sports.html">Neighbourhood Sports</a>
+                  <a class="dropdown-item" href="ticket_faster.html">Ticket Faster</a>
+                  <a class="dropdown-item" href="sports_radio.html">Sports Radio</a>
+                  <a class="dropdown-item" href="AR.html">AR navigation</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
 
-<body>
-  <!-- Nav bar -->
-  <div class="container-fluid navigation">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <div class="container">
-        <a class="navbar-brand" href="index.html">Jianchen Zhu</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Projects
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="snaptravel.html">SnapTravel</a>
-                <a class="dropdown-item" href="SOO.html">Special Olympics Ontario</a>
-                <a class="dropdown-item" href="chef.html">Chef</a>
-                <a class="dropdown-item" href="neighbourhood_sports.html">Neighbourhood Sports</a>
-                <a class="dropdown-item" href="ticket_faster.html">Ticket Faster</a>
-                <a class="dropdown-item" href="sports_radio.html">Sports Radio</a>
-                <a class="dropdown-item" href="AR.html">AR navigation</a>
-              </div>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="about.html">About</a>
-            </li>
+    <!-- Intro division -->
+    <div class="container intro">
+      <h2 class="greeting">Sports Radio</h2>
+      <h4 class="bio">
+        The objective of this design exercise is to create a <span class="highlight">user interface</span> for an Apple
+        CarPlay app.
+      </h4>
+    </div>
+
+    <!-- Design Rationales -->
+    <div class="container rationales">
+      <div class="text-box">
+        <img class="car-gif" src="images/gif/Car_UI_animation.gif" alt=" car UI gif" />
+        <h3 class="div-title">Design Rationales</h3>
+        <p>
+          A CarPlay app must be safe to use while driving. Its UI must be concise and clear without creating
+          distractions.
+        </p>
+        <p>
+          Sports Radio is an app for sports lovers on the road. Sometimes they may not have time to enjoy live games
+          when they are driving and watching the live stream on mobile phones while driving is distractive and extremely
+          dangerous.
+        </p>
+        <p>
+          Sports Radio offers them an audio version live stream of the games that they don’t want to miss. This app
+          includes all kinds of sports, and the user can follow their favourite teams.
+        </p>
+        <p>When no live game is going on, the user could also LISTEN to news about their favourite teams or leagues.</p>
+      </div>
+    </div>
+
+    <!-- Midfi wireframe -->
+    <div class="container mid-fi">
+      <div class="text-box">
+        <h3 class="div-title">Mid-Fi Wireframe</h3>
+      </div>
+
+      <div class="row radio-mid-fi">
+        <div class="col-md-5">
+          <h4 class="div-subtitle">Overall Structure</h4>
+          <ul>
+            <li class="text">Home screen</li>
+            <p>
+              In this “Leagues” tab view, different league logos are shown as buttons. Under “My Teams” tab, there will
+              be a list of teams that the users created on the mobile phone version of this app. “Trending” tab will
+              include important matches that are being broadcast.
+            </p>
           </ul>
         </div>
-      </div>
-    </nav>
-  </div>
 
-  <!-- Intro division -->
-  <div class="container intro">
-    <h2 class="greeting">Sports Radio</h2>
-    <h4 class="bio">The objective of this design exercise is to create a <span class="highlight">user
-        interface</span> for an Apple CarPlay app.</h4>
-  </div>
-
-  <!-- Design Rationales -->
-  <div class="container rationales">
-    <div class="text-box">
-      <img class="car-gif" src="images/gif/Car_UI_animation.gif" alt=" car UI gif">
-      <h3 class="div-title">Design Rationales</h3>
-      <p>A CarPlay app must be safe to use while driving. Its UI must
-        be concise and clear without creating distractions. </p>
-      <p>Sports Radio is an app for sports lovers on the road.
-        Sometimes they may not have time to enjoy live games when they are driving
-        and watching the live stream on mobile phones while driving is distractive
-        and extremely dangerous.</p>
-      <p>Sports Radio offers them an audio version live stream of the
-        games that they don’t want to miss. This app includes all kinds of sports,
-        and the user can follow their favourite teams.</p>
-      <p>When no live game is going on, the user could also LISTEN to
-        news about their favourite teams or leagues.</p>
-    </div>
-
-  </div>
-
-
-  <!-- Midfi wireframe -->
-  <div class="container mid-fi">
-    <div class="text-box">
-      <h3 class="div-title">Mid-Fi Wireframe</h3>
-    </div>
-
-
-    <div class="row radio-mid-fi">
-      <div class="col-md-5 ">
-        <h4 class="div-subtitle">Overall Structure</h4>
-        <ul>
-          <li class="text">Home screen</li>
-          <p>In this “Leagues” tab view, different league logos are
-            shown as buttons. Under “My Teams” tab, there will be a list of teams
-            that the users created on the mobile phone version of this app. “Trending”
-            tab will include important matches that are being broadcast.</p>
-        </ul>
+        <div class="col-md-7">
+          <img class="midfi-car" src="images/radio/radio_mid_1.png" alt="radio midfi img 1" />
+        </div>
       </div>
 
-      <div class="col-md-7 ">
-        <img class="midfi-car" src="images/radio/radio_mid_1.png" alt="radio midfi img 1">
+      <div class="row radio-mid-fi">
+        <div class="col-md-5">
+          <ul>
+            <li class="text">Game list</li>
+            <p>
+              Game list view, “Live Games” tab is active. Users can also tap on the “News” tab to see the list of news
+              or the "Programs" tab to listen to the sports commentating programs they like.
+            </p>
+          </ul>
+        </div>
+
+        <div class="col-md-7">
+          <img class="midfi-car" src="images/radio/radio_mid_2.png" alt="radio midfi img 2" />
+        </div>
+      </div>
+
+      <div class="row radio-mid-fi">
+        <div class="col-md-5">
+          <ul>
+            <li class="text">Live game</li>
+            <p>Live game screen. Team logos will be shown.</p>
+          </ul>
+        </div>
+
+        <div class="col-md-7">
+          <img class="midfi-car" src="images/radio/radio_mid_3.png" alt="radio midfi img 3" />
+        </div>
       </div>
     </div>
 
-    <div class="row radio-mid-fi">
-      <div class="col-md-5 ">
-        <ul>
-          <li class="text">Game list</li>
-          <p>Game list view, “Live Games” tab is active. Users can also
-            tap on the “News” tab to see the list of news or the "Programs" tab to
-            listen to the sports commentating programs they like.</p>
-        </ul>
+    <!-- Highfi-mockup -->
+    <div class="container high-fi">
+      <div class="text-box">
+        <h3 class="div-title">High-Fi Mockup</h3>
       </div>
 
-      <div class="col-md-7 ">
-        <img class="midfi-car" src="images/radio/radio_mid_2.png" alt="radio midfi img 2">
-      </div>
-    </div>
+      <div class="row radio-high-fi">
+        <div class="col-md-5">
+          <h4 class="div-subtitle">Overall Structure</h4>
+          <ul>
+            <li class="text">CarPlay home page</li>
+          </ul>
+        </div>
 
-    <div class="row radio-mid-fi">
-      <div class="col-md-5 ">
-        <ul>
-          <li class="text">Live game</li>
-          <p>Live game screen. Team logos will be shown.</p>
-        </ul>
-      </div>
-
-      <div class="col-md-7 ">
-        <img class="midfi-car" src="images/radio/radio_mid_3.png" alt="radio midfi img 3">
-      </div>
-    </div>
-
-  </div>
-
-
-
-  <!-- Highfi-mockup -->
-  <div class="container high-fi">
-    <div class="text-box">
-      <h3 class="div-title">High-Fi Mockup</h3>
-    </div>
-
-
-    <div class="row radio-high-fi">
-      <div class="col-md-5 ">
-        <h4 class="div-subtitle">Overall Structure</h4>
-        <ul>
-          <li class="text">CarPlay home page</li>
-        </ul>
+        <div class="col-md-7">
+          <img class="midfi-car" src="images/radio/radio_high_1.png" alt="radio highfi img 1" />
+        </div>
       </div>
 
-      <div class="col-md-7 ">
-        <img class="midfi-car" src="images/radio/radio_high_1.png" alt="radio highfi img 1">
-      </div>
-    </div>
+      <div class="row radio-high-fi">
+        <div class="col-md-5">
+          <ul>
+            <li class="text">Home screen</li>
+            <p>Logos of different sports leagues are added to the buttons.</p>
+          </ul>
+        </div>
 
-    <div class="row radio-high-fi">
-      <div class="col-md-5 ">
-        <ul>
-          <li class="text">Home screen</li>
-          <p>Logos of different sports leagues are added to the buttons.</p>
-        </ul>
-      </div>
-
-      <div class="col-md-7 ">
-        <img class="midfi-car" src="images/radio/radio_high_2.png" alt="radio highfi img 2">
-      </div>
-    </div>
-
-    <div class="row radio-high-fi">
-      <div class="col-md-5 ">
-        <ul>
-          <li class="text">Game list</li>
-          <p>Since all games listed here are live, the scheduled date
-            and game time in the mid-fi wireframe is removed. Instead, the list will show the current state.</p>
-        </ul>
+        <div class="col-md-7">
+          <img class="midfi-car" src="images/radio/radio_high_2.png" alt="radio highfi img 2" />
+        </div>
       </div>
 
-      <div class="col-md-7 ">
-        <img class="midfi-car" src="images/radio/radio_high_3.png" alt="radio highfi img 3">
-      </div>
-    </div>
+      <div class="row radio-high-fi">
+        <div class="col-md-5">
+          <ul>
+            <li class="text">Game list</li>
+            <p>
+              Since all games listed here are live, the scheduled date and game time in the mid-fi wireframe is removed.
+              Instead, the list will show the current state.
+            </p>
+          </ul>
+        </div>
 
-    <div class="row radio-high-fi">
-      <div class="col-md-5 ">
-        <ul>
-          <li class="text">Live game</li>
-          <p>Team logos, names and basic game information are provided.
-            The background is a blurred picture of the home team’s court, indicating the location of the game.</p>
-        </ul>
-      </div>
-
-      <div class="col-md-7 ">
-        <img class="midfi-car" src="images/radio/radio_high_4.png" alt="radio highfi img 4">
-      </div>
-    </div>
-
-
-
-    <div class="row radio-high-fi">
-      <div class="col-md-5 ">
-        <h4 class="div-subtitle">Alternative inputs</h4>
-        <ul>
-          <li class="text">Control Knob</li>
-          <p>Not all cars' infotainment systems​ are equipped with touch
-            screens. Some of them still rely on physical gadgets as input devices.
-            The UI of this CarPlay app also has to accommodate such needs. Here is
-            a demonstration showing how it works when the user turns the knob clockwise.</p>
-        </ul>
+        <div class="col-md-7">
+          <img class="midfi-car" src="images/radio/radio_high_3.png" alt="radio highfi img 3" />
+        </div>
       </div>
 
-      <div class="col-md-7 ">
-        <img class="midfi-car" src="images/radio/radio_knob.png" alt="radio highfi knob">
+      <div class="row radio-high-fi">
+        <div class="col-md-5">
+          <ul>
+            <li class="text">Live game</li>
+            <p>
+              Team logos, names and basic game information are provided. The background is a blurred picture of the home
+              team’s court, indicating the location of the game.
+            </p>
+          </ul>
+        </div>
+
+        <div class="col-md-7">
+          <img class="midfi-car" src="images/radio/radio_high_4.png" alt="radio highfi img 4" />
+        </div>
+      </div>
+
+      <div class="row radio-high-fi">
+        <div class="col-md-5">
+          <h4 class="div-subtitle">Alternative inputs</h4>
+          <ul>
+            <li class="text">Control Knob</li>
+            <p>
+              Not all cars' infotainment systems​ are equipped with touch screens. Some of them still rely on physical
+              gadgets as input devices. The UI of this CarPlay app also has to accommodate such needs. Here is a
+              demonstration showing how it works when the user turns the knob clockwise.
+            </p>
+          </ul>
+        </div>
+
+        <div class="col-md-7">
+          <img class="midfi-car" src="images/radio/radio_knob.png" alt="radio highfi knob" />
+        </div>
+      </div>
+
+      <div class="row radio-high-fi">
+        <div class="">
+          <h4 class="div-subtitle">Storyboard</h4>
+          <p>Click the image to see the HD version.</p>
+        </div>
+      </div>
+
+      <div class="row radio-high-fi">
+        <a href="pdf/sports_radio_storyboard.pdf" target="_blank"
+          ><img class="radio-storyboard" src="images/radio/radio_story.png" alt="radio highfi storyboard"
+        /></a>
       </div>
     </div>
-
-
-    <div class="row radio-high-fi">
-      <div class="">
-        <h4 class="div-subtitle">Storyboard</h4>
-        <p>Click the image to see the HD version.</p>
-      </div>
-    </div>
-
-    <div class="row radio-high-fi">
-      <a href="pdf/sports_radio_storyboard.pdf" target="_blank"><img class="radio-storyboard" src="images/radio/radio_story.png" alt="radio highfi storyboard"></a>
-    </div>
-  </div>
-
-
-
-
-
-</body>
-<footer>© Jianchen Zhu 2020</footer>
+  </body>
+  <footer>© Jianchen Zhu 2020</footer>
 </html>

@@ -1,273 +1,322 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-180622107-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-<head>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-180622107-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+      gtag("config", "UA-180622107-1");
+    </script>
 
-  gtag('config', 'UA-180622107-1');
-</script>
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <title>Chef</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="icon" href="images/favicon.ico" />
 
-  <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <title>Chef</title>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link rel="stylesheet" href="css/styles.css">
-  <link rel="icon" href="images/favicon.ico">
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="index.js" charset="utf-8"></script>
+  </head>
 
-  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  <script src="index.js" charset="utf-8"></script>
-</head>
+  <body>
+    <!-- Nav bar -->
+    <div class="container-fluid navigation">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+          <a class="navbar-brand" href="index.html">Jianchen Zhu</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  Projects
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="snaptravel.html">Snaptravel</a>
+                  <a class="dropdown-item" href="chef.html">Chef</a>
+                  <a class="dropdown-item" href="neighbourhood_sports.html">Neighbourhood Sports</a>
+                  <a class="dropdown-item" href="ticket_faster.html">Ticket Faster</a>
+                  <a class="dropdown-item" href="sports_radio.html">Sports Radio</a>
+                  <a class="dropdown-item" href="AR.html">AR navigation</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
 
-<body>
-  <!-- Nav bar -->
-  <div class="container-fluid navigation">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <div class="container">
-        <a class="navbar-brand" href="index.html">Jianchen Zhu</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Projects
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="snaptravel.html">SnapTravel</a>
-                <a class="dropdown-item" href="SOO.html">Special Olympics Ontario</a>
-                <a class="dropdown-item" href="chef.html">Chef</a>
-                <a class="dropdown-item" href="neighbourhood_sports.html">Neighbourhood Sports</a>
-                <a class="dropdown-item" href="ticket_faster.html">Ticket Faster</a>
-                <a class="dropdown-item" href="sports_radio.html">Sports Radio</a>
-                <a class="dropdown-item" href="AR.html">AR navigation</a>
-              </div>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="about.html">About</a>
-            </li>
+    <!-- Intro division -->
+    <div class="container intro">
+      <h2 class="greeting">Chef</h2>
+      <h4 class="bio">
+        The objective of this design exercise is to use lean UX principles to design the
+        <span class="highlight">user interface</span> of an Android mobile application and a Wear OS application.
+      </h4>
+    </div>
+
+    <!-- showcase -->
+    <div class="container showcase">
+      <div class="row">
+        <div class="col">
+          <img class="chef-mockup" src="images/chef/chef_mockup.png" alt="chef mockup" />
+        </div>
+      </div>
+    </div>
+
+    <!-- Design Rationales -->
+    <div class="container rationales">
+      <div class="text-box">
+        <h3 class="div-title">Design Rationales</h3>
+        <p>
+          As a cooking companion App, Chef should provide the user with some basic features such as step-by-step recipes
+          and timer. Also, it is important to add some discoverability to this app by offering users recipe
+          recommendations and a searching feature to find recipes according to their liking.
+        </p>
+      </div>
+    </div>
+
+    <!-- Midfi Wireframe -->
+    <div class="container mid-fi hideme">
+      <div class="text-box">
+        <h3 class="div-title">Mid-Fi Wireframe</h3>
+      </div>
+
+      <div class="row chef-mid-fi">
+        <div class="col-md-4">
+          <h4 class="div-subtitle">Overall Structure</h4>
+          <ul>
+            <li class="text">Bottom navigation bar</li>
+            <p>Organizes different pages and allows the user to navigate inside the app.</p>
+
+            <li class="text">Home page</li>
+            <p>
+              Contains recipe recommendations and the user's browsing history. The page layout gives the user an
+              affordance to scroll down and swipe to the left to explore more content.
+            </p>
+
+            <li class="text">Search page</li>
+            <p>
+              Placed on the top of the screen where the user can type in the keywords to search a specific recipe. Also,
+              the user can tap on any block below to open a category and view the recipes that he or she is interested
+              in.
+            </p>
           </ul>
         </div>
-      </div>
-    </nav>
-  </div>
 
-  <!-- Intro division -->
-  <div class="container intro">
-    <h2 class="greeting">Chef</h2>
-    <h4 class="bio">The objective of this design exercise is to use lean UX
-      principles to design the <span class="highlight">user interface</span> of an Android mobile application
-      and a Wear OS application.</h4>
-  </div>
-
-  <!-- showcase -->
-  <div class="container showcase">
-    <div class="row">
-      <div class="col">
-        <img class="chef-mockup" src="images/chef/chef_mockup.png" alt="chef mockup">
-      </div>
-    </div>
-  </div>
-
-
-  <!-- Design Rationales -->
-  <div class="container rationales">
-    <div class="text-box">
-      <h3 class="div-title">Design Rationales</h3>
-      <p>As a cooking companion App, Chef should provide the user with some
-        basic features such as step-by-step recipes and timer. Also, it is important to
-        add some discoverability to this app by offering users recipe recommendations
-        and a searching feature to find recipes according to their liking.</p>
-    </div>
-
-  </div>
-
-
-  <!-- Midfi Wireframe -->
-  <div class="container mid-fi hideme">
-    <div class="text-box">
-      <h3 class="div-title">Mid-Fi Wireframe</h3>
-    </div>
-
-    <div class="row chef-mid-fi">
-      <div class="col-md-4 ">
-        <h4 class="div-subtitle">Overall Structure</h4>
-        <ul>
-          <li class="text">Bottom navigation bar</li>
-          <p>Organizes different pages and allows the user to navigate inside the app.</p>
-
-          <li class="text">Home page</li>
-          <p>Contains recipe recommendations and the user's browsing history.
-            The page layout gives the user an affordance to scroll down and swipe to the
-            left to explore more content.</p>
-
-          <li class="text">Search page</li>
-          <p>Placed on the top of the screen where the user can type in
-            the keywords to search a specific recipe. Also, the user can tap on any
-            block below to open a category and view the recipes that he or she is interested in.</p>
-        </ul>
+        <div class="col-md-8">
+          <img class="midfi-mobile" src="images/chef/home.png" alt="midfi homepage" />
+          <img class="midfi-mobile" src="images/chef/search.png" alt="midfi search" />
+        </div>
       </div>
 
-      <div class="col-md-8 ">
-        <img class="midfi-mobile" src="images/chef/home.png" alt="midfi homepage">
-        <img class="midfi-mobile" src="images/chef/search.png" alt="midfi search">
-      </div>
-    </div>
+      <div class="row chef-mid-fi">
+        <div class="col-md-4">
+          <ul>
+            <li class="text">Favourite list</li>
+            <p>To save the favourite recipes.</p>
 
-    <div class="row chef-mid-fi">
-      <div class="col-md-4 ">
-        <ul>
-          <li class="text">Favourite list</li>
-          <p>To save the favourite recipes.</p>
+            <li class="text">Shopping list</li>
+            <p>A checklist of essential ingredients so that they can be fully prepared before cooking.</p>
+          </ul>
+        </div>
 
-          <li class="text">Shopping list</li>
-          <p>A checklist of essential ingredients so that they can be fully prepared before cooking.</p>
-        </ul>
-      </div>
-
-      <div class="col-md-8 ">
-        <img class="midfi-mobile" src="images/chef/favourite.png" alt="midfi favourite">
-        <img class="midfi-mobile" src="images/chef/shopping_list.png" alt="midfi shopping list">
-      </div>
-    </div>
-
-    <div class="row chef-mid-fi">
-      <div class="col-md-4 ">
-        <h4 class="div-subtitle">Recipe Page</h4>
-        <ul>
-          <li class="text">Introduction</li>
-          <p>Including the name, type of cuisine and ​a gallery of the recipe.</p>
-
-          <li class="text">Time and nutrition information</li>
-          <p>More detailed information for the user.</p>
-
-          <li class="text">Ingredient list</li>
-          <p>The user can tap on the button on the top right corner to create a shopping list for the ingredients.</p>
-        </ul>
+        <div class="col-md-8">
+          <img class="midfi-mobile" src="images/chef/favourite.png" alt="midfi favourite" />
+          <img class="midfi-mobile" src="images/chef/shopping_list.png" alt="midfi shopping list" />
+        </div>
       </div>
 
-      <div class="col-md-8 ">
-        <img class="midfi-mobile-lg" src="images/chef/recipe_page.png" alt="midfi recipe page">
-      </div>
-    </div>
+      <div class="row chef-mid-fi">
+        <div class="col-md-4">
+          <h4 class="div-subtitle">Recipe Page</h4>
+          <ul>
+            <li class="text">Introduction</li>
+            <p>Including the name, type of cuisine and ​a gallery of the recipe.</p>
 
-    <div class="row chef-mid-fi">
-      <div class="col-md-4 ">
-        <h4 class="div-subtitle">Steps Page</h4>
-        <ul>
-          <li class="text">Timeline</li>
-          <p>Located on the top of the screen, indicating the current step.
-            Also serves as an alternative to swiping gestures. Users can tap on the dot to skip multiple steps at a time.</p>
+            <li class="text">Time and nutrition information</li>
+            <p>More detailed information for the user.</p>
 
-          <li class="text">Photo/Video and text instructions</li>
-          <p>Depending on the complexity of the recipe, the content maker can choose to put a video or a simple photo.</p>
+            <li class="text">Ingredient list</li>
+            <p>The user can tap on the button on the top right corner to create a shopping list for the ingredients.</p>
+          </ul>
+        </div>
 
-          <li class="text">Timer</li>
-          <p>Users can tap on the button to set a timer. Once the timer is set, the countdown clock will replace the timer button.</p>
-        </ul>
-      </div>
-
-      <div class="col-md-8 ">
-        <img class="midfi-mobile" src="images/chef/step1.png" alt="midfi step page">
-        <img class="midfi-mobile" src="images/chef/timer_set.png" alt="midfi timer page">
-      </div>
-    </div>
-
-    <div class="row chef-mid-fi">
-      <div class="col-md-4 ">
-        <h4 class="div-subtitle">Watch UI</h4>
-        <ul>
-          <li class="text">Navigation</li>
-          <p>The navigation bar in the mobile UI is adjusted to accommodate the watch screen.</p>
-
-          <li class="text">Text instructions</li>
-          <p>Users can only see text instructions on their watches due to the screen size restriction.</p>
-
-          <li class="text">Timer</li>
-          <p>Same as the mobile UI, users can tap on the button to set a timer. Once the timer is set, the countdown clock will replace the timer button.</p>
-        </ul>
+        <div class="col-md-8">
+          <img class="midfi-mobile-lg" src="images/chef/recipe_page.png" alt="midfi recipe page" />
+        </div>
       </div>
 
-      <div class="col-md-8 ">
-        <div class="watch-imgs">
-          <img class="midfi-watch" src="images/chef/watch_fav_list.png" alt="midfi fav page">
-          <img class="midfi-watch" src="images/chef/watch_menu.png" alt="midfi menu page">
-          <img class="midfi-watch" src="images/chef/watch_timer.png" alt="midfi timer page">
-          <img class="midfi-watch" src="images/chef/watch_timer_set.png" alt="midfi timer set page">
+      <div class="row chef-mid-fi">
+        <div class="col-md-4">
+          <h4 class="div-subtitle">Steps Page</h4>
+          <ul>
+            <li class="text">Timeline</li>
+            <p>
+              Located on the top of the screen, indicating the current step. Also serves as an alternative to swiping
+              gestures. Users can tap on the dot to skip multiple steps at a time.
+            </p>
+
+            <li class="text">Photo/Video and text instructions</li>
+            <p>
+              Depending on the complexity of the recipe, the content maker can choose to put a video or a simple photo.
+            </p>
+
+            <li class="text">Timer</li>
+            <p>
+              Users can tap on the button to set a timer. Once the timer is set, the countdown clock will replace the
+              timer button.
+            </p>
+          </ul>
+        </div>
+
+        <div class="col-md-8">
+          <img class="midfi-mobile" src="images/chef/step1.png" alt="midfi step page" />
+          <img class="midfi-mobile" src="images/chef/timer_set.png" alt="midfi timer page" />
+        </div>
+      </div>
+
+      <div class="row chef-mid-fi">
+        <div class="col-md-4">
+          <h4 class="div-subtitle">Watch UI</h4>
+          <ul>
+            <li class="text">Navigation</li>
+            <p>The navigation bar in the mobile UI is adjusted to accommodate the watch screen.</p>
+
+            <li class="text">Text instructions</li>
+            <p>Users can only see text instructions on their watches due to the screen size restriction.</p>
+
+            <li class="text">Timer</li>
+            <p>
+              Same as the mobile UI, users can tap on the button to set a timer. Once the timer is set, the countdown
+              clock will replace the timer button.
+            </p>
+          </ul>
+        </div>
+
+        <div class="col-md-8">
+          <div class="watch-imgs">
+            <img class="midfi-watch" src="images/chef/watch_fav_list.png" alt="midfi fav page" />
+            <img class="midfi-watch" src="images/chef/watch_menu.png" alt="midfi menu page" />
+            <img class="midfi-watch" src="images/chef/watch_timer.png" alt="midfi timer page" />
+            <img class="midfi-watch" src="images/chef/watch_timer_set.png" alt="midfi timer set page" />
+          </div>
         </div>
       </div>
     </div>
-  </div>
 
+    <!-- High-fi Wireframe -->
+    <div class="container high-fi hideme">
+      <div class="text-box">
+        <h3 class="div-title">High-Fi Prototypes</h3>
+      </div>
 
+      <div class="row chef-high-fi">
+        <div class="col-md-4">
+          <h4 class="div-subtitle">Added Elements</h4>
+          <ul>
+            <li class="text">Colours & Interactions</li>
+            <p>High-fi prototypes are created following Material Design guidelines.</p>
+          </ul>
+        </div>
 
-  <!-- High-fi Wireframe -->
-  <div class="container high-fi hideme">
-    <div class="text-box">
-      <h3 class="div-title">High-Fi Prototypes</h3>
+        <div class="col-md-8">
+          <img class="chef-gif" src="images/gif/chef_proto_1.gif" alt="chef proto 1" />
+        </div>
+      </div>
+
+      <div class="row chef-high-fi">
+        <div class="col-md-4">
+          <ul>
+            <li class="text">Enhanced feedback</li>
+            <p>
+              A pop-up that indicates the new shopping list is created. A blue dot on the shopping list icon in the
+              bottom navigation bar to guide the user to the newly created shopping list.
+            </p>
+          </ul>
+        </div>
+
+        <div class="col-md-8">
+          <img class="chef-gif" src="images/gif/chef_proto_2.gif" alt="chef proto 2" />
+        </div>
+      </div>
+
+      <div class="row chef-high-fi">
+        <div class="col-md-4">
+          <ul>
+            <li class="text">Dimmed background</li>
+            <p>
+              The dimmed background creates a stronger contrast which allows the user to focus on the current task such
+              as setting a timer.
+            </p>
+          </ul>
+        </div>
+
+        <div class="col-md-8">
+          <img class="highfi-mobile-lg" src="images/chef/dimmed.png" alt="highfi time setting img" />
+        </div>
+      </div>
+
+      <div class="row chef-high-fi">
+        <div class="">
+          <h4 class="div-subtitle">Storyboard</h4>
+          <p>Click the image to see the HD version</p>
+        </div>
+      </div>
+
+      <div class="row chef-high-fi">
+        <a
+          href="https://www.figma.com/proto/QRv2Adnw4nGQ2jFweyUihMjQ/Cooking-companion-Hi-Fi?node-id=153%3A0&scaling=min-zoom"
+          target="_blank"
+          ><img class="chef-storyboard" src="images/chef/chefstoryboard.png" alt="chef storyboard img"
+        /></a>
+      </div>
     </div>
-
-    <div class="row chef-high-fi">
-      <div class="col-md-4 ">
-        <h4 class="div-subtitle">Added Elements</h4>
-        <ul>
-          <li class="text">Colours & Interactions</li>
-          <p>High-fi prototypes are created following Material Design guidelines. </p>
-        </ul>
-      </div>
-
-      <div class="col-md-8 ">
-        <img class="chef-gif" src="images/gif/chef_proto_1.gif" alt="chef proto 1">
-      </div>
-    </div>
-
-    <div class="row chef-high-fi">
-      <div class="col-md-4 ">
-        <ul>
-          <li class="text">Enhanced feedback</li>
-          <p>A pop-up that indicates the new shopping list is created. A blue dot on the shopping list icon in the bottom navigation bar to guide the user to the newly created shopping list.</p>
-        </ul>
-      </div>
-
-      <div class="col-md-8 ">
-        <img class="chef-gif" src="images/gif/chef_proto_2.gif" alt="chef proto 2">
-      </div>
-    </div>
-
-    <div class="row chef-high-fi">
-      <div class="col-md-4 ">
-        <ul>
-          <li class="text">Dimmed background</li>
-          <p>The dimmed background creates a stronger contrast which allows the user to focus on the current task such as setting a timer.</p>
-        </ul>
-      </div>
-
-      <div class="col-md-8 ">
-        <img class="highfi-mobile-lg" src="images/chef/dimmed.png" alt="highfi time setting img">
-      </div>
-    </div>
-
-
-    <div class="row chef-high-fi">
-      <div class="">
-        <h4 class="div-subtitle">Storyboard</h4>
-        <p>Click the image to see the HD version</p>
-      </div>
-    </div>
-
-    <div class="row chef-high-fi">
-      <a href="https://www.figma.com/proto/QRv2Adnw4nGQ2jFweyUihMjQ/Cooking-companion-Hi-Fi?node-id=153%3A0&scaling=min-zoom" target="_blank"><img class="chef-storyboard" src="images/chef/chefstoryboard.png" alt="chef storyboard img"></a>
-    </div>
-  </div>
-
-
-</body>
-<footer>© Jianchen Zhu 2020</footer>
-
+  </body>
+  <footer>© Jianchen Zhu 2020</footer>
 </html>

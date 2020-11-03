@@ -1,205 +1,191 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-180622107-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-<head>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-180622107-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+      gtag("config", "UA-180622107-1");
+    </script>
 
-  gtag('config', 'UA-180622107-1');
-</script>
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta property="og:title" content="Jianchen Zhu Portfolio" />
+    <meta property="og:image" content="https://www.jianchenzhuuxd.com/images/chef/chef_mockup.png" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:description" content="Jianchen Zhu Portfolio" />
+    <meta property="og:url" content="https://www.jianchenzhuuxd.com/images/chef/chef_mockup.png" />
+    <title>Jianchen Zhu Portfolio</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="icon" href="images/favicon.ico" />
 
-  <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property='og:title' content="Jianchen Zhu Portfolio">
-  <meta property="og:image" content="https://www.jianchenzhuuxd.com/images/chef/chef_mockup.png">
-  <meta property="og:image:type" content="image/png">
-  <meta property='og:description' content="Jianchen Zhu Portfolio">
-  <meta property='og:url' content="https://www.jianchenzhuuxd.com/images/chef/chef_mockup.png">
-  <title>Jianchen Zhu Portfolio</title>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link rel="stylesheet" href="css/styles.css">
-  <link rel="icon" href="images/favicon.ico">
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://kit.fontawesome.com/38f397105f.js" crossorigin="anonymous"></script>
+    <script src="index.js" charset="utf-8"></script>
+  </head>
 
-  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  <script src="https://kit.fontawesome.com/38f397105f.js" crossorigin="anonymous"></script>
-  <script src="index.js" charset="utf-8"></script>
-</head>
-
-<body>
-  <!-- Nav bar -->
-  <div class="container-fluid navigation">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <div class="container">
-        <a class="navbar-brand" href="index.html">Jianchen Zhu</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Projects
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="snaptravel.html">SnapTravel</a>
-                <a class="dropdown-item" href="SOO.html">Special Olympics Ontario</a>
-                <a class="dropdown-item" href="chef.html">Chef</a>
-                <a class="dropdown-item" href="neighbourhood_sports.html">Neighbourhood Sports</a>
-                <a class="dropdown-item" href="ticket_faster.html">Ticket Faster</a>
-                <a class="dropdown-item" href="sports_radio.html">Sports Radio</a>
-                <a class="dropdown-item" href="AR.html">AR navigation</a>
-              </div>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="about.html">About</a>
-            </li>
-          </ul>
+  <body>
+    <!-- Nav bar -->
+    <div class="container-fluid navigation">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+          <a class="navbar-brand" href="index.html">Jianchen Zhu</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  Projects
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="snaptravel.html">Snaptravel</a>
+                  <a class="dropdown-item" href="chef.html">Chef</a>
+                  <a class="dropdown-item" href="neighbourhood_sports.html">Neighbourhood Sports</a>
+                  <a class="dropdown-item" href="ticket_faster.html">Ticket Faster</a>
+                  <a class="dropdown-item" href="sports_radio.html">Sports Radio</a>
+                  <a class="dropdown-item" href="AR.html">AR navigation</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+              </li>
+            </ul>
+          </div>
         </div>
-      </div>
-    </nav>
-  </div>
-
-
-  <!-- Intro division -->
-  <div class="container landing">
-    <h2 class="greeting">Hello, I'm Jianchen.</h2>
-    <h4 class="bio anim-typewriter">Emerging <span class="highlight">user experience designer</span>, enthusiastic about solving problems and creating excellent user experience.</h4>
-
-    <div class="scroll floating">
-      <p>Scroll down to see my projects</p>
-      <i class="fas fa-chevron-circle-down"></i>
+      </nav>
     </div>
 
-  </div>
+    <!-- Intro division -->
+    <div class="container landing">
+      <h2 class="greeting">Hello, I'm Jianchen.</h2>
+      <h4 class="bio anim-typewriter">
+        Emerging <span class="highlight">user experience designer</span>, enthusiastic about solving problems and
+        creating excellent user experience.
+      </h4>
 
-
-  <!-- Projects-->
-
-  <div class="container projects hideme">
-    <!-- row 1 -->
-    <div class="row project-cards">
-      <div class="col-md-6  project-frame">
-        <a class="card-a-tag" href="snaptravel.html">
-          <div class="project-card">
-            <img class="card-img-top" src="images/homepage/snaptravel_logo.png" alt="snaptravel_logo image">
-            <div class="card-body">
-              <h4 class="project-title">SnapTravel</h4>
-              <h4>UX research and design internship</h4>
-              <h6 class="keywords">User Flow Audit</h6>
-              <h6 class="keywords">Data Analysis</h6>
-              <h6 class="keywords">Competitor Reasearch</h6>
-              <h6 class="keywords">Ideation</h6>
-            </div>
-          </div>
-        </a>
-      </div>
-
-      <div class="col-md-6  project-frame">
-        <a class="card-a-tag" href="SOO.html">
-          <div class="project-card">
-            <img class="card-img-top" src="images/homepage/SOO_mac.png" alt="SOO image">
-            <div class="card-body">
-              <h4 class="project-title">Special Olympics Ontario</h4>
-              <h4>Website design project for community partners</h4>
-              <h6 class="keywords">Information Architecture</h6>
-              <h6 class="keywords">User Reasearch</h6>
-              <h6 class="keywords">Usability Testing</h6>
-              <h6 class="keywords">Wireframing</h6>
-            </div>
-          </div>
-        </a>
+      <div class="scroll floating">
+        <p>Scroll down to see my projects</p>
+        <i class="fas fa-chevron-circle-down"></i>
       </div>
     </div>
 
-    <!-- row 2 -->
-    <div class="row project-cards">
-      <div class="col-md-6  project-frame">
-        <a class="card-a-tag" href="chef.html">
-          <div class="project-card">
-            <img class="card-img-top" src="images/homepage/chef.png" alt="chef image">
-            <div class="card-body">
-              <h4 class="project-title">Chef</h4>
-              <h4>Android mobile & Wear OS UI </h4>
-              <h6 class="keywords">Interface Design</h6>
-            </div>
+    <!-- Projects-->
+    <!-- flex container -->
+    <div class="project-cards hideme">
+      <a class="card-a-tag" href="snaptravel.html">
+        <div class="project-card">
+          <div class="card-img" style="background-color: #f36518">
+            <img class="card-img-top" src="images/homepage/snaptravel_logo.png" alt="snaptravel_logo image" />
           </div>
-        </a>
-      </div>
+          <div class="card-body">
+            <h4 class="project-title">Snaptravel</h4>
+            <h6>UX research and design internship</h6>
+          </div>
+        </div>
+      </a>
 
-      <div class="col-md-6  project-frame">
-        <a class="card-a-tag" href="neighbourhood_sports.html">
-          <div class="project-card">
-            <img class="card-img-top" src="images/homepage/neighbourhood.png" alt="neighbourhood image">
-            <div class="card-body">
-              <h4 class="project-title">Neighbourhood Sports</h4>
-              <h4>A simple way to find sport partners locally</h4>
-              <h6 class="keywords">User Research</h6>
-              <h6 class="keywords">Ideation</h6>
-              <h6 class="keywords">Interface Design</h6>
-              <h6 class="keywords">Prototyping</h6>
-            </div>
+      <a class="card-a-tag" href="chef.html">
+        <div class="project-card">
+          <div class="card-img" style="background-color: #daefdf">
+            <img class="card-img-top" src="images/homepage/chef.png" alt="chef image" />
           </div>
-        </a>
-      </div>
+          <div class="card-body">
+            <h4 class="project-title">Chef</h4>
+            <h6>Android mobile & Wear OS UI</h6>
+          </div>
+        </div>
+      </a>
+
+      <a class="card-a-tag" href="neighbourhood_sports.html">
+        <div class="project-card">
+          <div class="card-img" style="background-color: #fdba21">
+            <img class="card-img-top" src="images/homepage/neighbourhood.png" alt="neighbourhood image" />
+          </div>
+          <div class="card-body">
+            <h4 class="project-title">Neighbourhood Sports</h4>
+            <h6>A simple way to find sport partners locally</h6>
+          </div>
+        </div>
+      </a>
+
+      <a class="card-a-tag" href="ticket_faster.html">
+        <div class="project-card">
+          <div class="card-img" style="background-color: #ebcfc3">
+            <img class="card-img-top" src="images/homepage/ticket_faster.png" alt="ticket image" />
+          </div>
+          <div class="card-body">
+            <h4 class="project-title">Ticket Faster</h4>
+            <h6>macOS desktop application UI</h6>
+          </div>
+        </div>
+      </a>
+
+      <a class="card-a-tag" href="sports_radio.html">
+        <div class="project-card">
+          <div class="card-img" style="background-color: #34558b">
+            <img class="card-img-top" src="images/homepage/sports_radio.png" alt="sports radio image" />
+          </div>
+          <div class="card-body">
+            <h4 class="project-title">Sports Radio</h4>
+            <h6>Apple Carplay application UI</h6>
+          </div>
+        </div>
+      </a>
+
+      <a class="card-a-tag" href="AR.html">
+        <div class="project-card">
+          <div class="card-img" style="background-color: #bdc3b9">
+            <img class="card-img-top" src="images/homepage/AR_card.png" alt="AR image" />
+          </div>
+          <div class="card-body">
+            <h4 class="project-title">AR Navigation</h4>
+            <h6>Design and evaluation project for an AR app</h6>
+          </div>
+        </div>
+      </a>
     </div>
-
-    <!-- row 3 -->
-    <div class="row project-cards">
-      <div class="col-md-6  project-frame">
-        <a class="card-a-tag" href="ticket_faster.html">
-          <div class="project-card">
-            <img class="card-img-top" src="images/homepage/ticket_faster.png" alt="ticket image">
-            <div class="card-body">
-              <h4 class="project-title">Ticket Faster</h4>
-              <h4>macOS desktop application UI</h4>
-              <h6 class="keywords">Interface Design</h6>
-            </div>
-          </div>
-        </a>
-      </div>
-      <div class="col-md-6  project-frame">
-        <a class="card-a-tag" href="sports_radio.html">
-          <div class="project-card">
-            <img class="card-img-top" src="images/homepage/sports_radio.png" alt="sports radio image">
-            <div class="card-body">
-              <h4 class="project-title">Sports Radio</h4>
-              <h4>Apple Carplay application UI</h4>
-              <h6 class="keywords">Interface Design</h6>
-            </div>
-          </div>
-        </a>
-      </div>
-    </div>
-
-    <!-- row 4 -->
-    <div class="row project-cards">
-      <div class="col-md-6 project-frame">
-        <a class="card-a-tag" href="AR.html">
-          <div class="project-card">
-            <img class="card-img-top" src="images/homepage/AR_card.png" alt="AR image">
-            <div class="card-body">
-              <h4 class="project-title">AR Navigation</h4>
-              <h4>Design and evaluation project for an augmented reality app</h4>
-              <h6 class="keywords">Usability Testing</h6>
-              <h6 class="keywords">AR Prototyping</h6>
-            </div>
-          </div>
-        </a>
-      </div>
-
-      <div class="col-md-6 project-frame">
-
-      </div>
-    </div>
-  </div>
-
-
-</body>
-<footer>© Jianchen Zhu 2020</footer>
-
+  </body>
+  <footer>© Jianchen Zhu 2020</footer>
 </html>
