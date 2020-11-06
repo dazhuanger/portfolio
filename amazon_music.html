@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-180622107-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "UA-180622107-1");
+    </script>
+
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <title>Detail - Amazon Music</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="icon" href="images/favicon.ico" />
+
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://kit.fontawesome.com/38f397105f.js" crossorigin="anonymous"></script>
+    <script src="index.js" charset="utf-8"></script>
+  </head>
+
+  <body>
+    <!-- Nav Bar -->
+    <div class="container-fluid navigation">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+          <a class="navbar-brand" href="index.html">Jianchen Zhu</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="detail.html">Detail</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <!-- Intro Division -->
+    <div class="container intro">
+      <h2 class="greeting">Amazon Music iOS App</h2>
+      <h4 class="bio">
+        I recently switched from Spotify to Amazon Music for its better sound quality. But I found some tiny issues in
+        the micro-interactions of this newly developed app.
+      </h4>
+    </div>
+
+    <!-- Problem -->
+    <div class="container problem">
+      <div class="text-box">
+        <h3 class="div-title">Problem</h3>
+      </div>
+
+      <div class="row">
+        <div class="col-md-6">
+          <img class="snaptravel-mobile-gif" src="images/detail/amazon_music/amazon_music.gif" alt="amazon gif" />
+        </div>
+
+        <div class="col-md-6 problem-annotation">
+          <h4 class="div-subtitle">Playlist</h4>
+          <p>
+            When I open a playlist and tap on a song on it, the full description menu that contains a big album picture
+            and a full set of buttons slides in from the bottom.
+          </p>
+
+          <p>
+            If I want to switch to another song on that list, I have to slide down to close the menu first, and then tap
+            on another item of the playlist. Imagine if I want to switch quickly between multiple songs on the list, I
+            will have to repeat this excessive operation again and again, which is not a pleasant experience.
+          </p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-6">
+          <img class="snaptravel-mobile-static" src="images/detail/amazon_music/feedback.png" alt="amazon feedback" />
+        </div>
+
+        <div class="col-md-6 problem-annotation">
+          <h4 class="div-subtitle">Feedback & Visual Cues</h4>
+          <p>
+            I understand that the purpose of surfacing the full menu is to give the user feedback when a list item is
+            tapped, telling them that song is being played. However, as a music streaming app, visual cues shouldn't be
+            the primary medium of feedback, the SOUND should! Users could simply hear it instead of seeing it.
+          </p>
+          <p>
+            Plus, there have already been enough visual cues that can give the user feedback, for example, the animated
+            audio bars and the thumbnail at the bottom of the screen.
+          </p>
+          <p>
+            Therefore, showing the full menu every time a list item is tapped is excessive, and it disrupts the smooth
+            user flow of browsing through a playlist.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Solution -->
+    <div class="container">
+      <div class="text-box">
+        <h3 class="div-title">Solution</h3>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <img class="snaptravel-mobile-gif" src="images/detail/amazon_music/solution.gif" alt="amazon gif" />
+        </div>
+
+        <div class="col-md-6 problem-annotation">
+          <p>
+            Well, this one is a simple fix. Just stop surfacing the full menu every time, and let it be triggered only
+            when the thumbnail is tapped. In this way, the user can browse through songs on the list more efficiently,
+            and jump over some of them quickly if needed.
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

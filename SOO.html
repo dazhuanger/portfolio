@@ -1,226 +1,278 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-180622107-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-<head>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-180622107-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+      gtag("config", "UA-180622107-1");
+    </script>
 
-  gtag('config', 'UA-180622107-1');
-</script>
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <title>Special Olympics Ontario</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="icon" href="images/favicon.ico" />
 
-  <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <title>Special Olympics Ontario</title>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link rel="stylesheet" href="css/styles.css">
-  <link rel="icon" href="images/favicon.ico">
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="index.js" charset="utf-8"></script>
+  </head>
 
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  <script src="index.js" charset="utf-8"></script>
-</head>
+  <body>
+    <!-- Nav bar -->
+    <div class="container-fluid navigation">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+          <a class="navbar-brand" href="index.html">Jianchen Zhu</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  Projects
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="snaptravel.html">Snaptravel</a>
+                  <a class="dropdown-item" href="chef.html">Chef</a>
+                  <a class="dropdown-item" href="neighbourhood_sports.html">Neighbourhood Sports</a>
+                  <a class="dropdown-item" href="ticket_faster.html">Ticket Faster</a>
+                  <a class="dropdown-item" href="sports_radio.html">Sports Radio</a>
+                  <a class="dropdown-item" href="AR.html">AR navigation</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
 
-<body>
-  <!-- Nav bar -->
-  <div class="container-fluid navigation">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <div class="container">
-        <a class="navbar-brand" href="index.html">Jianchen Zhu</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Projects
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="snaptravel.html">SnapTravel</a>
-                <a class="dropdown-item" href="SOO.html">Special Olympics Ontario</a>
-                <a class="dropdown-item" href="chef.html">Chef</a>
-                <a class="dropdown-item" href="neighbourhood_sports.html">Neighbourhood Sports</a>
-                <a class="dropdown-item" href="ticket_faster.html">Ticket Faster</a>
-                <a class="dropdown-item" href="sports_radio.html">Sports Radio</a>
-                <a class="dropdown-item" href="AR.html">AR navigation</a>
-              </div>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="about.html">About</a>
-            </li>
-          </ul>
+    <!-- Intro division -->
+    <div class="container intro" id="SOO-intro">
+      <h2 class="greeting">Special Olympics Ontario</h2>
+      <h4 class="bio">
+        This community partner project focused on improving the overall
+        <span class="highlight">information architecture</span> of the Special Olympics Ontario's main website by
+        refining the organization, navigation and labeling system of the website.
+      </h4>
+      <h4 class="bio">My roles:</h4>
+      <div class="row greeting">
+        <div class="col-md-3 col-sm-6 tasks">
+          <h5><span style="font-weight: 100">User Interview</span></h5>
+          <img class="task-icon" src="images/icons/interview.png" alt="interview icon" />
+        </div>
+        <div class="col-md-3 col-sm-6 tasks">
+          <h5><span style="font-weight: 100">Usability Testing</span></h5>
+          <img class="task-icon" src="images/icons/testing.png" alt="testing icon" />
+        </div>
+        <div class="col-md-3 col-sm-6 tasks">
+          <h5><span style="font-weight: 100">Wireframing</span></h5>
+          <img class="task-icon" src="images/icons/wireframe.png" alt="wireframing icon" />
+        </div>
+        <div class="col-md-3 col-sm-6 tasks">
+          <h5><span style="font-weight: 100">Prototyping</span></h5>
+          <img class="task-icon" src="images/icons/prototyping.png" alt="prototyping icon" />
         </div>
       </div>
-    </nav>
-  </div>
+    </div>
 
-  <!-- Intro division -->
-  <div class="container intro" id="SOO-intro">
-    <h2 class="greeting">Special Olympics Ontario</h2>
-    <h4 class="bio">This community partner project focused on improving the overall
-      <span class="highlight">information architecture</span> of the Special Olympics Ontario's main website by
-      refining the organization, navigation and labeling system of the website.</h4>
-    <h4 class="bio">My roles: </h4>
-    <div class="row greeting">
-      <div class="col-md-3 col-sm-6 tasks">
-        <h5><span style="font-weight: 100;">User Interview</span></h5>
-        <img class="task-icon" src="images/icons/interview.png" alt="interview icon">
-      </div>
-      <div class="col-md-3 col-sm-6 tasks">
-        <h5><span style="font-weight: 100;">Usability Testing</span></h5>
-        <img class="task-icon" src="images/icons/testing.png" alt="testing icon">
-      </div>
-      <div class="col-md-3 col-sm-6 tasks">
-        <h5><span style="font-weight: 100;">Wireframing</span></h5>
-        <img class="task-icon" src="images/icons/wireframe.png" alt="wireframing icon">
-      </div>
-      <div class="col-md-3 col-sm-6 tasks">
-        <h5><span style="font-weight: 100;">Prototyping</span></h5>
-        <img class="task-icon" src="images/icons/prototyping.png" alt="prototyping icon">
+    <!-- Research division -->
+    <div class="container research" id="SOO-research">
+      <div class="text-box">
+        <h3 class="div-title">Research and Analysis</h3>
+        <h4 class="div-subtitle">Problem</h4>
+        <p>
+          Special Olympics Ontario's services are poorly represented on the website due to inextensible information
+          architecture that was used to build the site. The IA of the main website suffers from various problems:
+        </p>
+        <ul>
+          <li class="text">Incoherent and outdated organization system</li>
+          <li class="text">Inconsistent labeling system</li>
+          <li class="text">Disconnected navigation system</li>
+          <li class="text">Broken search functionality</li>
+          <li class="text">Lack of unified design and style</li>
+        </ul>
+
+        <h4 class="div-subtitle">Research Methods</h4>
+        <div class="row">
+          <div class="col-sm-6">
+            <p>
+              <a
+                class="highlight"
+                href="https://docs.google.com/document/d/1SI16VvrJvHK2KbMuKEFrmgd6kuqTgeukviygn6W01sc/edit?usp=sharing"
+                target="_blank"
+                >Semi-structured interview</a
+              >
+              with SOO staff members. It encourages two-way communication which will allow informants the freedom to
+              express their views.
+            </p>
+            <br />
+            <p>Findings:</p>
+            <ul>
+              <li class="text">Users do encounter multiple problems with the website</li>
+              <li class="text">But they learned to cope with it</li>
+              <li class="text">Sometimes they choose to call or email SOO staff</li>
+            </ul>
+          </div>
+
+          <div class="col-sm-6">
+            <p>
+              <a
+                class="highlight"
+                href="https://docs.google.com/document/d/1o97b-xVTTJA-y6NViHFAMOX6PQ0MYSj_1YQEYhLEeto/edit?usp=sharing"
+                target="_blank"
+                >Usability test</a
+              >
+              with five potential users. These participants have limited knowledge about SOO and their website. Such
+              participant profile would help us to analyze the behaviour of less frequent users of the website.
+            </p>
+
+            <p>Findings:</p>
+            <ul>
+              <li class="text">Heavy cognitive burden</li>
+              <li class="text">Excessive depth of information architecture</li>
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
 
-  <!-- Research division -->
-  <div class="container research" id="SOO-research">
-    <div class="text-box">
-      <h3 class="div-title">Research and Analysis</h3>
-      <h4 class="div-subtitle">Problem</h4>
-      <p>Special Olympics Ontario's services are poorly represented on the website due to inextensible information
-        architecture that was used to build the site. The IA of the main website suffers from various problems:</p>
-      <ul>
-        <li class="text">
-          Incoherent and outdated organization system
-        </li>
-        <li class="text">
-          Inconsistent labeling system
-        </li>
-        <li class="text">
-          Disconnected navigation system
-        </li>
-        <li class="text">
-          Broken search functionality
-        </li>
-        <li class="text">
-          Lack of unified design and style
-        </li>
-      </ul>
+    <!-- Design division -->
+    <div class="container design hideme" id="SOO-design">
+      <div class="text-box">
+        <h3 class="div-title">Design</h3>
 
+        <h4 class="div-subtitle">Card Sorting Study</h4>
+        <p>Sheds light onto the design of the categories, global navigation and labeling system of the website.</p>
+        <p>Conducted with volunteers and staff members of Special Olympics Ontario at their volunteer conference.</p>
+      </div>
 
-      <h4 class="div-subtitle">Research Methods</h4>
+      <a
+        href="https://www.optimalworkshop.com/optimalsort/aq8r2mw5/6hy55263/shared-results/35883hifj02eo5641tbj18h30o5hx67h"
+        target="_blank"
+      >
+        <img class="card-sorting-img" src="images/SOO/card_sorting.png" alt="cart sorting img"
+      /></a>
+
+      <div class="text-box diagram-box">
+        <h4 class="div-subtitle">Preliminary IA Schematic Diagram</h4>
+        <p>Rearranged the most important categories into the global navigation menu to make them more salient.</p>
+      </div>
+
+      <img class="p-sketch-img" src="images/SOO/p_sketch1.png" alt="p sketch img1" />
+      <img class="p-sketch-img" src="images/SOO/p_sketch2.png" alt="p sketch img1" />
+
+      <div class="text-box tree-test-box">
+        <h4 class="div-subtitle">Tree Test</h4>
+        <p>
+          Conducted for our new global navigation menu. Same tasks as previous usability test to ensure the validity and
+          reliability.
+        </p>
+      </div>
+
+      <a
+        href="https://www.optimalworkshop.com/treejack/r6wn5w24/47r50y86/shared-results/pi8r8cu166002tzyzntz0o4s5118k1v5"
+        target="_blank"
+      >
+        <img class="tree-test-img" src="images/SOO/tree_test.png" alt="tree test img"
+      /></a>
+    </div>
+
+    <!-- Prototype division -->
+    <div class="container prototype hideme" id="SOO-prototype">
+      <div class="text-box">
+        <h3 class="div-title">Prototyping</h3>
+        <h4 class="div-subtitle">Low-Fi Sketches</h4>
+      </div>
+
       <div class="row">
-        <div class="col-sm-6">
-          <p> <a class="highlight" href="https://docs.google.com/document/d/1SI16VvrJvHK2KbMuKEFrmgd6kuqTgeukviygn6W01sc/edit?usp=sharing" target="_blank">Semi-structured interview</a> with SOO
-            staff members. It encourages two-way communication which will allow informants the freedom to express their views.</p><br>
-          <p>Findings:</p>
-          <ul>
-            <li class="text">Users do encounter multiple problems with the website</li>
-            <li class="text">But they learned to cope with it</li>
-            <li class="text">Sometimes they choose to call or email SOO staff</li>
-          </ul>
+        <div class="col-sm-6 col-xs-12">
+          <img class="hand-sketch" src="images/SOO/sketch1.jpg" alt="sketch img1" />
         </div>
 
-        <div class="col-sm-6">
-          <p>
-            <a class="highlight" href="https://docs.google.com/document/d/1o97b-xVTTJA-y6NViHFAMOX6PQ0MYSj_1YQEYhLEeto/edit?usp=sharing" target="_blank">Usability test</a> with five potential users.
-            These participants have limited knowledge about SOO and their website. Such participant profile would help us
-            to analyze the behaviour of less frequent users of the website.</p>
-
-          <p>Findings:</p>
-          <ul>
-            <li class="text">Heavy cognitive burden</li>
-            <li class="text">Excessive depth of information architecture</li>
-          </ul>
+        <div class="col-sm-6 col-xs-12">
+          <img class="hand-sketch" src="images/SOO/sketch2.jpg" alt="sketch img1" />
         </div>
       </div>
 
-    </div>
-  </div>
-
-
-  <!-- Design division -->
-  <div class="container design hideme" id="SOO-design">
-    <div class="text-box">
-      <h3 class="div-title">Design</h3>
-
-      <h4 class="div-subtitle">Card Sorting Study</h4>
-      <p>Sheds light onto the design of the
-        categories, global navigation and labeling system of the website.</p>
-      <p>Conducted with volunteers and staff members of
-        Special Olympics Ontario at their volunteer conference.</p>
-    </div>
-
-    <a href="https://www.optimalworkshop.com/optimalsort/aq8r2mw5/6hy55263/shared-results/35883hifj02eo5641tbj18h30o5hx67h" target="_blank"> <img class="card-sorting-img" src="images/SOO/card_sorting.png" alt="cart sorting img"></a>
-
-    <div class="text-box diagram-box">
-      <h4 class="div-subtitle">Preliminary IA Schematic Diagram</h4>
-      <p> Rearranged the most important categories into the global navigation menu to make them more salient.</p>
-    </div>
-
-    <img class="p-sketch-img" src="images/SOO/p_sketch1.png" alt="p sketch img1">
-    <img class="p-sketch-img" src="images/SOO/p_sketch2.png" alt="p sketch img1">
-
-    <div class="text-box tree-test-box">
-      <h4 class="div-subtitle">Tree Test</h4>
-      <p>Conducted for our new global navigation menu.
-        Same tasks as previous usability test to ensure the validity and reliability.</p>
-    </div>
-
-    <a href="https://www.optimalworkshop.com/treejack/r6wn5w24/47r50y86/shared-results/pi8r8cu166002tzyzntz0o4s5118k1v5" target="_blank"> <img class="tree-test-img" src="images/SOO/tree_test.png" alt="tree test img"></a>
-
-  </div>
-
-
-  <!-- Prototype division -->
-  <div class="container prototype hideme" id="SOO-prototype">
-
-    <div class="text-box">
-      <h3 class="div-title">Prototyping</h3>
-      <h4 class="div-subtitle">Low-Fi Sketches</h4>
-    </div>
-
-    <div class="row">
-      <div class="col-sm-6 col-xs-12">
-        <img class="hand-sketch" src="images/SOO/sketch1.jpg" alt="sketch img1">
+      <div class="text-box midfi-box">
+        <h4 class="div-subtitle midfi-prototype">Mid-Fi Sketches</h4>
+        <a
+          role="button"
+          class="btn btn-primary try-it"
+          href="https://www.figma.com/proto/FIMUkYk40ejlUr9U1veJUz9F/Mid-Fidelity-Prototype?node-id=0%3A1&scaling=scale-down"
+          target="_blank"
+          >Try it</a
+        >
+        <ul>
+          <li class="text">Reorganized global navigation menu and fat footers</li>
+          <li class="text">Restructured page layout</li>
+          <li class="text">Improved labeling system</li>
+          <li class="text">Enhanced user experience</li>
+        </ul>
       </div>
 
-      <div class="col-sm-6 col-xs-12">
-        <img class="hand-sketch" src="images/SOO/sketch2.jpg" alt="sketch img1">
+      <div class="row">
+        <div class="col-sm-6 col-xs-12">
+          <img class="midfi-prototype" src="images/SOO/homepage.jpg" alt="midfi homepage" />
+        </div>
+
+        <div class="col-sm-6 col-xs-12">
+          <img class="midfi-prototype" src="images/SOO/event_calendar.jpg" alt="midfi homepage" />
+        </div>
       </div>
     </div>
+  </body>
 
-    <div class="text-box midfi-box">
-      <h4 class="div-subtitle midfi-prototype">Mid-Fi Sketches</h4>
-      <a role="button" class="btn btn-primary try-it" href="https://www.figma.com/proto/FIMUkYk40ejlUr9U1veJUz9F/Mid-Fidelity-Prototype?node-id=0%3A1&scaling=scale-down" target="_blank">Try it</a>
-      <ul>
-        <li class="text">Reorganized global navigation menu and fat footers</li>
-        <li class="text">Restructured page layout</li>
-        <li class="text">Improved labeling system</li>
-        <li class="text">Enhanced user experience</li>
-      </ul>
+  <footer>
+    <div>
+      Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from
+      <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
     </div>
-
-    <div class="row">
-      <div class="col-sm-6 col-xs-12">
-        <img class="midfi-prototype" src="images/SOO/homepage.jpg" alt="midfi homepage">
-      </div>
-
-      <div class="col-sm-6 col-xs-12">
-        <img class="midfi-prototype" src="images/SOO/event_calendar.jpg" alt="midfi homepage">
-      </div>
-    </div>
-
-  </div>
-
-
-</body>
-
-<footer>
-  <div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div> © Jianchen Zhu 2020
-</footer>
-
+    © Jianchen Zhu 2020
+  </footer>
 </html>
