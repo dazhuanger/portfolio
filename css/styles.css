@@ -193,7 +193,7 @@ footer {
 }
 
 .card-img-top {
-  max-width: 400px;
+  width: 400px;
   padding: 5% 5%;
 }
 
@@ -585,10 +585,6 @@ footer {
 }
 
 @media screen and (max-width: 768px) {
-  .project-card {
-    width: 90%;
-  }
-
   .greeting,
   .competitor-research-img,
   .result,
@@ -621,5 +617,15 @@ footer {
 
   .midfi-watch {
     margin: 0 2%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .project-card {
+    width: 90%;
+  }
+
+  .card-img-top {
+    width: 75%;
   }
 }
