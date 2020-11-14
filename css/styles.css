@@ -140,11 +140,14 @@ footer {
   margin: 3% auto;
 }
 
+.role span {
+  color: #0343fb;
+  font-weight: 300;
+  margin: 0 5px;
+}
+
 /* Homepage */
 /* Project cards division */
-.project-frame {
-  margin: 10px auto 0 auto;
-}
 
 /* Flex Container */
 .project-cards {
@@ -168,7 +171,6 @@ footer {
 
 .project-card {
   margin: 20px auto;
-  height: 100%;
   width: 500px;
   border-radius: 10px;
 }
@@ -199,6 +201,42 @@ footer {
 
 .card-body {
   border-radius: 0 0 10px 10px;
+}
+
+/* More projects section  */
+.bottom-section {
+  margin-top: 15%;
+}
+
+.more-projects {
+  margin: 50px auto;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: left;
+  align-items: flex-start;
+  overflow-y: hidden;
+  overflow-x: scroll;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.more-projects::-webkit-scrollbar {
+  display: none;
+}
+
+.project-card.mini {
+  height: 100%;
+  width: 300px;
+}
+
+.card-img.mini {
+  width: 100%;
+  height: 300px;
+  border-radius: 10px;
+}
+
+.card-img-top.mini {
+  width: 90%;
 }
 
 /* SOO page */
