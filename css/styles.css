@@ -659,8 +659,16 @@ footer {
 }
 
 @media screen and (max-width: 500px) {
+  .bio {
+    text-align: center;
+  }
+
   .project-card {
     width: 90%;
+  }
+
+  .card-a-tag {
+    margin: 0 5px;
   }
 
   .card-img-top {
