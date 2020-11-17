@@ -43,7 +43,7 @@ footer {
 }
 
 .highlight {
-  color: #0343fb;
+  color: #0645ff;
   font-weight: 600;
 }
 
@@ -53,7 +53,7 @@ footer {
 }
 
 .div-title {
-  color: #0343fb;
+  color: #0645ff;
   display: block;
   margin-bottom: 5%;
   text-align: center;
@@ -141,7 +141,7 @@ footer {
 }
 
 .role span {
-  color: #0343fb;
+  color: #0645ff;
   font-weight: 300;
   margin: 0 5px;
 }
@@ -332,6 +332,8 @@ footer {
   display: block;
   margin: 20px auto;
   max-width: 100%;
+  border: 1px #dbdbdb solid;
+  border-radius: 10px;
 }
 
 .needs-statement {
@@ -535,7 +537,7 @@ footer {
 }
 
 .data-dive-percentage {
-  color: #0343fb;
+  color: #0645ff;
 }
 
 .competitor-research-img {
