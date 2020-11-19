@@ -134,7 +134,7 @@ footer {
 
 .bio {
   font-weight: 300;
-  text-align: left;
+  text-align: center;
   line-height: 1.5;
   width: 60%;
   margin: 3% auto;
@@ -492,14 +492,25 @@ footer {
 }
 
 /* About page */
+.links {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: left;
+  align-items: center;
+  margin-top: 20px;
+}
+
 .resume {
   padding: 5% 20% 0 20%;
 }
 
 .linkedin {
-  padding-right: 19%;
-  max-width: 100px;
-  height: auto;
+  max-width: 48px;
+  height: 48px;
+}
+
+.resume-btn {
+  margin-left: 50px;
 }
 
 /* SnapTravel page */
