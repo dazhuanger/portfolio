@@ -309,7 +309,8 @@ footer {
 /* Neighbourhood Sports */
 .research .text-box,
 .design .text-box,
-.prototype .text-box {
+.prototype .text-box,
+.intro .text-box {
   margin-bottom: 50px;
 }
 
@@ -413,7 +414,7 @@ footer {
 }
 
 .chef-gif {
-  max-width: 80%;
+  max-width: 60%;
   display: block;
   margin: 0 auto;
 }
