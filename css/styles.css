@@ -329,7 +329,8 @@ footer {
 }
 
 .persona,
-.big-ideas {
+.big-ideas,
+.neighbour_struc {
   display: block;
   margin: 20px auto;
   max-width: 100%;
