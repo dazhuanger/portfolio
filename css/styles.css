@@ -264,6 +264,10 @@ footer {
   margin-bottom: 20px;
 }
 
+.success-rate {
+  text-align: center;
+  margin: 30px auto;
+}
 .test-result-img,
 .p-sketch-img {
   max-width: 80%;
