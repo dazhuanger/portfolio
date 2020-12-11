@@ -1,6 +1,7 @@
 /* Universal elements */
 body {
-  font-family: -apple-system, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  /* font-family: -apple-system, "Helvetica Neue", Helvetica, Arial, sans-serif; */
 }
 
 h1,
