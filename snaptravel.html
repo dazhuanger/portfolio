@@ -79,35 +79,89 @@
     <!-- Intro division -->
     <div class="container intro">
       <h2 class="greeting">Snaptravel</h2>
-      <h4 class="bio">
-        Snaptravel is an online travel agency based in Toronto. As a
-        <span class="highlight">UX research and design intern</span>, I helped Snaptravel revamp its current checkout
-        flow.
-      </h4>
+      <div class="project-intro-div">
+        <div class="overview-div">
+          <h4 class="div-subtitle">Overview</h4>
+          <p class="project-intro-des">
+            Snaptravel is an online travel agency based in Toronto. As a
+            <span class="highlight">product design intern</span>, I helped Snaptravel revamp its current checkout flow.
+          </p>
+        </div>
 
-      <div class="role">
-        <h4 class="bio">
-          My role:
-          <span>User Flow Audit</span>
-          <span>Data Analysis</span>
-          <span>Research</span>
-          <span>Ideation</span>
-        </h4>
+        <div class="role-div">
+          <h4 class="div-subtitle">My role</h4>
+          <div>
+            <p class="project-intro-des">User Flow Audit</p>
+            <p class="project-intro-des">Competitor Analysis</p>
+            <p class="project-intro-des">UI design</p>
+          </div>
+        </div>
+
+        <div class="outcome-div">
+          <h4 class="div-subtitle">Outcome</h4>
+          <p class="project-intro-des">
+            Redesigned the checkout pages' UI to increase the conversion rate by up to 11%.
+          </p>
+        </div>
       </div>
     </div>
 
-    <!-- Problem 1 Backtracking -->
-    <div class="container problem">
+    <!-- Discover -->
+    <div class="container problem hideme">
       <div class="text-box">
-        <h3 class="div-title">Problem</h3>
+        <h3 class="div-title">Discover</h3>
+        <h4 class="div-subtitle">What is the problem?</h4>
         <p>
-          I conducted a flow audit on the current website of Snaptravel. The goal was to identify issues that users may
-          encounter while using the product. In particular, as a first-time user of Snaptravel myself, I had some
-          different insights from users who are already familiar with the website. The problem of backtracking was one
-          of them.
+          An ideal checkout flow should be smooth and linear. It should feature three steps: verify hotel details,
+          insert guest details and pay with a credit card or PayPal.
+        </p>
+        <img class="st-flow-img" src="images/snaptravel/ideal_flow.png" alt="ideal flow" />
+        <p>
+          However, users keep backtracking on Snaptravel's checkout pages. My role was to figure out why they are doing
+          this and fix this problem.
+        </p>
+        <img class="st-flow-img" src="images/snaptravel/bad_flow.png" alt="bad flow" />
+        <h4 class="div-subtitle">Why is it a problem?</h4>
+        <p>
+          Because Snaptravel’s business model is special. It can only hold a low price for 30 minutes. After 30 minutes,
+          this rate will expire, and the user has to start over again with another price.
+        </p>
+        <p>
+          Therefore, the goal here is to allow the user to finish the payment process and secure the room as fast as
+          possible.
         </p>
       </div>
 
+      <div class="text-box">
+        <h4 class="div-subtitle">Data</h4>
+        <p>
+          Having identified these possible pain points, I dived into the database to find evidence to support my
+          assumption. The event tracker on Amplitude showed:
+        </p>
+        <p>
+          <span style="font-size: 2rem; font-weight: 600; color: #000">50%</span> of users go from step 2 to step 1.
+        </p>
+        <p>
+          <span style="font-size: 2rem; font-weight: 600; color: #000">35%</span> of users go from step 3 to step 2.
+        </p>
+        <p>
+          <span style="font-size: 2rem; font-weight: 600; color: #000">21%</span> of users go from step 3 to step 1.
+        </p>
+        <p>
+          <span style="font-size: 2rem; font-weight: 600; color: #000">11%</span> of users who opened the booking form
+          didn't finish the booking and let the rate expired.
+        </p>
+        <p>
+          The result indicates that the backtracking problem does exist and it is hurting the conversion rate since at
+          least 11% of users didn't finish the booking. So how might we solve this problem and increase the conversion
+          rate?
+        </p>
+      </div>
+    </div>
+
+    <!-- Analysis -->
+    <div class="container analysis hideme">
+      <h3 class="div-title">Analysis</h3>
       <div class="row">
         <div class="col-md-6">
           <img class="snaptravel-mobile-static" src="images/snaptravel/3_steps.png" alt="3_step img" />
@@ -137,37 +191,6 @@
           </p>
         </div>
       </div>
-    </div>
-
-    <!-- Analysis -->
-    <div class="container analysis hideme">
-      <div class="text-box">
-        <h3 class="div-title">Analysis</h3>
-        <h4 class="div-subtitle">Data Analysis</h4>
-        <p>
-          Having identified these possible pain points, I dived into the database to find evidence to support my
-          assumption. The event tracker on Amplitude showed:
-        </p>
-        <p>
-          <span style="font-size: 2rem; font-weight: 600; color: #000">50%</span> of users go from step 2 to step 1.
-        </p>
-        <p>
-          <span style="font-size: 2rem; font-weight: 600; color: #000">35%</span> of users go from step 3 to step 2.
-        </p>
-        <p>
-          <span style="font-size: 2rem; font-weight: 600; color: #000">21%</span> of users go from step 3 to step 1.
-        </p>
-        <p>
-          <span style="font-size: 2rem; font-weight: 600; color: #000">11%</span> of users who opened the booking form
-          didn't finish the booking and let the rate expired.
-        </p>
-        <p>
-          The result indicates that the backtracking problem does exist and it is hurting the conversion rate since at
-          least 11% of users didn't finish the booking. So how might we solve this problem and increase the conversion
-          rate?
-        </p>
-      </div>
-
       <div class="text-box">
         <h4 class="div-subtitle">Competitive Analysis</h4>
         <p>
