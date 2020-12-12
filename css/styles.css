@@ -74,6 +74,7 @@ footer {
   margin: 0 auto;
 }
 
+/* /////////////////////////////////////////////////// */
 /* Navigation menu */
 .navigation {
   padding: 0;
@@ -147,6 +148,7 @@ footer {
   margin: 0 5px;
 }
 
+/* //////////////////////////////////////////////// */
 /* Homepage */
 /* Project cards division */
 
@@ -204,6 +206,7 @@ footer {
   border-radius: 0 0 10px 10px;
 }
 
+/* //////////////////////////////////////////////////////// */
 /* More projects section  */
 .bottom-section {
   margin-top: 15%;
@@ -240,6 +243,7 @@ footer {
   width: 90%;
 }
 
+/* //////////////////////////////////////////////////// */
 /* Snaptravel page */
 .project-intro-div {
   margin: 30px auto;
@@ -247,10 +251,20 @@ footer {
   display: flex;
   flex-direction: column;
 }
+
+.outline::after {
+  display: block;
+  content: "";
+  margin-top: 2px;
+  border-bottom: 3px solid #ffeb10;
+  width: 50px;
+}
+
 .project-intro-des {
   font-size: 24px;
   line-height: 36px;
 }
+
 .role-div div {
   display: flex;
   flex-flow: row wrap;
@@ -258,13 +272,16 @@ footer {
   align-items: center;
   padding: 0;
 }
+
 .role-div li {
   list-style-type: none;
 }
+
 .st-flow-img {
   max-width: 100%;
   margin-bottom: 20px;
 }
+
 .problem,
 .analysis,
 .solutions {
@@ -308,6 +325,7 @@ footer {
   margin: 0 auto 7% auto;
 }
 
+/* ///////////////////////////////////////// */
 /* SOO page */
 /* containers */
 .research,
@@ -379,6 +397,7 @@ footer {
   margin-bottom: 5px;
 }
 
+/* //////////////////////////////////////////// */
 /* Neighbourhood Sports */
 .research .text-box,
 .design .text-box,
@@ -450,6 +469,8 @@ footer {
   margin: 0 auto;
 }
 
+/* 
+///////////////////////////////////////////////// */
 /* UI design projects */
 /* containers */
 .rationales,
@@ -566,6 +587,7 @@ footer {
   margin: 5% auto;
 }
 
+/* ////////////////////////////////////////////////// */
 /* About page */
 .links {
   display: flex;
@@ -588,6 +610,7 @@ footer {
   margin-left: 50px;
 }
 
+/* ////////////////////////////////////////////////////////// */
 /* AR project page */
 /* containers */
 .description,
@@ -661,11 +684,13 @@ footer {
   margin: 0 auto;
 }
 
+/* //////////////////////////////////////////////////////////////// */
 /* Detail Page*/
 .detai-intro {
   text-align: center;
 }
 
+/* //////////////////////////////////////////////////////////////// */
 @media screen and (max-width: 768px) {
   .greeting,
   .competitor-research-img,
