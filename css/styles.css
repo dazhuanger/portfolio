@@ -240,6 +240,74 @@ footer {
   width: 90%;
 }
 
+/* Snaptravel page */
+.project-intro-div {
+  margin: 30px auto;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+}
+.project-intro-des {
+  font-size: 24px;
+  line-height: 36px;
+}
+.role-div div {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+}
+.role-div li {
+  list-style-type: none;
+}
+.st-flow-img {
+  max-width: 100%;
+  margin-bottom: 20px;
+}
+.problem,
+.analysis,
+.solutions {
+  padding-top: 2%;
+  margin-bottom: 6%;
+}
+
+.snaptravel-mobile-static {
+  display: block;
+  width: 60%;
+  margin: 0 auto;
+}
+
+.snaptravel-mobile-gif {
+  display: block;
+  width: 60%;
+  margin: 0 auto;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.problem .text-box {
+  margin-bottom: 50px;
+}
+
+.analysis .row {
+  margin-bottom: 7%;
+}
+
+.problem-annotation {
+  padding-top: 6%;
+  padding-right: 10%;
+}
+
+.data-dive-percentage {
+  color: #0645ff;
+}
+
+.competitor-research-img {
+  display: block;
+  width: 60%;
+  margin: 0 auto 7% auto;
+}
+
 /* SOO page */
 /* containers */
 .research,
@@ -520,50 +588,6 @@ footer {
   margin-left: 50px;
 }
 
-/* SnapTravel page */
-.problem,
-.analysis,
-.solutions {
-  padding-top: 2%;
-  margin-bottom: 6%;
-}
-
-.snaptravel-mobile-static {
-  display: block;
-  width: 60%;
-  margin: 0 auto;
-}
-
-.snaptravel-mobile-gif {
-  display: block;
-  width: 60%;
-  margin: 0 auto;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-}
-
-.problem .text-box {
-  margin-bottom: 50px;
-}
-
-.problem .row {
-  margin-bottom: 7%;
-}
-
-.problem-annotation {
-  padding-top: 6%;
-  padding-right: 10%;
-}
-
-.data-dive-percentage {
-  color: #0645ff;
-}
-
-.competitor-research-img {
-  display: block;
-  width: 60%;
-  margin: 0 auto 7% auto;
-}
-
 /* AR project page */
 /* containers */
 .description,
@@ -683,7 +707,8 @@ footer {
     text-align: center;
   }
 
-  .project-card {
+  .project-card,
+  .project-intro-div {
     width: 90%;
   }
 
