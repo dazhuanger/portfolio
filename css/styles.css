@@ -136,8 +136,7 @@ nav a:visited {
 /* ///////////////////////////////////////////////// */
 /* Welcome division */
 .landing {
-  margin: 200px auto 200px auto;
-  position: relative;
+  margin: 200px auto;
 }
 
 .scroll {
@@ -743,13 +742,8 @@ nav a:visited {
   margin: 0 auto;
 }
 
-/* //////////////////////////////////////////////////////////////// */
-/* @media screen and (max-width: 930px) {
-
-} */
-
 @media screen and (max-width: 768px) {
-  /* Nav Bar  */
+  /* Responsive Nav Bar  */
   .top-nav {
     padding: 0 5%;
   }
