@@ -1,4 +1,5 @@
 $(document).ready(function () {
+  //Scrolling and emerging
   /* Every time the window is scrolled ... */
   $(window).scroll(function () {
     /* Check the location of each desired element */
@@ -8,17 +9,44 @@ $(document).ready(function () {
 
       /* If the object is completely visible in the window, fade it in */
       if (bottom_of_window > bottom_of_object) {
-        $(this).animate(
-          {
-            opacity: "1",
-          },
-          1000
-        );
-
+        $(this).animate({ opacity: "1" }, 1000);
         $(".scroll").removeClass("floating");
       }
     });
   });
+
+  // Nav bar activation
+  $(".top-nav-link").click(function () {
+    $(".nav-active").removeClass("nav-active");
+    $(this).addClass("nav-active");
+  });
+  // Hamburger menu toggle
+  $(".hamburger").click(function () {
+    let navLinks = $(".top-nav-links");
+    // navLinks.slideToggle("slow");
+    // navLinks.toggleClass("responsive slide-in");
+    if (navLinks.attr("class").includes("slide-in")) {
+      navLinks.toggleClass("slide-in");
+      navLinks.toggleClass("slide-out");
+    } else if (navLinks.attr("class").includes("slide-out")) {
+      navLinks.toggleClass("slide-out");
+      navLinks.toggleClass("slide-in");
+    } else {
+      navLinks.toggleClass("slide-in");
+    }
+    console.log(navLinks.attr("class"));
+  });
+
+  // Vanilla JS version nav bar
+  // const navItem = document.querySelectorAll(".nav-link");
+  // console.log(navItem);
+  // navItem.forEach((i) =>
+  //   i.addEventListener("click", (e) => {
+  //     document.querySelector(".nav-active").classList.remove("nav-active");
+  //     console.log(e);
+  //     e.target.classList.add("nav-active");
+  //   })
+  // );
 
   // Horizontal slider
   const slider = document.querySelector(".more-projects");
