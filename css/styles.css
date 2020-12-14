@@ -749,6 +749,7 @@ nav a:visited {
 } */
 
 @media screen and (max-width: 768px) {
+  /* Nav Bar  */
   .top-nav {
     padding: 0 5%;
   }
@@ -761,11 +762,51 @@ nav a:visited {
     margin-top: 5px;
   }
 
-  .top-nav-links.responsive {
+  .top-nav-links.slide-in {
     position: absolute;
     top: 80px;
-    left: 0;
+    left: 20px;
     display: block;
+  }
+  .top-nav-links.slide-out {
+    position: absolute;
+    top: 80px;
+    left: -315px;
+    display: block;
+  }
+
+  /* Nav bar animation */
+  /* Sliding in */
+  .top-nav-links.slide-in {
+    animation-name: slide-in;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease;
+  }
+
+  @keyframes slide-in {
+    from {
+      left: -315px;
+    }
+    to {
+      left: 20px;
+    }
+  }
+  /* Sliding out */
+  .top-nav-links.slide-out {
+    animation-name: slide-out;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease;
+  }
+
+  @keyframes slide-out {
+    from {
+      left: 20px;
+    }
+    to {
+      left: -315px;
+    }
   }
 
   .greeting,
