@@ -46,38 +46,24 @@
   </head>
 
   <body>
-    <!-- Nav Bar -->
-    <div class="container-fluid navigation">
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container">
-          <a class="navbar-brand" href="index.html">Jianchen Zhu</a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-toggle="collapse"
-            data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ml-auto">
-              <li class="nav-item">
-                <a class="nav-link" href="index.html">Projects</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="detail.html">Detail</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="about.html">About</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-    </div>
+    <!-- Nav Bar Detail Active -->
+    <nav class="top-nav">
+      <a class="logo" href="index.html">Jianchen</a>
+      <ul class="top-nav-links">
+        <li class="top-nav-item">
+          <a class="top-nav-link" href="index.html">Projects</a>
+        </li>
+        <li class="top-nav-item">
+          <a class="top-nav-link nav-active" href="detail.html">Detail</a>
+        </li>
+        <li class="top-nav-item">
+          <a class="top-nav-link" href="about.html">About</a>
+        </li>
+      </ul>
+      <a href="#" class="hamburger">
+        <i class="fas fa-bars fa-2x"></i>
+      </a>
+    </nav>
 
     <!-- Intro division -->
     <div class="container intro">
