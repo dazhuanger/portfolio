@@ -643,8 +643,45 @@ nav a:visited {
   margin-top: 20px;
 }
 
-.resume {
-  padding: 5% 20% 0 20%;
+.about .text-box {
+  margin-top: 20px;
+}
+
+.about-items,
+.timeline-items {
+  position: relative;
+}
+
+.about-items span,
+.timeline-items span {
+  color: black;
+}
+
+.timeline-items p span {
+  background-color: #fcf6bd;
+}
+
+.timeline-node {
+  background: #0645ff;
+  border: 3px solid #b3c5fd;
+  border-radius: 100%;
+  height: 0.8rem;
+  width: 0.8rem;
+  display: inline-block;
+  position: absolute;
+  left: -1.5rem;
+  margin-top: 0.5rem;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+}
+.timeline-items::before {
+  content: "";
+  position: absolute;
+  height: calc(100% - 22px);
+  min-height: calc(60px - 22px);
+  top: 22px;
+  left: -1.15rem;
+  width: 2px;
+  background-color: #e9e9e9;
 }
 
 .linkedin {
@@ -834,6 +871,13 @@ nav a:visited {
 
   .midfi-watch {
     margin: 0 2%;
+  }
+
+  .about-items {
+    padding-left: 1rem;
+  }
+  .about-items p::before {
+    left: -0.5rem;
   }
 }
 
