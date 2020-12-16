@@ -445,6 +445,13 @@ nav a:visited {
 
 /* //////////////////////////////////////////// */
 /* Neighbourhood Sports */
+.neighbour-overview {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+
 .research .text-box,
 .design .text-box,
 .prototype .text-box,
