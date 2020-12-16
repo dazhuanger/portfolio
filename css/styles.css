@@ -644,7 +644,7 @@ nav a:visited {
 .links {
   display: flex;
   flex-flow: row nowrap;
-  justify-content: left;
+  justify-content: center;
   align-items: center;
   margin-top: 20px;
 }
