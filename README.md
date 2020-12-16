@@ -1,3 +1,3 @@
 # UX Design Portfolio
-HTML, CSS & JavsScript
-Bootstrap & jQuery
+// HTML, CSS & JavsScript
+// Bootstrap & jQuery
