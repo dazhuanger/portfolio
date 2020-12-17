@@ -666,6 +666,9 @@ nav a:visited {
 .timeline-items p span {
   background-color: #fcf6bd;
 }
+.timeline-items div {
+  margin-bottom: 2rem;
+}
 
 .timeline-node {
   background: #0645ff;
