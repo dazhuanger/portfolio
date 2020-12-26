@@ -52,9 +52,6 @@
           <a class="top-nav-link nav-active" href="index.html">Projects</a>
         </li>
         <li class="top-nav-item">
-          <a class="top-nav-link" href="detail.html">Detail</a>
-        </li>
-        <li class="top-nav-item">
           <a class="top-nav-link" href="about.html">About</a>
         </li>
       </ul>
@@ -158,19 +155,29 @@
           </p>
         </div>
       </div>
-
+      <div class="row">
+        <div class="col-md-6">
+          <img class="snaptravel-mobile-static" src="images/snaptravel/missing_info.png" alt="backtracking gif" />
+        </div>
+        <div class="col-md-6 problem-annotation">
+          <h4 class="div-subtitle">Missing Key Information</h4>
+          <p>
+            By the time users reach the final "complete booking" button, all important information such as hotel name,
+            dates and prices are already scrolled out of the viewport, resulting in the backtracking problem.
+          </p>
+        </div>
+      </div>
       <div class="row">
         <div class="col-md-6">
           <img class="snaptravel-mobile-gif" src="images/gif/backtracking.gif" alt="backtracking gif" />
         </div>
-
         <div class="col-md-6 problem-annotation">
-          <h4 class="div-subtitle">Backtracking</h4>
+          <h4 class="div-subtitle">Malfunctioning Buttons</h4>
           <p>
-            Before tapping on the final confirmation button, if users want to double-check if the information they
-            entered was correct, they have to expand the hotel details card again. However, once the card is expanded,
-            it can only be collapsed by clicking the main button because the triangle button on the top-right corner is
-            not a toggle switch. This means that users have to go through the entire process again.
+            Before tapping the "complete booking" button, if users want to double-check if the information they entered
+            was correct, they have to expand the hotel details card again. However, once the card is expanded, it can
+            only be collapsed by tapping the orange button because the triangle button on the top-right corner is not a
+            toggle switch.
           </p>
         </div>
       </div>
@@ -230,10 +237,23 @@
           <li class="text">Sticky summary cards</li>
           <p>
             This option also keeps the current mechanism. Making the collapsed card sticky to persist key details would
-            solve the backtracking problem.
+            solve the backtracking problem. However, keeping the sticky summary cards would take up a lot of screen
+            space, leaving not enough space for the user to fill in payment information forms.
           </p>
         </ul>
         <img class="snaptravel-mobile-static" src="images/gif/sticky.gif" alt="sticky img" />
+      </div>
+
+      <div class="text-box">
+        <ul>
+          <li class="text">Static summary cards</li>
+          <p>
+            Another option is to present a static summary card on top of the "complete booking" button. It allows users
+            to have enough screen space for previous steps. But they will have scroll back and open the card to make
+            modification if needed.
+          </p>
+        </ul>
+        <img class="snaptravel-mobile-static" src="images/snaptravel/summary.png" alt="static summary img" />
       </div>
 
       <div class="text-box">
