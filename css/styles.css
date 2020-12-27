@@ -325,7 +325,8 @@ nav a:visited {
 
 .problem,
 .analysis,
-.solutions {
+.solutions,
+.evaluation {
   padding-top: 2%;
   margin-bottom: 6%;
 }
@@ -369,6 +370,10 @@ nav a:visited {
   margin: 0 auto 7% auto;
 }
 
+.evaluation ul span {
+  color: black;
+  background-color: #fcf6bd;
+}
 /* ///////////////////////////////////////// */
 /* SOO page */
 /* containers */
@@ -777,7 +782,7 @@ nav a:visited {
 
 /* //////////////////////////////////////////////////////////////// */
 /* Detail Page*/
-.detai-intro {
+/* .detai-intro {
   text-align: center;
 }
 
@@ -785,7 +790,7 @@ nav a:visited {
   display: block;
   max-width: 60%;
   margin: 0 auto;
-}
+} */
 
 @media screen and (max-width: 768px) {
   /* Responsive Nav Bar  */
