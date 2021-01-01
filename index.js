@@ -20,11 +20,11 @@ $(document).ready(function () {
     $(".nav-active").removeClass("nav-active");
     $(this).addClass("nav-active");
   });
-  // Hamburger menu toggle
+
+  // Hamburger menu toggle function
   $(".hamburger").click(function () {
     let navLinks = $(".top-nav-links");
-    // navLinks.slideToggle("slow");
-    // navLinks.toggleClass("responsive slide-in");
+    // Adding animations to the tabs
     if (navLinks.attr("class").includes("slide-in")) {
       navLinks.toggleClass("slide-in");
       navLinks.toggleClass("slide-out");
@@ -48,7 +48,11 @@ $(document).ready(function () {
   //   })
   // );
 
-  // Horizontal slider
+  // set the year of footer
+  let year = new Date().getFullYear();
+  document.querySelector("footer").innerHTML = `© Jianchen Zhu ${year}`;
+
+  // Horizontal mouse slider
   const slider = document.querySelector(".more-projects");
   let isDown = false;
   let startX;
