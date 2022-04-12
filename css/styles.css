@@ -69,7 +69,7 @@ footer {
 }
 
 .text-box {
-  width: 60%;
+  width: 68%;
   margin: 0 auto;
 }
 
@@ -282,6 +282,26 @@ nav a:visited {
 
 .card-img-top.mini {
   width: 90%;
+}
+/* //////////////////////////////////////////////////// */
+/* Gateway page */
+.problem p span {
+  color: black;
+  font-weight: 600;
+  background-color: #fcf6bd;
+}
+.gw-img {
+  max-width: 100%;
+  margin: 10% 0px;
+}
+.gw-desktop-static {
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+.gw-desktop-static-showcase {
+  max-width: 100%;
+  margin: 20px auto;
 }
 
 /* //////////////////////////////////////////////////// */
