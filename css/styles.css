@@ -285,7 +285,7 @@ nav a:visited {
 }
 /* //////////////////////////////////////////////////// */
 /* Gateway page */
-.problem p span {
+.problem p span,.solutions p span {
   color: black;
   font-weight: 600;
   background-color: #fcf6bd;
