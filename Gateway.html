@@ -219,11 +219,12 @@
         <h3 class="div-title">Design</h3>
         <h4 class="div-subtitle">Design system</h4>
         <p>
-          The bank has a very comprehensive design system. Therefore, I didn't have to go through the paper sketches and
-          mid-fi wireframes. Every design iteration was created directly in Sketch using the existing components.
+          The bank has a very <span>comprehensive design system</span>. Therefore, I didn't have to go through the paper
+          sketches and mid-fi wireframes. Every design iteration was created directly in Sketch using the existing
+          components.
         </p>
         <!-- eDocuments  -->
-        <h4 class="div-subtitle">eDocuments</h4>
+        <h4 class="div-subtitle">Feature 1: eDocuments</h4>
         <p>eDocuments service is the most frequently used feature on Gateway. The major pain-points users have are:</p>
         <ul>
           <li class="text">Hard to find the documents they want to see</li>
@@ -247,14 +248,12 @@
       </div>
 
       <div class="text-box">
-        <ul>
-          <li class="text">First iteration</li>
-          <p>
-            For the first iteration of the new eDocument preference page, I grouped the accounts by categories and
-            offered a global level setting. Users will no longer need to go through each of their accounts to change the
-            settings.
-          </p>
-        </ul>
+        <h5>First Iteration</h5>
+        <p>
+          For the first iteration of the new eDocument preference page, I grouped the accounts by categories and offered
+          a global level setting. Users will no longer need to go through each of their accounts to change the settings.
+        </p>
+
         <img
           class="gw-desktop-static-showcase"
           src="images/gateway/edocs_iteration1_1.png"
@@ -273,22 +272,59 @@
       </div>
       <!-- First iteration testing -->
       <div class="text-box">
-        <ul>
-          <li class="text">User testing feedback</li>
-          <p>
-            I worked with our researcher to gather a round of feedback from other stakeholders, and also conducted an
-            unmoderated user testing on usertesting.com
-          </p>
-        </ul>
+        <h5>User testing feedback</h5>
+        <p>
+          I worked with our researcher to gather a round of feedback from other stakeholders, and also conducted an
+          unmoderated user testing on usertesting.com
+        </p>
         <img class="gw-desktop-static" src="images/gateway/legacy_feedback.png" alt="legacy feedback image" />
+      </div>
+      <!-- Second iteration -->
+      <div class="text-box">
+        <h5>Second iteration</h5>
+        <ul>
+          <li class="text">New "Go Paperless" button</li>
+          <p>
+            As the global level card confuses the user, I replaced it with a button that has the same function as the
+            card. Users will be able to subscribe to eDocuments and alerts with <span>just one click</span>. And the
+            button is a <span>one-time shot</span>. Once clicked, it will be disabled so that the user cannot
+            unsubscribe so easily (which fulfills the business requirement). If they want to customize the settings for
+            an individual account or a category of account, they can uncheck the corresponding checkbox.
+          </p>
+          <img class="gw-desktop-static" src="images/gateway/main_btn_highlight.png" alt="main button image" />
+          <li class="text">Prompt for the user</li>
+          <p>
+            To address the issue of users forgetting to save the change, I added a prompt that shows up when there is an
+            unsaved change. This is a <span>trade-off after consulting our tech lead.</span> Since the bank's back-end
+            system cannot support frequent visits, the ideal way of dynamically saving changes when users check or
+            uncheck a checkbox is not feasible.
+          </p>
+          <img class="gw-desktop-static" src="images/gateway/main_btn_disable_highlight.png" alt="main button image" />
+          <li class="text">Better Information Architecture</li>
+          <p>
+            Lastly, the second iteration also improved the information architecture of the web app. Now users have a
+            dedicated tab on the top nav bar to access their eDocuments.
+          </p>
+          <img class="gw-desktop-static" src="images/gateway/improved_ia.png" alt="main button image" />
+        </ul>
+      </div>
+      <div class="text-box">
+        <h5>Prototype</h5>
+        <iframe
+          style="border: 1px solid rgba(0, 0, 0, 0.1)"
+          width="800"
+          height="450"
+          src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FRuc2r84UrxzJWrTU2GadDs%2FGateway---eDocs-Retrieval%3Fnode-id%3D3%253A98945%26scaling%3Dmin-zoom%26page-id%3D0%253A12646%26starting-point-node-id%3D3%253A98945"
+          allowfullscreen
+        ></iframe>
       </div>
 
       <div class="text-box">
         <h4 class="div-subtitle">Work in progress...</h4>
         <p>
-          Due to the non-disclosure agreement, I cannot reveal the final designs to the public just yet. But I am happy
-          to chat about them during an interview 😉. I will make them available once the product is launched to the
-          public. Stay tuned!
+          Due to the non-disclosure agreement, I cannot reveal the final designs of other features to the public just
+          yet. But I am happy to chat about them during an interview 😉. I will make them available once the product is
+          launched to the public. Stay tuned!
         </p>
       </div>
     </div>
